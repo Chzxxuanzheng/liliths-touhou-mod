@@ -10,7 +10,7 @@
 	<race>touhou_vampire</race>
 	
 	<!-- The name that will be used when referring to transformations related to this type (such as when changing body parts in the self-TF menu). -->
-	<transformationName><![CDATA[吸血鬼]]></transformationName>
+	<transformationName><![CDATA[血族]]></transformationName>
 	
 	<!-- The id of the material covering this ear.
 	The id will typically take the form of 'innoxia_hyena_fur'.
@@ -54,13 +54,13 @@
 		#ELSE
 			正如[npc.her]身体的其他部分一样,它们[npc.earFullDescription],
 		#ENDIF
-		当转化结束时,[npc.she]试探性地摸了一下新张出来的吸血鬼之耳。
-		<br/>[npc.Name]现在拥有了[style.boldHyena(灵活的吸血鬼之耳)],它们[npc.materialCompositionDescriptor][npc.earFullDescription]。
+		当转化结束时,[npc.she]试探性地摸了一下新张出来的血族之耳。
+		<br/>[npc.Name]现在拥有了[style.boldHyena(灵活的血族之耳)],它们[npc.materialCompositionDescriptor][npc.earFullDescription]。
 	]]></transformationDescription>
 	
 	<!-- How this ear is described in a character's description page. -->
 	<bodyDescription><![CDATA[
-		[npc.She]有着一对灵敏的血族耳朵#IF(npc.isPiercedEar()),且已经打过孔#ENDIF,[npc.materialCompositionDescriptor][npc.earFullDescription(true)]。如此灵活的耳朵可以帮助吸血鬼在夜晚捕捉到猎物的动静。
+		[npc.She]有着一对灵敏的血族耳朵#IF(npc.isPiercedEar()),且已经打过孔#ENDIF,[npc.materialCompositionDescriptor][npc.earFullDescription(true)]。如此灵活的耳朵可以帮助血族在夜晚捕捉到猎物的动静。
 	]]></bodyDescription>
 	
 </ear>

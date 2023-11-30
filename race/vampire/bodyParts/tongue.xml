@@ -15,7 +15,7 @@
 	</descriptorsFeminine>
 	<bodyDescription><![CDATA[
 		[npc.Her]的嘴里有一根十分灵活的[npc.a_tongueLength]的[npc.tongue],呈现[npc.tongueColour(true)]
-		#IF(npc.isPiercedTongue()),且已经被打了孔#ENDIF,这样细长灵活的舌头可以很好的帮助吸血鬼从咬破的皮肤处吸食血液。
+		#IF(npc.isPiercedTongue()),且已经被打了孔#ENDIF,这样细长灵活的舌头可以很好的帮助血族从咬破的皮肤处吸食血液。
 	]]></bodyDescription>
 	<!-- The tongue modifiers which this tongue has when first created (such as when a new hyena-morph is spawned).
 	RIBBED		有棱纹的

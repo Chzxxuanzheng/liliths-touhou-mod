@@ -115,7 +115,7 @@
 	<bookIconName>vampireBat</bookIconName>
 	
 	<!-- The name for the book. -->
-	<bookName><![CDATA[求闻史记(吸血鬼篇)]]></bookName>
+	<bookName><![CDATA[求闻史记(血族篇)]]></bookName>
 	
 	<!-- The element names which contain the book's basic and advanced descriptions.
 	描述元素,这里写名字,具体内容应当写到'bookEntries.xml'里
@@ -139,26 +139,26 @@
 	(可能应该由“namesDefault”元素覆盖) -->
 	<nameAnthro>
 		<namesDefault>
-			<name><![CDATA[吸血鬼]]></name>
-			<namePlural><![CDATA[吸血鬼]]></namePlural>
-			<singularMaleName><![CDATA[吸血鬼]]></singularMaleName>
+			<name><![CDATA[血族]]></name>
+			<namePlural><![CDATA[血族]]></namePlural>
+			<singularMaleName><![CDATA[血族]]></singularMaleName>
 			<singularFemaleName><![CDATA[吸血姬]]></singularFemaleName>
-			<pluralMaleName><![CDATA[吸血鬼]]></pluralMaleName>
+			<pluralMaleName><![CDATA[血族]]></pluralMaleName>
 			<pluralFemaleName><![CDATA[吸血姬]]></pluralFemaleName>
 		</namesDefault>
 	</nameAnthro>
 	
 	<!-- 描述 -->
-	<description><![CDATA[一种人形生物。相对于人类,有着血红色的双眼,更长的犬牙与指甲,以及一对巨大蝙蝠翅膀。吸血鬼无论是对自身肉体的掌握还是对魔法的理解都达到了人类无法超越的地步。]]></description>
+	<description><![CDATA[一种人形生物。相对于人类,有着血红色的双眼,更长的犬牙与指甲,以及一对巨大蝙蝠翅膀。血族无论是对自身肉体的掌握还是对魔法的理解都达到了人类无法超越的地步。]]></description>
 	
 	<!-- 变恶魔的称呼 -->
 	<nameHalfDemon>
 		<namesDefault>
-			<name><![CDATA[吸血鬼]]></name>
-			<namePlural><![CDATA[吸血鬼]]></namePlural>
-			<singularMaleName><![CDATA[吸血鬼]]></singularMaleName>
+			<name><![CDATA[血族]]></name>
+			<namePlural><![CDATA[血族]]></namePlural>
+			<singularMaleName><![CDATA[血族]]></singularMaleName>
 			<singularFemaleName><![CDATA[吸血姬]]></singularFemaleName>
-			<pluralMaleName><![CDATA[吸血鬼]]></pluralMaleName>
+			<pluralMaleName><![CDATA[血族]]></pluralMaleName>
 			<pluralFemaleName><![CDATA[吸血姬]]></pluralFemaleName>
 		</namesDefault>
 	</nameHalfDemon>
@@ -166,11 +166,11 @@
 	<!-- 野生的. -->
 	<feralAttributes>
 		<!-- Naming: -->
-		<feralName><![CDATA[吸血鬼]]></feralName>
-		<feralNamePlural><![CDATA[吸血鬼]]></feralNamePlural>
-		<feralSingularMaleName><![CDATA[吸血鬼]]></feralSingularMaleName>
+		<feralName><![CDATA[血族]]></feralName>
+		<feralNamePlural><![CDATA[血族]]></feralNamePlural>
+		<feralSingularMaleName><![CDATA[血族]]></feralSingularMaleName>
 		<feralSingularFemaleName><![CDATA[吸血姬]]></feralSingularFemaleName>
-		<feralPluralMaleName><![CDATA[吸血鬼]]></feralPluralMaleName>
+		<feralPluralMaleName><![CDATA[血族]]></feralPluralMaleName>
 		<feralPluralFemaleName><![CDATA[吸血姬]]></feralPluralFemaleName>
 		
 		<!-- The leg configuration that a feral form of this subspecies has.
@@ -216,9 +216,9 @@
 	<!-- 该亚种的提示工具. -->
 	<statusEffectDescription><![CDATA[
 	#IF (npc == pc)
-		吸血鬼异于常人的力量在你身上涌动着
+		血族异于常人的力量在你身上涌动着。
 	#ELSE
-		[npc.NamePos]正在用那仿佛某种捕食者的深红竖瞳注视这你
+		[npc.NamePos]正在用那仿佛某种捕食者的深红竖瞳注视这你。
 	#ENDIF
 	]]></statusEffectDescription>
 	

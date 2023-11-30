@@ -5,7 +5,7 @@
 	<race>touhou_vampire</race>
 	
 	<!-- The name that will be used when referring to transformations related to this type (such as when changing body parts in the self-TF menu). -->
-	<transformationName><![CDATA[吸血鬼]]></transformationName>
+	<transformationName><![CDATA[血族]]></transformationName>
 	<coveringType>touhou_vampire_skin</coveringType>
 	
 	<!-- Whether this arm type grants the ability to fly. -->
@@ -28,12 +28,12 @@
 	<!-- The descriptors which should be drawn upon when describing a masculine character's arm of this type.
 	Can be left blank. -->
 	<descriptorsMasculine>
-		<descriptor>独属于吸血鬼的</descriptor>
+		<descriptor>独属于血族的</descriptor>
 		<descriptor>血族的</descriptor>
 		<descriptor></descriptor>
 	</descriptorsMasculine>
 	<descriptorsFeminine>
-		<descriptor>独属于吸血鬼的</descriptor>
+		<descriptor>独属于血族的</descriptor>
 		<descriptor>血族的</descriptor>
 		<descriptor>精致的</descriptor>
 		<descriptor>光滑的</descriptor>
@@ -68,8 +68,8 @@
 	<!-- The description which is shown when a character transforms to obtain this arm type.
 	This description immediately follows a brief description of the arm type beginning to transform. -->
 	<transformationDescription><![CDATA[
-	不一会儿,[npc.her]胳膊处开始散发出黑雾,当黑屋散去之后,露出了白的不正常的皮肤
-	<br/>当变形结束时,[npc.name]的手臂变成了血族专有的[style.boldSamoyed(吸血鬼手臂)]
+	不一会儿,[npc.her]胳膊处开始散发出黑雾,当黑雾散去之后,露出了白的不正常的皮肤
+	<br/>当变形结束时,[npc.name]的手臂变成了血族专有的[style.boldSamoyed(血族手臂)]
 	]]></transformationDescription>
 	
 	<!-- How these arms are described in a character's description page. -->

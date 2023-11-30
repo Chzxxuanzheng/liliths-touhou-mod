@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <torso>
 	<race>touhou_vampire</race>
-	<transformationName><![CDATA[吸血鬼]]></transformationName>
+	<transformationName><![CDATA[血族]]></transformationName>
 	
 	<coveringType>touhou_vampire_skin</coveringType>
 	
@@ -18,7 +18,7 @@
 	]]></transformationDescription>
 	
 	<bodyDescription><![CDATA[
-		[npc.Her]有一个[npc.a_femininity(true)]的独属于吸血鬼的身躯,[npc.materialCompositionDescriptor][npc.skinFullDescription(true)]。
+		[npc.Her]有一个[npc.a_femininity(true)]的独属于血族的身躯,[npc.materialCompositionDescriptor][npc.skinFullDescription(true)]。
 	]]></bodyDescription>
 	
 	<tags/>

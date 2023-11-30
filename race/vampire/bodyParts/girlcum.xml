@@ -2,7 +2,7 @@
 <fluid>
 	<race>touhou_vampire</race>
 	
-	<transformationName><![CDATA[吸血鬼]]></transformationName>
+	<transformationName><![CDATA[血族]]></transformationName>
 	
 	<baseFluidType>GIRLCUM</baseFluidType>
 	
@@ -13,11 +13,11 @@
 	<namesFeminine/>
 	
 	<descriptorsMasculine>
-		<name><![CDATA[吸血鬼]]></name>
+		<name><![CDATA[血族]]></name>
 	</descriptorsMasculine>
 	
 	<descriptorsFeminine>
-		<name><![CDATA[吸血鬼]]></name>
+		<name><![CDATA[血族]]></name>
 	</descriptorsFeminine>
 	
 	<defaultFluidModifiers/>

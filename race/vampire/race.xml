@@ -15,8 +15,8 @@
 	<applyRaceChanges/>
 	<!-- The non-gendered name and plural name of this race when in anthropomorphic form. -->
 	<!-- 该种族的非性别名称和复数名称，当采用拟人化形式时 -->
-	<name><![CDATA[吸血鬼]]></name><!-- 估计是非性别名称 -->
-	<namePlural><![CDATA[吸血鬼]]></namePlural><!-- 复数 -->
+	<name><![CDATA[血族]]></name><!-- 估计是非性别名称 -->
+	<namePlural><![CDATA[血族]]></namePlural><!-- 复数 -->
 	
 	<!-- The non-gendered name and plural name of this race when in feral form.
 	该种族的非性别名称和复数名称，当不礼貌的时刻?(野蛮,不会译捏)
@@ -51,7 +51,7 @@
 	It should most likely be the same value as that defined as 'nameFeral'. 
 	它应当与nameFeral的值相同
 	-->
-	<defaultTransformName><![CDATA[吸血鬼]]></defaultTransformName>
+	<defaultTransformName><![CDATA[血族]]></defaultTransformName>
 	
 	<!-- The colour of this race.
 	种族的颜色
@@ -97,7 +97,7 @@
 	这个种族是否可以访问变形菜单?(好像是能决定是否变形)
 	这通常应保留为false
 	This should typically be left as false. -->
-	<ableToSelfTransform>true</ableToSelfTransform>
+	<ableToSelfTransform>false</ableToSelfTransform>
 	
 	<!-- Whether this is a race capable of flight or not. -->
 	<!-- 是否有能力飞行? -->
