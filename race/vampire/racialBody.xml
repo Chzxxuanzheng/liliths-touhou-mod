@@ -411,7 +411,7 @@
 	<!-- 阴茎: -->
 	
 	<!-- https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/body/types/PenisType.java -->
-	<penisType>HUMAN</penisType>
+	<penisType>touhou_vampire_penis</penisType>
 	
 	<!-- 长度,单位cm,Values from 0 to 100, measured in cm (don't use -1). Values: https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/body/valueEnums/PenisLength.java -->
 	<penisLength>10</penisLength>

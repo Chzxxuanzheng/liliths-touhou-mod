@@ -4,20 +4,20 @@
 	
 	<!-- For a commented example of a fluid type, see 'milk.xml'. -->
 	
-	<race>touhou_yousei</race>
+	<race>touhou_vampire</race>
 	
-	<transformationName><![CDATA[妖精]]></transformationName>
+	<transformationName><![CDATA[血族]]></transformationName>
 	
 	<baseFluidType>CUM</baseFluidType>
 	
 	<flavour>CUM</flavour>
 	
 	<namesMasculine>
-		<name><![CDATA[妖精]]></name>
+		<name><![CDATA[血族]]></name>
 	</namesMasculine>
 	
 	<namesFeminine>
-		<name><![CDATA[妖精]]></name>
+		<name><![CDATA[血族]]></name>
 	</namesFeminine>
 	
 	<descriptorsMasculine/>
