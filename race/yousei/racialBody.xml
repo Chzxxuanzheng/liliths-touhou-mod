@@ -472,12 +472,11 @@
 	<!-- Multiple wing types can be defined for one race, from which a random type will be selected upon spawning an instance of this race.
 	https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/body/types/WingType.java -->
 	<wingTypes>
-		<type>touhou_yousei_wingIce</type>
-		<type>touhou_yousei_wing</type>
+		<type weight="0">touhou_yousei_wingDefault1</type>
 	</wingTypes>
 	
 	<!-- Values from 0 to 4. Values: https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/body/valueEnums/WingSize.java -->
-	<maleWingSize>1</maleWingSize>
-	<femaleWingSize>1</femaleWingSize>
+	<maleWingSize>3</maleWingSize>
+	<femaleWingSize>3</femaleWingSize>
 	
 </racialBody>

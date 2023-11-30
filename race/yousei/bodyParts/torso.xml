@@ -4,7 +4,6 @@
 	<transformationName><![CDATA[妖精]]></transformationName>
 	
 	<coveringType>touhou_yousei_skin</coveringType>
-	[#pc.getBody().getWing().getNameSingular(pc)] | [#WING_TYPE_touhou_yousei_wing.getNameSingular(pc)]
 	<descriptorsMasculine>
 		<descriptor><![CDATA[小巧的]]></descriptor>
 		<descriptor><![CDATA[迷你的]]></descriptor>

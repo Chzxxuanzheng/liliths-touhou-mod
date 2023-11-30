@@ -62,7 +62,11 @@
 	这个会在种族的'applyRaceChanges'方法执行后执行.
 	你可以通过'targetedBody'获取改变前的身体信息(不用加npc) -->
 	<applySubspeciesChanges><![CDATA[
-	[##npc.getBody().setWingType(WING_TYPE_touhou_yousei_wing)]
+	#IF (RND.nextInt(2) == 1)
+		[##npc.getBody().setWingType(WING_TYPE_touhou_yousei_wingDefault1)]
+	#ELSE
+		[##npc.getBody().setWingType(WING_TYPE_touhou_yousei_wingDefault2)]
+	#ENDIF
 	[##npc.getBody().getCoverings().get(BODY_COVERING_TYPE_touhou_yousei_wingDefault).setPrimaryGlowing(true)]
 	]]></applySubspeciesChanges>
 	
@@ -79,7 +83,8 @@
 	-->
 	<subspeciesWeighting><![CDATA[
 		#IF(targetedRace==RACE_touhou_yousei)
-			#IF (targetedBody.getWingType() == WING_TYPE_touhou_yousei_wing)
+			#IF (targetedBody.getWingType() == WING_TYPE_touhou_yousei_wingDefault1 ||
+				 targetedBody.getWingType() == WING_TYPE_touhou_yousei_wingDefault2) 
 				100
 			#ELSE
 				0
@@ -94,7 +99,7 @@
 	<!-- The name of the svg file which represents this subspecies' icon.
 	这个亚种的图标
 	It should be located in the same folder as this xml file. -->
-	<iconName displaySize="80"></iconName>
+	<iconName displaySize="80">vampireBat</iconName>
 	
 	<!-- The name of the svg file which represents the background for this subspecies' icon.
 	It should be located in the same folder as this xml file.
@@ -115,7 +120,7 @@
 	<bookIconName></bookIconName>
 	
 	<!-- The name for the book. -->
-	<bookName><![CDATA[求闻史记(妖精篇1)]]></bookName>
+	<bookName><![CDATA[求闻史记(妖精篇)]]></bookName>
 	
 	<!-- The element names which contain the book's basic and advanced descriptions.
 	描述元素,这里写名字,具体内容应当写到'bookEntries.xml'里

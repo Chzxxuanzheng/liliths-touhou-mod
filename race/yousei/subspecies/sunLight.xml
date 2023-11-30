@@ -15,9 +15,9 @@
 	通常与种族的颜色相似
 	这个亚种大部分都会使用这个颜色
 	'secondaryColour' 和 'tertiaryColour' 与 'colour'一起用于这个亚种的图标和背景 -->
-	<colour>BASE_GREEN</colour>
-	<secondaryColour>BASE_GREEN</secondaryColour>
-	<tertiaryColour>BASE_GREEN</tertiaryColour>
+	<colour>touhou_youseiSun</colour>
+	<secondaryColour>touhou_youseiSun</secondaryColour>
+	<tertiaryColour>touhou_youseiSun</tertiaryColour>
 	
 	<!-- 这个亚种是否是这个种族的主要亚种
 	如果这个种族只有这一个亚种,应当设置为true -->
@@ -60,9 +60,9 @@
 	<aquatic>false</aquatic>
 	
 	<applySubspeciesChanges><![CDATA[
-	[##npc.getBody().setWingType(WING_TYPE_touhou_yousei_wingSpring)]
-	[##npc.getBody().getCoverings().get(BODY_COVERING_TYPE_touhou_yousei_wingDefault).setPrimaryColour(COLOUR_touhou_youseiWing)]
-	[##npc.getBody().getCoverings().get(BODY_COVERING_TYPE_touhou_yousei_wingDefault).setSecondaryColour(COLOUR_touhou_youseiWing)]
+	[##npc.getBody().setWingType(WING_TYPE_touhou_yousei_wingSun)]
+	[##npc.getBody().getCoverings().get(BODY_COVERING_TYPE_touhou_yousei_wingDefault).setPrimaryColour(COLOUR_touhou_youseiSun)]
+	[##npc.getBody().getCoverings().get(BODY_COVERING_TYPE_touhou_yousei_wingDefault).setSecondaryColour(COLOUR_touhou_youseiSun)]
 	]]></applySubspeciesChanges>
 	
 	<!-- This conditional statement determines if a body is detected as being an instance of this subspecies.
@@ -76,17 +76,15 @@
 	可以使用“targetedBody”访问正在检查的正文。
 	不应通过targetedBody.getRace()访问正在检查的主体的种族，而应使用'targetedRace'访问。
 	-->
-	<subspeciesWeighting><![CDATA[
-		#IF(targetedRace==RACE_touhou_yousei)
-			#IF (targetedBody.getWingType() == WING_TYPE_touhou_yousei_wingSpring)
+	<subspeciesWeighting><![CDATA[#IF(targetedRace==RACE_touhou_yousei)
+			#IF (targetedBody.getWingType() == WING_TYPE_touhou_yousei_wingSun)
 				100
 			#ELSE
 				0
 			#ENDIF
 		#ELSE
 			0
-		#ENDIF
-	]]></subspeciesWeighting>
+		#ENDIF]]></subspeciesWeighting>
 
 	<!-- All non-striped hyenas are classified as spotted just to catch any which have accidentally had their covering set to something other than spotted or striped. -->
 	
@@ -114,12 +112,12 @@
 	<bookIconName>vampireBat</bookIconName>
 	
 	<!-- The name for the book. -->
-	<bookName><![CDATA[求闻史记(妖精篇3)]]></bookName>
+	<bookName><![CDATA[求闻史记(妖精篇4)]]></bookName>
 	
 	<!-- The element names which contain the book's basic and advanced descriptions.
 	描述元素,这里写名字,具体内容应当写到'bookEntries.xml'里
 	These should be entered into the 'bookEntries.xml' file in the same folder location as this file. -->
-	<basicDescriptionId>touhou_YOUSEI_SPRING</basicDescriptionId>
+	<basicDescriptionId>touhou_YOUSEI_SAN</basicDescriptionId>
 	<advancedDescriptionId/>
 	
 	<!-- The default preference for this subspecies spawning.
@@ -132,24 +130,24 @@
 	FOUR_ABUNDANT
 	不懂捏,源码不写注释,差评差评
 	Values can be found here: https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/race/SubspeciesPreference.java -->
-	<defaultPreference>TWO_AVERAGE</defaultPreference>
+	<defaultPreference>ZERO_NONE</defaultPreference>
 	
 	<!-- 该亚种在非野生形态时的名称。
 	(可能应该由“namesDefault”元素覆盖) -->
 	<nameAnthro>
 		<namesDefault>
-			<name><![CDATA[叫春精]]></name>
-			<namePlural><![CDATA[叫春精]]></namePlural>
-			<singularMaleName><![CDATA[叫春精]]></singularMaleName>
-			<singularFemaleName><![CDATA[叫春精]]></singularFemaleName>
-			<pluralMaleName><![CDATA[叫春精]]></pluralMaleName>
-			<pluralFemaleName><![CDATA[叫春精]]></pluralFemaleName>
+			<name><![CDATA[日光妖精]]></name>
+			<namePlural><![CDATA[日光妖精]]></namePlural>
+			<singularMaleName><![CDATA[日光妖精]]></singularMaleName>
+			<singularFemaleName><![CDATA[日光妖精]]></singularFemaleName>
+			<pluralMaleName><![CDATA[日光妖精]]></pluralMaleName>
+			<pluralFemaleName><![CDATA[日光妖精]]></pluralFemaleName>
 		</namesDefault>
 	</nameAnthro>
 	
 	<!-- 描述 -->
 	<description><![CDATA[一种类人形生物。相对于人类,身形小的可怜,即时个体最大的妖精也没人类小孩大,长者一堆娇小的翅膀,但却能使自己飞起来。
-	当春天到来,叫春精就会异常兴奋起来。]]></description>
+	拥有折射光线程度的能力。]]></description>
 	
 	<!-- 变恶魔的称呼 -->
 	<nameHalfDemon>
@@ -166,12 +164,12 @@
 	<!-- 野生的. -->
 	<feralAttributes>
 		<!-- Naming: -->
-		<feralName><![CDATA[叫春精]]></feralName>
-		<feralNamePlural><![CDATA[叫春精]]></feralNamePlural>
-		<feralSingularMaleName><![CDATA[叫春精]]></feralSingularMaleName>
-		<feralSingularFemaleName><![CDATA[叫春精]]></feralSingularFemaleName>
-		<feralPluralMaleName><![CDATA[叫春精]]></feralPluralMaleName>
-		<feralPluralFemaleName><![CDATA[叫春精]]></feralPluralFemaleName>
+		<feralName><![CDATA[日光妖精]]></feralName>
+		<feralNamePlural><![CDATA[日光妖精]]></feralNamePlural>
+		<feralSingularMaleName><![CDATA[日光妖精]]></feralSingularMaleName>
+		<feralSingularFemaleName><![CDATA[日光妖精]]></feralSingularFemaleName>
+		<feralPluralMaleName><![CDATA[日光妖精]]></feralPluralMaleName>
+		<feralPluralFemaleName><![CDATA[日光妖精]]></feralPluralFemaleName>
 		
 		<!-- The leg configuration that a feral form of this subspecies has.
 		腿的形状,决定了这个亚种的体型

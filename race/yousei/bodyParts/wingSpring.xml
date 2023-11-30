@@ -14,12 +14,12 @@
 	<race>touhou_yousei</race>
 	
 	<!-- The name that will be used when referring to transformations related to this type (such as when changing body parts in the self-TF menu). -->
-	<transformationName><![CDATA[冰妖精]]></transformationName>
+	<transformationName><![CDATA[春之妖精之翼]]></transformationName>
 	
 	<!-- The id of the material covering this wing.
 	The id will typically take the form of 'innoxia_hyena_fur'.
 	Hard-coded values can be found here: https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/body/coverings/BodyCoveringType.java -->
-	<coveringType>touhou_yousei_wingIce</coveringType>
+	<coveringType>touhou_yousei_wingDefault</coveringType>
 	
 	<!-- Whether this is a generic wing type or not (use the values 'true' or 'false' here).
 		是否是通用翅膀,通用翅膀可以被任何种族使用
@@ -43,8 +43,8 @@
 	<maximumSize>FOUR_HUGE</maximumSize>
 	
 	<!-- The singular and plural names of this wing. -->
-	<name><![CDATA[冰晶之翼]]></name>
-	<namePlural><![CDATA[冰晶之翼]]></namePlural>
+	<name><![CDATA[妖精之翼]]></name>
+	<namePlural><![CDATA[妖精之翼]]></namePlural>
 	
 	<!-- The descriptors which should be drawn upon when describing a masculine character's wing of this type.
 	Can be left blank. -->
@@ -63,19 +63,19 @@
 	<!-- The description which is shown when a character transforms to obtain this wing type.
 	This description immediately follows a brief description of the wing type beginning to transform. -->
 	<transformationDescription><![CDATA[
-		[npc.She]的背部突然出现了一块冰,[npc.She]只好紧咬下唇,忍受着来自全身的疼痛
-		在不知不觉中,冰块破碎,
-		碎片变成了一对相对身体而言的[npc.wingSize][npc.materialDescriptor][npc.wingFullDescription(true)]的冰晶之翼,漂浮在[npc.her][npc.legConfiguration]
+		[npc.She]的背部突然亮起了强光,[npc.She]只好紧咬下唇,忍受着来自全身的疼痛
+		在不知不觉中,
+		一对相对身体而言的[npc.wingSize][npc.materialDescriptor][npc.wingFullDescription(true)]的妖精之翼从从[npc.her][npc.legConfiguration]
 		#IF (npc.getLegConfiguration().isWingsOnLegConfiguration())
-			身体的两侧。
+			身体的两侧长了出来。
 		#ELSE
-			的肩胛骨位置。
+			的肩胛骨位置长了出来。
 		#ENDIF
-		<br/>[npc.Name]现在拥有[style.boldTfGeneric(独属于冰妖精的晶莹冰晶之翼)]。
+		<br/>[npc.Name]现在拥有[style.boldTfGeneric(独属于妖精的晶莹碟翼)]。
 	]]></transformationDescription>
 	
 	<!-- How this wing is described in a character's description page. -->
 	<bodyDescription><![CDATA[
-		[npc.sheHasFull]拥有一对相对身体而言的[npc.wingSize]的冰晶之翼,由六颗[npc.wingFullDescription(true)]。
+		[npc.sheHasFull]拥有一对相对身体而言的[npc.wingSize]的宛如蜻蜓般的妖精之翼,[npc.materialDescriptor][npc.wingFullDescription(true)]。
 	]]></bodyDescription>
 </wing>

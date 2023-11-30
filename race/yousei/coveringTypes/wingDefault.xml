@@ -95,13 +95,21 @@
 	Acceptable 'values' are found here: https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/utils/colours/ColourListPresets.java -->
 	
 	<naturalColoursPrimary>
-		<colour>allSkinColours</colour>
+		<colour>BASE_WHITE</colour>
+		<colour>BASE_ROSE</colour>
+		<colour>BASE_LILAC_LIGHT</colour>
+		<colour>BASE_YELLOW_LIGHT</colour>
+		<colour>BASE_GREEN_LIGHT</colour>
 	</naturalColoursPrimary> 
 	
 	<extraColoursPrimary values="allSkinColours"/>
 
 	<naturalColoursSecondary>
-		<colour>allSkinColours</colour>
+		<colour>BASE_WHITE</colour>
+		<colour>BASE_ROSE</colour>
+		<colour>BASE_LILAC_LIGHT</colour>
+		<colour>BASE_YELLOW_LIGHT</colour>
+		<colour>BASE_GREEN_LIGHT</colour>
 	</naturalColoursSecondary>
 	
 	<extraColoursSecondary values="allSkinColours"/>

@@ -14,7 +14,7 @@
 	<race>touhou_yousei</race>
 	
 	<!-- The name that will be used when referring to transformations related to this type (such as when changing body parts in the self-TF menu). -->
-	<transformationName><![CDATA[妖精]]></transformationName>
+	<transformationName><![CDATA[地狱妖精之翼]]></transformationName>
 	
 	<!-- The id of the material covering this wing.
 	The id will typically take the form of 'innoxia_hyena_fur'.
@@ -39,8 +39,8 @@
 	THREE_LARGE	大型
 	FOUR_HUGE	巨型
 	Values for wing sizes can be found here: https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/body/valueEnums/WingSize.java -->
-	<minimumSize>ZERO_TINY</minimumSize>
-	<maximumSize>TWO_AVERAGE</maximumSize>
+	<minimumSize>THREE_LARGE</minimumSize>
+	<maximumSize>FOUR_HUGE</maximumSize>
 	
 	<!-- The singular and plural names of this wing. -->
 	<name><![CDATA[妖精之翼]]></name>
@@ -63,9 +63,9 @@
 	<!-- The description which is shown when a character transforms to obtain this wing type.
 	This description immediately follows a brief description of the wing type beginning to transform. -->
 	<transformationDescription><![CDATA[
-		[npc.She]的背部突然亮起了强光,[npc.She]只好紧咬下唇,忍受着来自全身的疼痛
+		[npc.She]的背部突然着起了火,[npc.She]只好紧咬下唇,忍受着来自全身的疼痛
 		在不知不觉中,
-		一对[npc.wingSize][npc.materialDescriptor][npc.wingFullDescription(true)]的妖精之翼从从[npc.her][npc.legConfiguration]
+		一对相对身体而言的[npc.wingSize][npc.materialDescriptor][npc.wingFullDescription(true)]的妖精之翼从从[npc.her][npc.legConfiguration]
 		#IF (npc.getLegConfiguration().isWingsOnLegConfiguration())
 			身体的两侧长了出来。
 		#ELSE
@@ -76,6 +76,6 @@
 	
 	<!-- How this wing is described in a character's description page. -->
 	<bodyDescription><![CDATA[
-		[npc.sheHasFull]拥有一对[npc.wingSize]的妖精之翼,[npc.materialDescriptor][npc.wingFullDescription(true)]。
+		[npc.sheHasFull]拥有一对相对身体而言的[npc.wingSize]的宛如蜻蜓般的妖精之翼,[npc.materialDescriptor][npc.wingFullDescription(true)]。
 	]]></bodyDescription>
 </wing>

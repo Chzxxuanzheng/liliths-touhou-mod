@@ -21,7 +21,7 @@
 	
 	<!-- 这个亚种是否是这个种族的主要亚种
 	如果这个种族只有这一个亚种,应当设置为true -->
-	<mainSubspecies>true</mainSubspecies>
+	<mainSubspecies>false</mainSubspecies>
 	
 	<!-- 被作为奴隶售卖的价格 -->
 	<baseSlaveValue>2000</baseSlaveValue>
@@ -91,7 +91,7 @@
 	<!-- The name of the svg file which represents this subspecies' icon.
 	这个亚种的图标
 	It should be located in the same folder as this xml file. -->
-	<iconName displaySize="80"></iconName>
+	<iconName displaySize="80">vampireBat</iconName>
 	
 	<!-- The name of the svg file which represents the background for this subspecies' icon.
 	It should be located in the same folder as this xml file.

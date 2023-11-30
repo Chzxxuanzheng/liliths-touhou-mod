@@ -90,13 +90,13 @@
 	
 
 	<naturalColoursPrimary>
-		<colour>allSkinColours</colour>
+		<colour>touhou_youseiIceColor</colour>
 	</naturalColoursPrimary> 
 	
 	<extraColoursPrimary values="allSkinColours"/>
 
 	<naturalColoursSecondary>
-		<colour>allSkinColours</colour>
+		<colour>touhou_youseiIceColor</colour>
 	</naturalColoursSecondary>
 	
 	<extraColoursSecondary values="allSkinColours"/>

@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<fluid>
+	<!-- GENERAL INFORMATION: If you are unsure of anything, please use the LT Discord to ask for help! -->
+	
+	<!-- For a commented example of a fluid type, see 'milk.xml'. -->
+	
+	<race>innoxia_hyena</race>
+	
+	<transformationName><![CDATA[妖精]]></transformationName>
+	
+	<baseFluidType>CUM</baseFluidType>
+	
+	<flavour>CUM</flavour>
+	
+	<namesMasculine>
+		<name><![CDATA[妖精]]></name>
+	</namesMasculine>
+	
+	<namesFeminine>
+		<name><![CDATA[妖精]]></name>
+	</namesFeminine>
+	
+	<descriptorsMasculine/>
+	
+	<descriptorsFeminine/>
+	
+	<defaultFluidModifiers/>
+	
+</fluid>
