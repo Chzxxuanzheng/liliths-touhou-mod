@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<fluid>
+	<!-- GENERAL INFORMATION: If you are unsure of anything, please use the LT Discord to ask for help! -->
+	
+	<!-- If you want to see the part of the code where this type is defined, then please look here:
+	https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/body/abstractTypes/AbstractFluidType.java -->
+	
+	<!-- The id of the race which this fluid belongs to.
+	This will almost always be the id of the race in which this type is found (in this case hyena). -->
+	<race>touhou_yousei</race>
+	
+	<!-- The name that will be used when referring to transformations related to this type (such as when changing body parts in the self-TF menu). -->
+	<transformationName><![CDATA[妖精]]></transformationName>
+	
+	<!-- The base type of this fluid.
+	Hard-coded values can be found here: https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/body/valueEnums/FluidTypeBase.java -->
+	<baseFluidType>MILK</baseFluidType>
+	
+	<!-- The default flavour of this fluid.
+	Hard-coded values can be found here: https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/body/valueEnums/FluidFlavour.java -->
+	<flavour>MILK</flavour>
+	
+	<!-- The names of this fluid when produced by a masculine character.
+	Names ending in '-' are handled in a special manner by appending a generic fluid name to the end of it before returning. (See hyena cum for an example of this.)
+	One of the defined names will be chosen at random every time the name is displayed to the player. -->
+	<namesMasculine/>
+	<!-- You can do as I've done here and leave this empty to use the game's default names for the fluid's type (in this case 'MILK' names) or define your own fluid names like so:
+	<namesMasculine>
+		<name><![CDATA[milk]]></name>
+	</namesMasculine>
+	-->
+	
+	<!-- Exactly the same as above, but for when produced by a feminine character. -->
+	<namesFeminine/>
+	
+	<!-- The descriptors which should be drawn upon when describing a masculine character's fluid of this type.
+	Additional fluid descriptors are generated based on the fluid's properties (such as its modifiers, flavour, etc.), so these descriptors should only be related to the race itself. -->
+	<descriptorsMasculine>
+		<name><![CDATA[妖精]]></name>
+	</descriptorsMasculine>
+	
+	<!-- Same as above, but for feminine characters. -->
+	<descriptorsFeminine>
+		<name><![CDATA[妖精]]></name>
+	</descriptorsFeminine>
+	
+	<!-- The fluid modifiers which this fluid has by default .
+	Values can be found here: https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/body/valueEnums/FluidModifier.java -->
+    <!-- 
+	VISCOUS		"粘稠", "十分粘稠，会缓慢地成块滴落而下，如同浓厚的糖蜜一般。", "使得该液体拥有固体和液体之间的粘稠度。"),
+    STICKY		"黏糊糊", "十分黏糊，不使用肥皂就不能清洗干净。", "使得该液体能够黏住接触的任何东西。"),
+    SLIMY		"粘滑", "拥有粘滑、油质的质感。", "使得该液体感觉像粘液。"),
+    BUBBLING	"起泡", "如碳酸饮料一般会起气泡。", "使得该液体会像碳酸饮料一样起泡。"),
+    MUSKY		"气味浓重", "拥有强烈的淫味。", "气味浓重的精液或爱液如果在性交中沾染在某人身上，则会使其获得“被淫味标记”的效果。"),
+    MINERAL_OIL	"矿物油", "富含会滋润皮肤但腐蚀橡胶制品的矿物质。", "混入矿物油的液体能够迅速融化避孕套，导致其在高潮时破裂。"),
+    ALCOHOLIC	"高度酒精", "含有高度酒精，会使得喝下该液体的角色醉酒。", "含高度酒精的液体会急剧增加喝下该液体角色的醉酒等级。") -->
+	<defaultFluidModifiers/>
+	
+</fluid>

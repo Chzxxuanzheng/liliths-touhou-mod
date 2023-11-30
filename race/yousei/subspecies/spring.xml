@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<subspecies>
+	<!-- GENERAL INFORMATION: If you are unsure of anything, please use the LT Discord to ask for help! -->
+	
+	<!-- The race which this subspecies belongs to. -->
+	<!-- 这个亚种属于那个种族 -->
+	<race>touhou_yousei</race>
+	<!-- 头发id -->
+	<bodyHair>touhou_yousei_bodyHair</bodyHair>
+	<!-- The colour of this subspecies.
+	Will usually be the same as the race's colour.
+	The 'colour' value is used in most places as the base colour for this subspecies.
+	The 'secondaryColour' and 'tertiaryColour' are used alongside 'colour' in recolouring this subspecies' icon and background.
+	这个亚种的颜色
+	通常与种族的颜色相似
+	这个亚种大部分都会使用这个颜色
+	'secondaryColour' 和 'tertiaryColour' 与 'colour'一起用于这个亚种的图标和背景 -->
+	<colour>BASE_GREEN</colour>
+	<secondaryColour>BASE_GREEN</secondaryColour>
+	<tertiaryColour>BASE_GREEN</tertiaryColour>
+	
+	<!-- 这个亚种是否是这个种族的主要亚种
+	如果这个种族只有这一个亚种,应当设置为true -->
+	<mainSubspecies>false</mainSubspecies>
+	
+	<!-- 被作为奴隶售卖的价格 -->
+	<baseSlaveValue>2000</baseSlaveValue>
+	
+	<!-- The id of the item associated with this race which can be enchanted to modify attributes.
+	没有的话填innoxia_race_human_vanilla_water
+	If you do not have an associated item made for this race then use 'innoxia_race_human_vanilla_water'. -->
+	<attributeItemId>innoxia_race_human_vanilla_water</attributeItemId>
+	
+	<!-- The id of the item associated with this race which can be enchanted to create a transformation potion.
+	大致是其他物种使用了这个道具,会变成这个种族
+	没有的话填innoxia_race_human_bread_roll
+	If you do not have an associated item made for this race then use 'innoxia_race_human_bread_roll'. -->
+	<transformativeItemId>innoxia_race_human_bread_roll</transformativeItemId>
+	
+	<!-- An integer representing how important this Subspecies is to be defined as a character's Subspecies override (meaning that this Subspecies will always be their true Subspecies, no matter the race of their body parts).
+	The default value is 0, which, along with any negative integer value, means that this Subspecies does not set an Override.
+	A Subspecies which has a higher value than a character's current Subspecies Override will replace the current Override with this one.
+	This is only used for demons, and should always be left as 0 unless you know what you're doing. 
+	应该只对恶魔有用,除非你真的这是是干啥的,否则填0-->
+	<subspeciesOverridePriority>0</subspeciesOverridePriority>
+	
+	<!-- Whether this race is of a small stature or not.
+	是否身材矮小?不会翻
+	If set to true, then this race is limited to the game's smallest height categories (as is the case for imps). -->
+	<shortStature>true</shortStature>
+	
+	<!-- Whether or not this subspecies has the bipedal leg configuration by default.
+	是否两足行走
+	Set to false for subspecies like centaurs. -->
+	<bipedalSubspecies>true</bipedalSubspecies>
+	
+	<!-- Whether or not this is a subspecies which prefers to live in an aquatic environment.
+	这个亚种是否喜欢水生环境
+	If set to true, then this subspecies will have the positive & negative aquatic status effects applied to it when in a tile with and without access to water, respectively. -->
+	<aquatic>false</aquatic>
+	
+	<applySubspeciesChanges><![CDATA[
+	[##npc.getBody().setWingType(WING_TYPE_touhou_yousei_wing)]
+	]]></applySubspeciesChanges>
+	
+	<!-- This conditional statement determines if a body is detected as being an instance of this subspecies.
+	It should return an integer value, with 0 being returned if this subspecies' requirements are not met by the supplied body/race.
+	You should usually return a value of 100 if the requirements are met, or something higher if this subspecies should have a higher priority than other subspecies which may also detect this body as being an instance of their subspecies.
+	The body that's being checked can be accessed via using 'targetedBody'.
+	The race of the body that's being checked SHOULD NOT be accessed via targetedBody.getRace(), and should instead be accessed via using 'targetedRace'. 
+	这个条件语句确定一个身体是否被检测为该亚种的一个实例。
+	它应该返回一个整数值，如果提供的身体/种族不满足该亚种的要求，则返回0。
+	如果满足要求，你通常应该返回100的值，或者如果这个亚种比其他亚种有更高的优先级，则返回更高的值，其他亚种也可能检测到这个身体是他们亚种的一个实例。
+	可以使用“targetedBody”访问正在检查的正文。
+	不应通过targetedBody.getRace()访问正在检查的主体的种族，而应使用'targetedRace'访问。
+	-->
+	<subspeciesWeighting><![CDATA[
+		#IF(targetedRace==RACE_touhou_yousei)
+			#IF (targetedBody.getWingType() == WING_TYPE_touhou_yousei_wing)
+				100
+			#ELSE
+				0
+			#ENDIF
+		#ELSE
+			0
+		#ENDIF
+	]]></subspeciesWeighting>
+
+	<!-- All non-striped hyenas are classified as spotted just to catch any which have accidentally had their covering set to something other than spotted or striped. -->
+	
+	<!-- The name of the svg file which represents this subspecies' icon.
+	这个亚种的图标
+	It should be located in the same folder as this xml file. -->
+	<iconName displaySize="80"></iconName>
+	
+	<!-- The name of the svg file which represents the background for this subspecies' icon.
+	It should be located in the same folder as this xml file.
+	图标背景,留空代表使用默认
+	You can leave this blank to use the game's default background. -->
+	<backgroundName></backgroundName>
+	
+	<!-- Book information:
+	百科全书
+	Books are automatically-generated items which reveal information about the game's subspecies.
+	书是自动生成的,用来显示关于这个亚种的详细信息
+	There is a unique book created for every unique value defined for each subspecies' 'advancedDescriptionId' field.
+	i.e. If I defined a different 'advancedDescriptionId' for spotted and striped hyenas, the game would make a book for each of them.
+		As it stands, I have defined both spotted and striped hyena subspecies to use the 'hyena_advanced' xml file, so there will only be one book type generated.	-->
+		
+	<!-- The icon to be used on the book's front cover.
+	It should be located in the same folder as this xml file. -->
+	<bookIconName>vampireBat</bookIconName>
+	
+	<!-- The name for the book. -->
+	<bookName><![CDATA[求闻史记(妖精篇3)]]></bookName>
+	
+	<!-- The element names which contain the book's basic and advanced descriptions.
+	描述元素,这里写名字,具体内容应当写到'bookEntries.xml'里
+	These should be entered into the 'bookEntries.xml' file in the same folder location as this file. -->
+	<basicDescriptionId>touhou_YOUSEI_SPRING</basicDescriptionId>
+	<advancedDescriptionId/>
+	
+	<!-- The default preference for this subspecies spawning.
+	该亚种产卵偏好
+	(23.11.22)
+	ZERO_NONE
+	ONE_LOW
+	TWO_AVERAGE
+	THREE_HIGH
+	FOUR_ABUNDANT
+	不懂捏,源码不写注释,差评差评
+	Values can be found here: https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/race/SubspeciesPreference.java -->
+	<defaultPreference>TWO_AVERAGE</defaultPreference>
+	
+	<!-- 该亚种在非野生形态时的名称。
+	(可能应该由“namesDefault”元素覆盖) -->
+	<nameAnthro>
+		<namesDefault>
+			<name><![CDATA[叫春精]]></name>
+			<namePlural><![CDATA[叫春精]]></namePlural>
+			<singularMaleName><![CDATA[叫春精]]></singularMaleName>
+			<singularFemaleName><![CDATA[叫春精]]></singularFemaleName>
+			<pluralMaleName><![CDATA[叫春精]]></pluralMaleName>
+			<pluralFemaleName><![CDATA[叫春精]]></pluralFemaleName>
+		</namesDefault>
+	</nameAnthro>
+	
+	<!-- 描述 -->
+	<description><![CDATA[一种类人形生物。相对于人类,身形小的可怜,即时个体最大的妖精也没人类小孩大,长者一堆娇小的翅膀,但却能使自己飞起来。
+	当春天到来,叫春精就会异常兴奋起来。]]></description>
+	
+	<!-- 变恶魔的称呼 -->
+	<nameHalfDemon>
+		<namesDefault>
+			<name><![CDATA[妖精恶魔]]></name>
+			<namePlural><![CDATA[妖精恶魔]]></namePlural>
+			<singularMaleName><![CDATA[妖精恶魔]]></singularMaleName>
+			<singularFemaleName><![CDATA[妖精恶魔]]></singularFemaleName>
+			<pluralMaleName><![CDATA[妖精恶魔]]></pluralMaleName>
+			<pluralFemaleName><![CDATA[妖精恶魔]]></pluralFemaleName>
+		</namesDefault>
+	</nameHalfDemon>
+	
+	<!-- 野生的. -->
+	<feralAttributes>
+		<!-- Naming: -->
+		<feralName><![CDATA[叫春精]]></feralName>
+		<feralNamePlural><![CDATA[叫春精]]></feralNamePlural>
+		<feralSingularMaleName><![CDATA[叫春精]]></feralSingularMaleName>
+		<feralSingularFemaleName><![CDATA[叫春精]]></feralSingularFemaleName>
+		<feralPluralMaleName><![CDATA[叫春精]]></feralPluralMaleName>
+		<feralPluralFemaleName><![CDATA[叫春精]]></feralPluralFemaleName>
+		
+		<!-- The leg configuration that a feral form of this subspecies has.
+		腿的形状,决定了这个亚种的体型
+		This determines their overall body shape. -->
+		<legConfiguration>BIPEDAL</legConfiguration>
+		<!-- Whether or not this feral form's size is measured as height from floor to head, as for most mammals (true), or from head to tail (false), as for alligators and other low-lying animals which are far longer than they are tall. -->
+		<!-- 长度怎么计算
+		true:从头到脚底的长度
+		false:从头到尾巴的长度 -->
+		<sizeHeight>true</sizeHeight>
+		<!-- The height/length of this subspecies' feral form, measured in cm. -->
+		<!-- 身高,单位:cm. -->
+		<size>61</size>
+		
+		<!-- The number of breast rows this feral form has on their chest.
+		野生动物的乳房数
+		这通常是0,因为它指的是处于人类位置的乳房,而大多数动物都没有
+		This will usually be 0, as it refers to breasts in the position of humans, which most animals lack. -->
+		<breastRowCount>0</breastRowCount>
+		<!-- The number of nipples per breast.
+		每个乳房的乳头数量
+		'breastRowCount'为0是,整个数值没意义
+		If the 'breastRowCount' is 0, this value is never used. -->
+		<nipplesPerBreastCount>1</nipplesPerBreastCount>
+		<!-- The number of breast rows this feral form has near their crotch. -->
+		<!-- 胯胸,同时 -->
+		<crotchBreastRowCount>0</crotchBreastRowCount>
+		<!-- The number of nipples per crotch breast. -->
+		<nipplesPerCrotchBreastCount>1</nipplesPerCrotchBreastCount>
+		
+		<!-- Whether this feral form has arms or wings. -->
+		<!-- 这种野兽是否有胳膊或者翅膀 -->
+		<armsOrWingsPresent>true</armsOrWingsPresent>
+		<!-- Whether this feral form has fingers which they can use to manipulate objects. -->
+		<!-- 这种野性形态是否有手指可以用来操纵物体 -->
+		<fingerActionsAvailable>false</fingerActionsAvailable>
+		<!-- Whether or not this feral form has hair on its head that's clearly distinct from the rest of its fur (which also includes manes). -->
+		<!-- 无论这种野生动物的头上是否有与其他皮毛(也包括鬃毛)明显不同的毛发. -->
+		<hairPresent>false</hairPresent>
+	</feralAttributes>
+	
+	<!-- 该亚种的提示工具. -->
+	<statusEffectDescription><![CDATA[
+	#IF (npc == pc)
+		作为妖精的你,比人类更加弱小,但脑中总是浮现出各种各样的恶作剧
+	#ELSE
+		[npc.NamePos]轻轻拍动着妖精翅膀,好奇的看着你,似乎又在考虑做新的恶作剧了
+	#ENDIF
+	]]></statusEffectDescription>
+	
+	<!-- The core attributes which a character of this subspecies benefits from.
+	The text inside the 'attribute' element corresponds to an Attribute found here: https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/attributes/Attribute.java 
+	The 'value' field corresponds to a float of the magnitude of that Attribute. -->
+	<!-- 
+	(23.11.22)
+	感谢:Joelrena Glover Chin•Jotimourns
+	HEALTH_MAXIMUM		生命
+	MANA_MAXIMUM		灵力
+	EXPERIENCE			exp
+	ACTION_POINTS		行动点数
+	AROUSAL				勃起?
+	LUST				堕落
+	RESTING_LUST		性欲
+	MAJOR_PHYSIQUE		体格
+	MAJOR_ARCANE		奥术
+	MAJOR_CORRUPTION	堕落
+	// 其他属性:
+	ENCHANTMENT_LIMIT	附魔上限
+	FERTILITY
+	VIRILITY
+	SPELL_COST_MODIFIER	法术效率
+	// 战斗属性:
+	CRITICAL_DAMAGE		暴击伤害
+	ENERGY_SHIELDING	生命护盾
+	// 护盾:
+	RESISTANCE_PHYSICAL	物理护盾
+	RESISTANCE_LUST		性欲护盾
+	RESISTANCE_FIRE		火焰护盾
+	RESISTANCE_ICE		寒冰护盾
+	RESISTANCE_POISON	毒素护盾
+	// 伤害:
+	DAMAGE_UNARMED 		徒手伤害
+	DAMAGE_MELEE_WEAPON	近战伤害
+	DAMAGE_RANGED_WEAPON远程伤害
+	DAMAGE_SPELLS		法术伤害
+	DAMAGE_PHYSICAL		物理伤害
+	DAMAGE_LUST			性欲伤害
+	DAMAGE_FIRE			火焰伤害
+	DAMAGE_ICE			寒冰伤害
+	DAMAGE_POISON		毒素伤害
+	-->
+	<statusEffectAttributeModifiers>
+		<attribute value="-30">MAJOR_PHYSIQUE</attribute>	<!-- 体格 -->
+		<attribute value="10">MAJOR_ARCANE</attribute>	<!-- 奥术 -->
+		<attribute value="10">SPELL_COST_MODIFIER</attribute>	<!-- 法术效率 -->
+		<attribute value="-30">ENERGY_SHIELDING</attribute>	<!-- 生命护盾 -->
+		<attribute value="-30">RESISTANCE_PHYSICAL</attribute>	<!-- 物理护盾 -->
+		<attribute value="-10">DAMAGE_UNARMED</attribute>	<!-- 徒手伤害 -->
+	</statusEffectAttributeModifiers>
+	<!-- 该亚种的状态效果工具提示中应列出的任何额外效果
+	由于这些额外的效果需要对游戏代码进行更改才能生效,因此它们可能应该留空. -->
+	<extraEffects/>
+	
+	<!-- The likelihood of an AI of this subspecies choosing to select a perk from each of the three main perk categories.
+	The 'masculineWeighting' and 'feminineWeighting' values should be integers.
+	三种主要攻击的权重
+	The weightings are relative to each other, and so you can use whatever values you want, but be aware that negative numbers, or a total number weight greater than 2,147,483,647 will produce unexpected results. -->
+	<perkWeightings>
+		<category masculineWeighting="10" feminineWeighting="3">PHYSICAL</category>
+		<category masculineWeighting="1" feminineWeighting="1">LUST</category>
+		<category masculineWeighting="10" feminineWeighting="10">ARCANE</category>
+	</perkWeightings>
+	
+	<!-- Along with 'worldLocations' below, this determines in what areas of the game this subspecies can spawn.
+	TODO
+	这个物种可以在那些地方刷新
+	'regionLocations' covers a more general spawn area, whereas 'worldLocations' is a lot more precise in which areas should see this subspecies spawning.
+	The text inside the 'region' element corresponds to a WorldRegion as found here: https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/world/WorldRegion.java 
+	The 'rarity' field corresponds to a SubspeciesSpawnRarity, values of which can be found here: https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/race/SubspeciesSpawnRarity.java
+	This can be left blank, but if no 'regionLocations' or 'worldLocations' are defined, then this subspecies will never spawn as a randomly-encountered subspecies. -->
+	<regionLocations>
+		<!-- TODO<region rarity="TWO_RARE">DOMINION</region>
+		<region rarity="ONE_VERY_RARE">SUBMISSION</region>
+		<region rarity="NEGATIVE_TWO_MYTHICAL">FIELD_CITY</region> -->
+	</regionLocations>
+	
+	<!-- The places in which this subspecies can spawn.
+	The text inside the 'world' element corresponds to a WorldType as found here: https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/world/WorldType.java 
+	The 'rarity' field corresponds to a SubspeciesSpawnRarity, values of which can be found here: https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/race/SubspeciesSpawnRarity.java
+	This can be left blank, but if no 'regionLocations' or 'worldLocations' are defined, then this subspecies will never spawn as a randomly-encountered subspecies. -->
+	<worldLocations>
+	<!-- TODO<world rarity="ONE_VERY_RARE">NIGHTLIFE_CLUB</world> -->
+	</worldLocations>
+	<!-- Any special flags which should be applied to this subspecies.
+	Values can be found here: https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/race/SubspeciesFlag.java -->
+	<flags/>
+	<!-- This subspecies does not require any special flags, but if you did want to define any, do so like this:
+	<flags>
+		<flag>DISABLE_FURRY_PREFERENCE</flag>
+	</flags>
+	-->
+	
+	
+</subspecies>

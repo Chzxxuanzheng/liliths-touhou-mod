@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<wing>
+	<!-- GENERAL INFORMATION: If you are unsure of anything, please use the LT Discord to ask for help! -->
+	
+	<!-- IMPORTANT!!!
+	Instead of making a new wing type, you should almost certainly be using the pre-defined wing types FEATHERED or LEATHERY
+	These can be seen here: https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/body/types/WingType.java -->
+	
+	<!-- If you want to see the part of the code where this type is defined, then please look here:
+	https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/body/abstractTypes/AbstractWingType.java -->
+	
+	<!-- The id of the race which this wing belongs to.
+	This will almost always be the id of the race in which this type is found (in this case hyena). -->
+	<race>touhou_yousei</race>
+	
+	<!-- The name that will be used when referring to transformations related to this type (such as when changing body parts in the self-TF menu). -->
+	<transformationName><![CDATA[妖精]]></transformationName>
+	
+	<!-- The id of the material covering this wing.
+	The id will typically take the form of 'innoxia_hyena_fur'.
+	Hard-coded values can be found here: https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/body/coverings/BodyCoveringType.java -->
+	<coveringType>touhou_yousei_wingDefault</coveringType>
+	
+	<!-- Whether this is a generic wing type or not (use the values 'true' or 'false' here).
+		是否是通用翅膀,通用翅膀可以被任何种族使用
+		Generic wing types are not associated with any race and therefore can be inherited by any race of wingless offspring, and should be defined as true if this wing type could be applied to any sort of race (such as the default 'feathered', 'leathery', and 'insect' wing types in the base game).
+		Will most likely be left as false here.  -->
+	<genericType>false</genericType>
+	
+	<!-- Whether this wing type grants the ability to fly. -->
+	<allowsFlight>true</allowsFlight>
+	
+	<!-- The minimum and maximum size that this wing type can be transformed into.
+	Default values are ZERO_TINY and FOUR_HUGE.
+	(23.11.26)
+	ZERO_TINY	微型
+	ONE_SMALL	小型
+	TWO_AVERAGE	中型
+	THREE_LARGE	大型
+	FOUR_HUGE	巨型
+	Values for wing sizes can be found here: https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/body/valueEnums/WingSize.java -->
+	<minimumSize>ZERO_TINY</minimumSize>
+	<maximumSize>TWO_AVERAGE</maximumSize>
+	
+	<!-- The singular and plural names of this wing. -->
+	<name><![CDATA[妖精之翼]]></name>
+	<namePlural><![CDATA[妖精之翼]]></namePlural>
+	
+	<!-- The descriptors which should be drawn upon when describing a masculine character's wing of this type.
+	Can be left blank. -->
+	<descriptorsMasculine>
+		<descriptor><![CDATA[迷你的]]></descriptor>
+		<descriptor><![CDATA[小巧的]]></descriptor>
+		<descriptor><![CDATA[宛如碟翼的]]></descriptor>
+	</descriptorsMasculine>
+	<!-- Same as above, but for feminine characters. -->
+	<descriptorsFeminine>
+		<descriptor><![CDATA[迷你的]]></descriptor>
+		<descriptor><![CDATA[小巧的]]></descriptor>
+		<descriptor><![CDATA[宛如碟翼的]]></descriptor>
+	</descriptorsFeminine>
+	
+	<!-- The description which is shown when a character transforms to obtain this wing type.
+	This description immediately follows a brief description of the wing type beginning to transform. -->
+	<transformationDescription><![CDATA[
+		[npc.She]的背部突然亮起了强光,[npc.She]只好紧咬下唇,忍受着来自全身的疼痛
+		在不知不觉中,
+		一对[npc.wingSize][npc.materialDescriptor][npc.wingFullDescription(true)]的妖精之翼从从[npc.her][npc.legConfiguration]
+		#IF (npc.getLegConfiguration().isWingsOnLegConfiguration())
+			身体的两侧长了出来。
+		#ELSE
+			的肩胛骨位置长了出来。
+		#ENDIF
+		<br/>[npc.Name]现在拥有[style.boldTfGeneric(独属于妖精的晶莹碟翼)]。
+	]]></transformationDescription>
+	
+	<!-- How this wing is described in a character's description page. -->
+	<bodyDescription><![CDATA[
+		[npc.sheHasFull]拥有一对[npc.wingSize]的妖精之翼,[npc.materialDescriptor][npc.wingFullDescription(true)]。
+	]]></bodyDescription>
+</wing>

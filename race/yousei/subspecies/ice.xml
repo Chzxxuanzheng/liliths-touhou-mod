@@ -15,9 +15,9 @@
 	通常与种族的颜色相似
 	这个亚种大部分都会使用这个颜色
 	'secondaryColour' 和 'tertiaryColour' 与 'colour'一起用于这个亚种的图标和背景 -->
-	<colour>BASE_AQUA</colour>
-	<secondaryColour>BASE_AQUA</secondaryColour>
-	<tertiaryColour>BASE_AQUA</tertiaryColour>
+	<colour>BASE_BLUE_LIGHT</colour>
+	<secondaryColour>BASE_BLUE_LIGHT</secondaryColour>
+	<tertiaryColour>BASE_BLUE_LIGHT</tertiaryColour>
 	
 	<!-- 这个亚种是否是这个种族的主要亚种
 	如果这个种族只有这一个亚种,应当设置为true -->
@@ -44,8 +44,9 @@
 	应该只对恶魔有用,除非你真的这是是干啥的,否则填0-->
 	<subspeciesOverridePriority>0</subspeciesOverridePriority>
 	
-	<!-- 是否身材矮小
-	是的话身高限制不对其生效 -->
+	<!-- Whether this race is of a small stature or not.
+	是否身材矮小?不会翻
+	If set to true, then this race is limited to the game's smallest height categories (as is the case for imps). -->
 	<shortStature>true</shortStature>
 	
 	<!-- Whether or not this subspecies has the bipedal leg configuration by default.
@@ -58,12 +59,8 @@
 	If set to true, then this subspecies will have the positive & negative aquatic status effects applied to it when in a tile with and without access to water, respectively. -->
 	<aquatic>false</aquatic>
 	
-	<!--任何特殊的变动要写到这里,这个东西会在物种变成这个物种是被调用(再调试界面时重置种族会被调用,转化身体部件不会被调用)
-	这个会在种族的'applyRaceChanges'方法执行后执行.
-	你可以通过'targetedBody'获取改变前的身体信息(不用加npc) -->
 	<applySubspeciesChanges><![CDATA[
-	[##npc.getBody().setWingType(WING_TYPE_touhou_yousei_wing)]
-	[##npc.getBody().getCoverings().get(BODY_COVERING_TYPE_touhou_yousei_wingDefault).setPrimaryGlowing(true)]
+	[##npc.getBody().setWingType(WING_TYPE_touhou_yousei_wingIce)]
 	]]></applySubspeciesChanges>
 	
 	<!-- This conditional statement determines if a body is detected as being an instance of this subspecies.
@@ -79,7 +76,7 @@
 	-->
 	<subspeciesWeighting><![CDATA[
 		#IF(targetedRace==RACE_touhou_yousei)
-			#IF (targetedBody.getWingType() == WING_TYPE_touhou_yousei_wing)
+			#IF (targetedBody.getWingType() == WING_TYPE_touhou_yousei_wingIce)
 				100
 			#ELSE
 				0
@@ -112,15 +109,15 @@
 		
 	<!-- The icon to be used on the book's front cover.
 	It should be located in the same folder as this xml file. -->
-	<bookIconName></bookIconName>
+	<bookIconName>vampireBat</bookIconName>
 	
 	<!-- The name for the book. -->
-	<bookName><![CDATA[求闻史记(妖精篇1)]]></bookName>
+	<bookName><![CDATA[求闻史记(妖精篇2)]]></bookName>
 	
 	<!-- The element names which contain the book's basic and advanced descriptions.
 	描述元素,这里写名字,具体内容应当写到'bookEntries.xml'里
 	These should be entered into the 'bookEntries.xml' file in the same folder location as this file. -->
-	<basicDescriptionId>touhou_YOUSEI_BASE</basicDescriptionId>
+	<basicDescriptionId>touhou_YOUSEI_ICE</basicDescriptionId>
 	<advancedDescriptionId/>
 	
 	<!-- The default preference for this subspecies spawning.
@@ -139,39 +136,40 @@
 	(可能应该由“namesDefault”元素覆盖) -->
 	<nameAnthro>
 		<namesDefault>
-			<name><![CDATA[道中小妖]]></name>
-			<namePlural><![CDATA[道中小妖]]></namePlural>
-			<singularMaleName><![CDATA[道中小妖]]></singularMaleName>
-			<singularFemaleName><![CDATA[道中小妖]]></singularFemaleName>
-			<pluralMaleName><![CDATA[道中小妖]]></pluralMaleName>
-			<pluralFemaleName><![CDATA[道中小妖]]></pluralFemaleName>
+			<name><![CDATA[冰妖精]]></name>
+			<namePlural><![CDATA[冰妖精]]></namePlural>
+			<singularMaleName><![CDATA[冰妖精]]></singularMaleName>
+			<singularFemaleName><![CDATA[冰妖精]]></singularFemaleName>
+			<pluralMaleName><![CDATA[冰妖精]]></pluralMaleName>
+			<pluralFemaleName><![CDATA[冰妖精]]></pluralFemaleName>
 		</namesDefault>
 	</nameAnthro>
 	
 	<!-- 描述 -->
-	<description><![CDATA[一种类人形生物。相对于人类,身形小的可怜,即时个体最大的妖精也没人类小孩大,长者一堆娇小的翅膀,但却能使自己飞起来。]]></description>
+	<description><![CDATA[一种类人形生物。相对于人类,身形小的可怜,即时个体最大的妖精也没人类小孩大,长者一堆娇小的翅膀,但却能使自己飞起来。
+	冰妖精相对于普通的妖精而言增加了操纵冰程度的能力,稍微棘手一些。]]></description>
 	
 	<!-- 变恶魔的称呼 -->
 	<nameHalfDemon>
 		<namesDefault>
-			<name><![CDATA[妖精恶魔]]></name>
-			<namePlural><![CDATA[妖精恶魔]]></namePlural>
-			<singularMaleName><![CDATA[妖精恶魔]]></singularMaleName>
-			<singularFemaleName><![CDATA[妖精恶魔]]></singularFemaleName>
-			<pluralMaleName><![CDATA[妖精恶魔]]></pluralMaleName>
-			<pluralFemaleName><![CDATA[妖精恶魔]]></pluralFemaleName>
+			<name><![CDATA[冰精恶魔]]></name>
+			<namePlural><![CDATA[冰精恶魔]]></namePlural>
+			<singularMaleName><![CDATA[冰精恶魔]]></singularMaleName>
+			<singularFemaleName><![CDATA[冰精恶魔]]></singularFemaleName>
+			<pluralMaleName><![CDATA[冰精恶魔]]></pluralMaleName>
+			<pluralFemaleName><![CDATA[冰精恶魔]]></pluralFemaleName>
 		</namesDefault>
 	</nameHalfDemon>
 	
 	<!-- 野生的. -->
 	<feralAttributes>
 		<!-- Naming: -->
-		<feralName><![CDATA[道中小妖]]></feralName>
-		<feralNamePlural><![CDATA[道中小妖]]></feralNamePlural>
-		<feralSingularMaleName><![CDATA[道中小妖]]></feralSingularMaleName>
-		<feralSingularFemaleName><![CDATA[道中小妖]]></feralSingularFemaleName>
-		<feralPluralMaleName><![CDATA[道中小妖]]></feralPluralMaleName>
-		<feralPluralFemaleName><![CDATA[道中小妖]]></feralPluralFemaleName>
+		<feralName><![CDATA[冰妖精]]></feralName>
+		<feralNamePlural><![CDATA[冰妖精]]></feralNamePlural>
+		<feralSingularMaleName><![CDATA[冰妖精]]></feralSingularMaleName>
+		<feralSingularFemaleName><![CDATA[冰妖精]]></feralSingularFemaleName>
+		<feralPluralMaleName><![CDATA[冰妖精]]></feralPluralMaleName>
+		<feralPluralFemaleName><![CDATA[冰妖精]]></feralPluralFemaleName>
 		
 		<!-- The leg configuration that a feral form of this subspecies has.
 		腿的形状,决定了这个亚种的体型
@@ -269,9 +267,12 @@
 		<attribute value="10">SPELL_COST_MODIFIER</attribute>	<!-- 法术效率 -->
 		<attribute value="-30">ENERGY_SHIELDING</attribute>	<!-- 生命护盾 -->
 		<attribute value="-30">RESISTANCE_PHYSICAL</attribute>	<!-- 物理护盾 -->
+		<attribute value="-30">RESISTANCE_FIRE</attribute>	<!-- 火焰护盾 -->
+		<attribute value="30">RESISTANCE_ICE</attribute>	<!-- 寒冰护盾 -->
+		<attribute value="-30">DAMAGE_FIRE</attribute>	<!-- 火焰伤害 -->
+		<attribute value="30">DAMAGE_ICE</attribute>	<!-- 寒冰伤害 -->
 		<attribute value="-10">DAMAGE_UNARMED</attribute>	<!-- 徒手伤害 -->
 	</statusEffectAttributeModifiers>
-	
 	<!-- 该亚种的状态效果工具提示中应列出的任何额外效果
 	由于这些额外的效果需要对游戏代码进行更改才能生效,因此它们可能应该留空. -->
 	<extraEffects/>

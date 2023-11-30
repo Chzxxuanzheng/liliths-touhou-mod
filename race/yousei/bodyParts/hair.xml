@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<hair>
+	<race>touhou_yousei</race>
+	<transformationName><![CDATA[妖精]]></transformationName>
+	<coveringType>HAIR_HUMAN</coveringType>
+	
+	<!-- The chance of this hair giving the owning character 'neck fluff' when they're first spawned-in, using a float value in the range of 0-100, representing 0-100%.
+		给角色'neck fluff'的概率,范围0-100,表示0%-100%
+		If you need to set neck fluff for just males or females for your subspecies, then use the 'applySubspeciesChanges' in your subspecies xml file, using the method 'targetedBody.getHair().setNeckFluff(null, true)'
+		The 'requiresGreaterMorph' attribute defines whether or not neck fluff is only applied on spawn if the character is a greater morph. -->
+	<neckFluffChance requiresGreaterMorph="true">0</neckFluffChance>
+	<tags>
+		<tag>HAIR_HANDLES_IN_SEX</tag>
+	</tags>
+	
+	<!-- The way in which this hair is referred to.
+	Will normally be 'a head of', but will sometimes be different (such as 'a plume of' for harpy head-feathers). -->
+	<determiner><![CDATA[一头]]></determiner>
+	
+	<!-- The name of a singular piece of this hair type. -->
+	<name><![CDATA[头发]]></name>
+	
+	<!-- The name of many pieces of this hair type.
+	The 'pluralByDefault' attribute determines whether or not this hair is by default referred to as a plural (to fit into the sentence 'Her head is covered in X').
+	It should most likely always be left as false, but for bird feathers, it will be true. -->
+	<namePlural pluralByDefault="false"><![CDATA[头发]]></namePlural> 
+	
+	<!-- The descriptors which should be drawn upon when describing a masculine character's hair of this type.
+	Can be left blank. -->
+	<descriptorsMasculine>
+	</descriptorsMasculine>
+	<!-- Same as above, but for feminine characters. -->
+	<descriptorsFeminine>
+		<descriptor><![CDATA[秀丽的]]></descriptor>
+	</descriptorsFeminine>
+	
+	<!-- The description which is shown when a character transforms to obtain this hair type.
+	This description immediately follows a brief description of the hair type beginning to transform. -->
+	<transformationDescription><![CDATA[
+		<br/>[npc.Name]现在拥有[npc.hairColour][style.boldHyena(妖精头发)]。
+	]]></transformationDescription>
+	
+	<!-- How this hair is described in a character's description page. -->
+	<bodyDescription><![CDATA[
+		[npc.SheHasFull]拥有[npc.hairDeterminer][npc.hairColour(true)]的[npc.hairLength]发
+]]></bodyDescription>
+	
+</hair>

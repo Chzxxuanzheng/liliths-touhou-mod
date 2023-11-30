@@ -50,7 +50,7 @@
 	It should most likely be the same value as that defined as 'nameFeral'. 
 	它应当与nameFeral的值相同
 	-->
-	<defaultTransformName><![CDATA[吸血鬼]]></defaultTransformName>
+	<defaultTransformName><![CDATA[妖精]]></defaultTransformName>
 	
 	<!-- The colour of this race.
 	种族的颜色
