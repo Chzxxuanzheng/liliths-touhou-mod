@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<torso>
+	<race>touhou_vampire</race>
+	<transformationName><![CDATA[吸血鬼]]></transformationName>
+	
+	<coveringType>touhou_vampire_skin</coveringType>
+	
+	<descriptorsMasculine>
+		<descriptor>健壮的</descriptor>
+	</descriptorsMasculine>
+	<descriptorsFeminine>
+		<descriptor>性感的</descriptor>
+		<descriptor>曼妙的</descriptor>
+	</descriptorsFeminine>
+	
+	<transformationDescription><![CDATA[
+		</br>[npc.Name]现在拥有[style.boldHuman(血族的)][npc.skinFullDescription]
+	]]></transformationDescription>
+	
+	<bodyDescription><![CDATA[
+		[npc.Her]有一个[npc.a_femininity(true)]的独属于吸血鬼的身躯,[npc.materialCompositionDescriptor][npc.skinFullDescription(true)]。
+	]]></bodyDescription>
+	
+	<tags/>
+</torso>

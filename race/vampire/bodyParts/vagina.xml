@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<vagina>
+	<race>touhou_vampire</race>
+	<transformationName><![CDATA[吸血鬼]]></transformationName>
+	
+	<coveringType>VAGINA</coveringType>
+	
+	<fluidType>touhou_vampire_girlcum</fluidType>
+	
+	<pubicHairAllowed>true</pubicHairAllowed>
+	
+	<eggLayer>false</eggLayer>
+	
+	<names>
+		<name><![CDATA[吸血鬼的]]></name>
+	</names>
+	<namesPlural>
+		<name><![CDATA[吸血鬼的]]></name>
+	</namesPlural>
+
+	<descriptors/>
+
+	<defaultOrificeModifiers>
+		<modifier>PUFFY</modifier>
+		<modifier>MUSCLE_CONTROL</modifier>
+	</defaultOrificeModifiers>
+
+	<transformationDescription><![CDATA[
+		[npc.Name]现在拥有[style.boldHuman(吸血鬼的阴道)],阴唇呈[npc.pussyColourPrimary(true)],而内壁则是[npc.pussyColourSecondary(true)]
+	]]></transformationDescription>
+	
+	<bodyDescription><![CDATA[
+		[npc.she]有着属于吸血鬼的小穴,#IF(npc.isPiercedVagina())且已经穿过孔,#ENDIF[npc.labiaSize]的[npc.pussyPrimaryColour(true)]阴唇,以及[npc.pussySecondaryColour(true)]的肉壁。吸血鬼对身体强大的支配力使其可以自由控制阴道与子宫的收缩。
+	]]></bodyDescription>
+	
+</vagina>

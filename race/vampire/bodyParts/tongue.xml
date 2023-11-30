@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<tongue>
+	<race>touhou_vampire</race>
+	<coveringType>TONGUE</coveringType>
+	<defaultLength><![CDATA[8]]></defaultLength>
+	<name><![CDATA[舌头]]></name>
+	<namePlural><![CDATA[舌头]]></namePlural>
+	<descriptorsMasculine>
+		<descriptor><![CDATA[细长的]]></descriptor>
+		<descriptor><![CDATA[灵巧的]]></descriptor>
+	</descriptorsMasculine>
+	<descriptorsFeminine>
+		<descriptor><![CDATA[细长的]]></descriptor>
+		<descriptor><![CDATA[灵巧的]]></descriptor>
+	</descriptorsFeminine>
+	<bodyDescription><![CDATA[
+		[npc.Her]的嘴里有一根十分灵活的[npc.a_tongueLength]的[npc.tongue],呈现[npc.tongueColour(true)]
+		#IF(npc.isPiercedTongue()),且已经被打了孔#ENDIF,这样细长灵活的舌头可以很好的帮助吸血鬼从咬破的皮肤处吸食血液。
+	]]></bodyDescription>
+	<!-- The tongue modifiers which this tongue has when first created (such as when a new hyena-morph is spawned).
+	RIBBED		有棱纹的
+	TENTACLED	有触手的
+	BIFURCATED	分叉
+	WIDE		宽的
+	FLAT		扁平的
+	STRONG		强有力的
+	TAPERED		锥形的
+	Values can be found here: https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/body/valueEnums/TongueModifier.java -->
+	<defaultTongueModifiers>
+		<modifier>STRONG</modifier>
+		<modifier>FLAT</modifier>
+	</defaultTongueModifiers>
+	
+</tongue>

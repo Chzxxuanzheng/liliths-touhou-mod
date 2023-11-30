@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<coveringType>
+	<!-- GENERAL INFORMATION: If you are unsure of anything, please use the LT Discord to ask for help! -->
+	
+	<!-- See fur.xml for a fully-commented coveringType example. -->
+	
+	<category>BODY_HAIR</category>
+	
+	<determiner><![CDATA[一层]]></determiner>
+	<name><![CDATA[头发]]></name>
+	<namePlural pluralByDefault="false"><![CDATA[头发]]></namePlural> 
+	
+	<naturalCoveringModifiers>
+		<modifier>SILKEN</modifier>
+	</naturalCoveringModifiers>
+	
+	<extraCoveringModifiers/>
+	
+	<naturalPatterns>
+		<pattern weighting="1">NONE</pattern>
+	</naturalPatterns>
+	
+	<extraPatterns>
+	</extraPatterns>
+	
+	<naturalColoursPrimary values="naturalHairColours"/> 
+	<extraColoursPrimary values="allCoveringColours"/>
+	
+	<naturalColoursSecondary values="naturalHairColours"/>
+	<extraColoursSecondary values="allCoveringColours"/>
+	
+</coveringType>
