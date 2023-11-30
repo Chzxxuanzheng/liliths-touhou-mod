@@ -11,7 +11,15 @@
 	<!-- 任何特殊的变动要写到这里,这个东西会在物种变成这个物种是被调用(再调试界面时重置种族会被调用,转化身体部件不会被调用)
 	这个会在亚种的'applySubspeciesChanges'方法执行前执行.
 	你可以通过'targetedBody'获取改变前的身体信息(不用加npc). -->
-	<applyRaceChanges/>
+	<applyRaceChanges><![CDATA[
+	[##npc.getBody().getCoverings().get(BODY_COVERING_TYPE_touhou_yousei_wingDefault).setPrimaryGlowing(true)]
+	[##npc.getBody().getCoverings().get(BODY_COVERING_TYPE_touhou_yousei_wingIce).setPrimaryGlowing(true)]
+	[##npc.getBody().getCoverings().get(BODY_COVERING_TYPE_touhou_yousei_wingSun).setPrimaryGlowing(true)]
+	[##npc.getBody().getCoverings().get(BODY_COVERING_TYPE_touhou_yousei_wingMoon).setPrimaryGlowing(true)]
+	[##npc.getBody().getCoverings().get(BODY_COVERING_TYPE_touhou_yousei_wingStar).setPrimaryGlowing(true)]
+	[##npc.getBody().getCoverings().get(BODY_COVERING_TYPE_touhou_yousei_wingTranslucent).setPrimaryGlowing(true)]
+	]]>
+	</applyRaceChanges>
 	<!-- The non-gendered name and plural name of this race when in anthropomorphic form. -->
 	<!-- 该种族的非性别名称和复数名称，当采用拟人化形式时 -->
 	<name><![CDATA[妖精]]></name><!-- 估计是非性别名称 -->

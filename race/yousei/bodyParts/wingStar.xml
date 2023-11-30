@@ -19,7 +19,7 @@
 	<!-- The id of the material covering this wing.
 	The id will typically take the form of 'innoxia_hyena_fur'.
 	Hard-coded values can be found here: https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/body/coverings/BodyCoveringType.java -->
-	<coveringType>touhou_yousei_wingDefault</coveringType>
+	<coveringType>touhou_yousei_wingStar</coveringType>
 	
 	<!-- Whether this is a generic wing type or not (use the values 'true' or 'false' here).
 		是否是通用翅膀,通用翅膀可以被任何种族使用

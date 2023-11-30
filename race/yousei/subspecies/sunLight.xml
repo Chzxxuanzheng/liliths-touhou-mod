@@ -61,8 +61,6 @@
 	
 	<applySubspeciesChanges><![CDATA[
 	[##npc.getBody().setWingType(WING_TYPE_touhou_yousei_wingSun)]
-	[##npc.getBody().getCoverings().get(BODY_COVERING_TYPE_touhou_yousei_wingDefault).setPrimaryColour(COLOUR_touhou_youseiSun)]
-	[##npc.getBody().getCoverings().get(BODY_COVERING_TYPE_touhou_yousei_wingDefault).setSecondaryColour(COLOUR_touhou_youseiSun)]
 	]]></applySubspeciesChanges>
 	
 	<!-- This conditional statement determines if a body is detected as being an instance of this subspecies.

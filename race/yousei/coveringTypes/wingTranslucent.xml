@@ -89,24 +89,19 @@
 	Acceptable 'values' are found here: https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/utils/colours/ColourListPresets.java -->
 	
 	<naturalColoursPrimary>
-		<colour>BASE_WHITE</colour>
-		<colour>BASE_ROSE</colour>
-		<colour>BASE_LILAC_LIGHT</colour>
-		<colour>BASE_YELLOW_LIGHT</colour>
-		<colour>BASE_GREEN_LIGHT</colour>
+		<colour>touhou_youseiWing</colour>
 	</naturalColoursPrimary> 
 	
-	<extraColoursPrimary values="allSkinColours"/>
+	<extraColoursPrimary>
+		<colour>touhou_youseiWing</colour>
+	</extraColoursPrimary>
 
 	<naturalColoursSecondary>
-		<colour>BASE_WHITE</colour>
-		<colour>BASE_ROSE</colour>
-		<colour>BASE_LILAC_LIGHT</colour>
-		<colour>BASE_YELLOW_LIGHT</colour>
-		<colour>BASE_GREEN_LIGHT</colour>
+		<colour>touhou_youseiWing</colour>
 	</naturalColoursSecondary>
 	
-	<extraColoursSecondary values="allSkinColours"/>
-
+	<extraColoursSecondary>
+		<colour>touhou_youseiWing</colour>
+	</extraColoursSecondary>
 	
 </coveringType>
