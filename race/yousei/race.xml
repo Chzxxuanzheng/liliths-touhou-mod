@@ -10,54 +10,51 @@
 	
 	<!-- 任何特殊的变动要写到这里,这个东西会在物种变成这个物种是被调用(再调试界面时重置种族会被调用,转化身体部件不会被调用)
 	这个会在亚种的'applySubspeciesChanges'方法执行前执行.
-	你可以通过'targetedBody'获取改变前的身体信息(不用加npc). -->
+	你可以通过'targetedBody'获取改变前的身体信息. -->
+	<!-- 这段代码的意思是把touhou_yousei_wingDefault,touhou_yousei_wingIce,touhou_yousei_wingSun,touhou_yousei_wingMoon
+	touhou_yousei_wingStar,touhou_yousei_wingTranslucent着6个coveringType的闪光描述设为true -->
+	<!-- 请根据自己的需求来改动 -->
 	<applyRaceChanges><![CDATA[
-	[##npc.getBody().getCoverings().get(BODY_COVERING_TYPE_touhou_yousei_wingDefault).setPrimaryGlowing(true)]
-	[##npc.getBody().getCoverings().get(BODY_COVERING_TYPE_touhou_yousei_wingIce).setPrimaryGlowing(true)]
-	[##npc.getBody().getCoverings().get(BODY_COVERING_TYPE_touhou_yousei_wingSun).setPrimaryGlowing(true)]
-	[##npc.getBody().getCoverings().get(BODY_COVERING_TYPE_touhou_yousei_wingMoon).setPrimaryGlowing(true)]
-	[##npc.getBody().getCoverings().get(BODY_COVERING_TYPE_touhou_yousei_wingStar).setPrimaryGlowing(true)]
-	[##npc.getBody().getCoverings().get(BODY_COVERING_TYPE_touhou_yousei_wingTranslucent).setPrimaryGlowing(true)]
+	[##targetedBody.getCoverings().get(BODY_COVERING_TYPE_touhou_yousei_wingDefault).setPrimaryGlowing(true)]
+	[##targetedBody.getCoverings().get(BODY_COVERING_TYPE_touhou_yousei_wingIce).setPrimaryGlowing(true)]
+	[##targetedBody.getCoverings().get(BODY_COVERING_TYPE_touhou_yousei_wingSun).setPrimaryGlowing(true)]
+	[##targetedBody.getCoverings().get(BODY_COVERING_TYPE_touhou_yousei_wingMoon).setPrimaryGlowing(true)]
+	[##targetedBody.getCoverings().get(BODY_COVERING_TYPE_touhou_yousei_wingStar).setPrimaryGlowing(true)]
+	[##targetedBody.getCoverings().get(BODY_COVERING_TYPE_touhou_yousei_wingTranslucent).setPrimaryGlowing(true)]
 	]]>
 	</applyRaceChanges>
-	<!-- The non-gendered name and plural name of this race when in anthropomorphic form. -->
 	<!-- 该种族的非性别名称和复数名称，当采用拟人化形式时 -->
 	<name><![CDATA[妖精]]></name><!-- 估计是非性别名称 -->
 	<namePlural><![CDATA[妖精]]></namePlural><!-- 复数 -->
+	<!-- 你也可以按照上面的模式定义 -->
 	
-	<!-- The non-gendered name and plural name of this race when in feral form.
-	该种族的非性别名称和复数名称，当不礼貌的时刻?(野蛮,不会译捏)
-	The name corresponds to the name of this race when in the 'legConfiguration' form defined.
-	这个名字相当于在'legConfiguration'里定义的
+	<!-- 该种族在野兽形态时的非性别名称和复数名称
+	这个名字应当与'legConfiguration'里定义的值相符
 	LegConfiguration values can be found here: https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/body/valueEnums/LegConfiguration.java
 	LegConfiguration的值可以在上述文件中找到
 	(23.11.22)
-	BIPEDAL		人类、恶魔、天使用这个
-	QUADRUPEDAL	几乎适用于所有哺乳动物种族,但人类、恶魔和天使除外。
-	TAIL_LONG	蛇和鳗鱼。
-	TAIL		鱼
-	ARACHNID	蜘蛛,鞋子(昆虫?)
-	CEPHALOPOD	鱿鱼,章鱼(触手?克苏鲁?)
-	AVIAN		鸟?(不太会翻This LegConfiguration is a 'tauric' configuration for bird races.)
-	WINGED_BIPED用翅膀代替前腿的动物
-	(Just use 'BIPEDAL' if you're unsure of what to use, and the game will handle the rest.) 
-	(如果你不确定该用什么，只需使用“BIPEDAL”，游戏就会处理剩下的)
+	BIPEDAL			双足		下半身最常见的类型；角色的腿和腹股沟配置与人类相同	人类、恶魔、天使用这个
+	QUADRUPEDAL		四足		角色的腿和腹股沟被相应动物形态四足、兽态的身体所替代，外生殖器的位置与对应动物的位置相同。最常见的例子是“半人马”，角色的腿和腹股沟都被马的身躯和外生殖器替代
+	TAIL_LONG		蛇尾		角色的腿和腹股沟被相应动物形态极长的尾巴所替代，外生殖器被转移至泄殖腔的位置。最常见的例子是“拉米亚”，角色的腿和腹股沟都被蛇的身躯和外生殖器替代
+	TAIL			鱼尾		角色的腿和腹股沟被相应动物形态尾巴所替代，外生殖器被转移至泄殖腔的位置。最常见的例子是“美人鱼”，角色的腿和腹股沟都被鱼的身躯和外生殖器替代
+	ARACHNID		蛛身		角色的腿和腹股沟被相应蜘蛛形态八足、兽态的身体所替代，外生殖器的位置与对应动物的位置相同。最常见的例子是“阿拉克涅”，角色的腿和腹股沟都被蜘蛛的身躯和外生殖器替代
+	CEPHALOPOD		头足		角色的腿和腹股沟被相应头足动物形态长有触手、兽态的身体所替代，外生殖器的位置与对应动物的位置相同。最常见的例子是“克拉肯”，角色的腿和腹股沟都被鱿鱼的身躯和外生殖器替代。
+	AVIAN			鸟类		角色的腿和腹股沟被相应动物形态鸟类身躯所替代，外生殖器被转移至泄殖腔的位置。最常见的例子是“哈比鸟”，角色的腿和腹股沟都被鸟的身躯和外生殖器替代
+	WINGED_BIPED	翼手双足	角色的腿和腹股沟被相应动物形态的身体所替代，而翼手则取代了前腿。最常见的例子是双足飞龙和蝙蝠，前肢均为翅膀而非手臂，也可以使用这对翼手四足行走
+	(如果你不确定该用什么，只需使用"BIPEDAL"，游戏就会处理剩下的)
 	-->
-	<!-- 不礼貌的名称 -->
+	<!-- 野兽形态的名称 -->
 	<nameFeral>
 		<name legConfiguration="BIPEDAL"><![CDATA[妖精]]></name>
 	</nameFeral>
-	<!-- 不礼貌的名称复数 -->
+	<!-- 野兽形态的名称复数 -->
 	<nameFeralPlural>
 		<name legConfiguration="BIPEDAL"><![CDATA[妖精]]></name>
 	</nameFeralPlural>
 	
-	<!-- The name that will be used when referring to transformations related to this race (such as when changing body parts in the self-TF menu).
-	在引用与此种族相关的转换时将使用的名称
+	<!-- 在引用与此种族相关的转换时将使用的名称
 	(例如在self-TF菜单中更改身体部位时)
-	It should most likely be the same value as that defined as 'nameFeral'. 
-	它应当与nameFeral的值相同
-	-->
+	它应当与nameFeral的值相同 -->
 	<defaultTransformName><![CDATA[妖精]]></defaultTransformName>
 	
 	<!-- The colour of this race.
@@ -66,9 +63,7 @@
 	想自定义颜色要写到colours里 -->
 	<colour>BASE_AQUA</colour>
 	
-	<!-- How this race will typically treat strangers.
-	This value is not really used much in the game, so don't worry if you're unsure of which value to use.
-	这场比赛通常会如何对待陌生人。
+	<!-- 这个种族通常会如何对待陌生人。
 	这个值在游戏中使用得并不多，所以如果你不确定该使用哪个值，不要担心。
 	值可以看下面链接
 	我查出来的值(23.11.21日查阅)
@@ -79,8 +74,7 @@
 	Values can be found here: https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/race/Disposition.java -->
 	<disposition>UNPREDICTABLE</disposition>
 	
-	<!-- What kind of animal this race is based on.
-	这个种族是以什么样的动物为基础的?
+	<!-- 这个种族是以什么样的动物为基础的?
 	值还是可以从这个链接查
 	我查出来的值(23.11.21日查阅)
 	MAMMAL(true, true),			哺乳类
@@ -90,63 +84,47 @@
 	FISH(false, false),			鱼
 	INSECT(false, false),		昆虫
 	OTHER(true, true);		 	可以用来指代元素生物
-	据说这帮东西不影响泌乳,有木有翅膀之类的
 	Values can be found here: https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/race/RacialClass.java -->
 	<racialClass>MAMMAL</racialClass>
 	
-	<!-- Whether this race can be transformed into a feral form or not.
-	这个种族是否可以转变成一个野性的形式。(变动物?)
-	这个值通常应该是true,除非你写的种族没动物形态
-	This should typically be left as true, unless the race you are creating has no animal equivalent (examples of a false value would be for humans, demons, and angels). -->
+	<!-- 这个种族是否可以转变成一个野性的形式。(变动物?)
+	这个值通常应该是true,除非你写的种族没动物形态 -->
 	<feralPartsAvailable>false</feralPartsAvailable>
 	
-	<!-- Whether this race has access to the self-transformation menu or not.
-	这个种族是否可以访问变形菜单?(好像是能决定是否变形)
-	这通常应保留为false
-	This should typically be left as false. -->
-	<ableToSelfTransform>true</ableToSelfTransform>
+	<!-- 这个种族是否可以访问变形菜单?(史莱姆在手机里用的变形)
+	这通常应保留为false -->
+	<ableToSelfTransform>false</ableToSelfTransform>
 	
-	<!-- Whether this is a race capable of flight or not. -->
 	<!-- 是否有能力飞行? -->
 	<flyingRace>true</flyingRace>
 	
 	
-	<!-- Combat: -->
 	<!-- 战斗: -->
 	
-	<!-- This race's typical behaviour in combat can be defined here.
-	这个种族战斗时的行为在这里定义
-	This behaviour will determine what attacks the race typically prefers to use in combat, and will be used if no specific combat behaviour has been defined for a character.
+	<!-- 这个种族战斗时的行为在这里定义
 	这种行为将决定种族在战斗中通常喜欢使用什么攻击，如果没有为角色定义特定的战斗行为，则会使用默认值BALANCED
-	The default value is 'BALANCED'.
-	可以在下面链接查值
+	可以在下面链接查值https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/combat/CombatBehaviour.java
 	我查出来的值(23.11.21日查阅)
 	BALANCED	平衡的
 	ATTACK		攻击
 	DEFEND		防御
 	SEDUCE		勾引
 	SPELLS		奥数
-	SUPPORT		帮盟友
-	Values can be found here: https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/combat/CombatBehaviour.java -->
+	SUPPORT		帮盟友 -->
 	<combatBehaviour>BALANCED</combatBehaviour>
 	
 	
-	<!-- Breeding: -->
 	<!-- 生育: -->
 	
-	<!-- The percentage chance for offspring of this race to be male.
-	Acceptable values are floats between 0 and 1, representing 0% to 100%, with the standard value being 0.5 (representing 50%).
-	这个种族的后代成为雄性的几率百分比。
-	可接受的值是介于0和1之间的浮动值，表示0%到100%，标准值为0.5（表示50%）。 -->
+	<!-- 这个种族的后代成为雄性的几率百分比。
+	可接受的值是介于0和1之间的浮动值，表示0%到100%，标准值为0.5(表示50%) -->
 	<chanceForMaleOffspring>0</chanceForMaleOffspring>
 	
-	<!-- The minimum and maximum number of offspring in each litter which females of this race produce. -->
 	<!-- 每次生孩子的数量 -->
 	<numberOfOffspringLow>1</numberOfOffspringLow>
 	<numberOfOffspringHigh>4</numberOfOffspringHigh>
 	
 	
-	<!-- Gameplay preferences: -->
 	<!-- 游戏偏好: -->
 	
 	<!-- 在一款使用完全默认设置的新游戏中,雌性和雄性的“毛茸茸”级别应该是多少。

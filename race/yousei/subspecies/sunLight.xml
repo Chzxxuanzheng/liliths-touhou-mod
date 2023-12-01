@@ -58,7 +58,12 @@
 	这个亚种是否喜欢水生环境
 	If set to true, then this subspecies will have the positive & negative aquatic status effects applied to it when in a tile with and without access to water, respectively. -->
 	<aquatic>false</aquatic>
-	
+	<!-- #IF (npc == pc && pc.getBodyMaterial() != BODY_MATERIAL_SLIME)
+		[##pc.getBody().setWingType(WING_TYPE_touhou_yousei_wingDefault1)]
+		[##pc.getBody().setSubspeciesOverride(SUBSPECIES_touhou_yousei_subspecies_default)]
+	#ELSE
+		[##npc.getBody().setWingType(WING_TYPE_touhou_yousei_wingSun)]
+	#ENDIF -->
 	<applySubspeciesChanges><![CDATA[
 	[##npc.getBody().setWingType(WING_TYPE_touhou_yousei_wingSun)]
 	]]></applySubspeciesChanges>
@@ -224,24 +229,24 @@
 	<!-- 
 	(23.11.22)
 	感谢:Joelrena Glover Chin•Jotimourns
-	HEALTH_MAXIMUM		生命
+	HEALTH_MAXIMUM		健康/生命
 	MANA_MAXIMUM		灵力
 	EXPERIENCE			exp
 	ACTION_POINTS		行动点数
-	AROUSAL				勃起?
-	LUST				堕落
-	RESTING_LUST		性欲
+	AROUSAL				快感 你现在积累了多少快感，充满时则会高潮
+	LUST				性欲 衡量你有多急切地想进行性接触的标准。你的性欲值会随时间逐渐向日常性欲值恢复
+	RESTING_LUST		日常性欲 的性欲会随时间恢复至该数值
 	MAJOR_PHYSIQUE		体格
 	MAJOR_ARCANE		奥术
 	MAJOR_CORRUPTION	堕落
 	// 其他属性:
 	ENCHANTMENT_LIMIT	附魔上限
-	FERTILITY
-	VIRILITY
-	SPELL_COST_MODIFIER	法术效率
+	FERTILITY			生育力 提升怀孕的概率
+	VIRILITY			生殖力 提升使人受孕的概率
+	SPELL_COST_MODIFIER	法术效率 降低释放法术的消耗
 	// 战斗属性:
-	CRITICAL_DAMAGE		暴击伤害
-	ENERGY_SHIELDING	生命护盾
+	CRITICAL_DAMAGE		暴击伤害 每一点给于1%额外的暴击伤害
+	ENERGY_SHIELDING	生命护盾 每战斗回合开始时，该数值会被施加到生命护盾上
 	// 护盾:
 	RESISTANCE_PHYSICAL	物理护盾
 	RESISTANCE_LUST		性欲护盾
@@ -260,11 +265,12 @@
 	DAMAGE_POISON		毒素伤害
 	-->
 	<statusEffectAttributeModifiers>
-		<attribute value="-30">MAJOR_PHYSIQUE</attribute>	<!-- 体格 -->
+		<attribute value="-5">MAJOR_PHYSIQUE</attribute>	<!-- 体格 -->
 		<attribute value="10">MAJOR_ARCANE</attribute>	<!-- 奥术 -->
 		<attribute value="10">SPELL_COST_MODIFIER</attribute>	<!-- 法术效率 -->
-		<attribute value="-30">ENERGY_SHIELDING</attribute>	<!-- 生命护盾 -->
-		<attribute value="-30">RESISTANCE_PHYSICAL</attribute>	<!-- 物理护盾 -->
+		<attribute value="20">RESISTANCE_LUST</attribute>	<!-- 性欲护盾 -->
+		<attribute value="-5">ENERGY_SHIELDING</attribute>	<!-- 生命护盾 -->
+		<attribute value="-5">RESISTANCE_PHYSICAL</attribute>	<!-- 物理护盾 -->
 		<attribute value="-10">DAMAGE_UNARMED</attribute>	<!-- 徒手伤害 -->
 	</statusEffectAttributeModifiers>
 	<!-- 该亚种的状态效果工具提示中应列出的任何额外效果

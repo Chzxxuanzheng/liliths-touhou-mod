@@ -136,12 +136,12 @@
 	(可能应该由“namesDefault”元素覆盖) -->
 	<nameAnthro>
 		<namesDefault>
-			<name><![CDATA[叫春精]]></name>
-			<namePlural><![CDATA[叫春精]]></namePlural>
-			<singularMaleName><![CDATA[叫春精]]></singularMaleName>
-			<singularFemaleName><![CDATA[叫春精]]></singularFemaleName>
-			<pluralMaleName><![CDATA[叫春精]]></pluralMaleName>
-			<pluralFemaleName><![CDATA[叫春精]]></pluralFemaleName>
+			<name><![CDATA[春之妖精]]></name>
+			<namePlural><![CDATA[春之妖精]]></namePlural>
+			<singularMaleName><![CDATA[春之妖精]]></singularMaleName>
+			<singularFemaleName><![CDATA[春之妖精]]></singularFemaleName>
+			<pluralMaleName><![CDATA[春之妖精]]></pluralMaleName>
+			<pluralFemaleName><![CDATA[春之妖精]]></pluralFemaleName>
 		</namesDefault>
 	</nameAnthro>
 	
@@ -262,11 +262,12 @@
 	DAMAGE_POISON		毒素伤害
 	-->
 	<statusEffectAttributeModifiers>
-		<attribute value="-30">MAJOR_PHYSIQUE</attribute>	<!-- 体格 -->
+		<attribute value="-5">MAJOR_PHYSIQUE</attribute>	<!-- 体格 -->
 		<attribute value="10">MAJOR_ARCANE</attribute>	<!-- 奥术 -->
 		<attribute value="10">SPELL_COST_MODIFIER</attribute>	<!-- 法术效率 -->
-		<attribute value="-30">ENERGY_SHIELDING</attribute>	<!-- 生命护盾 -->
-		<attribute value="-30">RESISTANCE_PHYSICAL</attribute>	<!-- 物理护盾 -->
+		<attribute value="20">RESISTANCE_LUST</attribute>	<!-- 性欲护盾 -->
+		<attribute value="-5">ENERGY_SHIELDING</attribute>	<!-- 生命护盾 -->
+		<attribute value="-5">RESISTANCE_PHYSICAL</attribute>	<!-- 物理护盾 -->
 		<attribute value="-10">DAMAGE_UNARMED</attribute>	<!-- 徒手伤害 -->
 	</statusEffectAttributeModifiers>
 	<!-- 该亚种的状态效果工具提示中应列出的任何额外效果

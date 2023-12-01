@@ -260,12 +260,11 @@
 	DAMAGE_POISON		毒素伤害
 	-->
 	<statusEffectAttributeModifiers>
-		<attribute value="-30">MAJOR_PHYSIQUE</attribute>	<!-- 体格 -->
 		<attribute value="10">MAJOR_ARCANE</attribute>	<!-- 奥术 -->
 		<attribute value="10">SPELL_COST_MODIFIER</attribute>	<!-- 法术效率 -->
-		<attribute value="-30">ENERGY_SHIELDING</attribute>	<!-- 生命护盾 -->
-		<attribute value="-30">RESISTANCE_PHYSICAL</attribute>	<!-- 物理护盾 -->
-		<attribute value="-10">DAMAGE_UNARMED</attribute>	<!-- 徒手伤害 -->
+		<attribute value="20">RESISTANCE_LUST</attribute>	<!-- 性欲护盾 -->
+		<attribute value="30">RESISTANCE_FIRE</attribute>	<!-- 火焰护盾 -->
+		<attribute value="30">DAMAGE_FIRE</attribute>	<!-- 火焰伤害 -->
 	</statusEffectAttributeModifiers>
 	<!-- 该亚种的状态效果工具提示中应列出的任何额外效果
 	由于这些额外的效果需要对游戏代码进行更改才能生效,因此它们可能应该留空. -->

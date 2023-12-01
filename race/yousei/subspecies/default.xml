@@ -61,13 +61,7 @@
 	<!--任何特殊的变动要写到这里,这个东西会在物种变成这个物种是被调用(再调试界面时重置种族会被调用,转化身体部件不会被调用)
 	这个会在种族的'applyRaceChanges'方法执行后执行.
 	你可以通过'targetedBody'获取改变前的身体信息(不用加npc) -->
-	<applySubspeciesChanges><![CDATA[
-	#IF (RND.nextInt(2) == 1)
-		[##npc.getBody().setWingType(WING_TYPE_touhou_yousei_wingDefault1)]
-	#ELSE
-		[##npc.getBody().setWingType(WING_TYPE_touhou_yousei_wingDefault2)]
-	#ENDIF
-	]]></applySubspeciesChanges>
+	<applySubspeciesChanges/>
 	
 	<!-- This conditional statement determines if a body is detected as being an instance of this subspecies.
 	It should return an integer value, with 0 being returned if this subspecies' requirements are not met by the supplied body/race.
@@ -268,11 +262,12 @@
 	DAMAGE_POISON		毒素伤害
 	-->
 	<statusEffectAttributeModifiers>
-		<attribute value="-30">MAJOR_PHYSIQUE</attribute>	<!-- 体格 -->
+		<attribute value="-5">MAJOR_PHYSIQUE</attribute>	<!-- 体格 -->
 		<attribute value="10">MAJOR_ARCANE</attribute>	<!-- 奥术 -->
 		<attribute value="10">SPELL_COST_MODIFIER</attribute>	<!-- 法术效率 -->
-		<attribute value="-30">ENERGY_SHIELDING</attribute>	<!-- 生命护盾 -->
-		<attribute value="-30">RESISTANCE_PHYSICAL</attribute>	<!-- 物理护盾 -->
+		<attribute value="-5">ENERGY_SHIELDING</attribute>	<!-- 生命护盾 -->
+		<attribute value="-5">RESISTANCE_PHYSICAL</attribute>	<!-- 物理护盾 -->
+		<attribute value="20">RESISTANCE_LUST</attribute>	<!-- 性欲护盾 -->
 		<attribute value="-10">DAMAGE_UNARMED</attribute>	<!-- 徒手伤害 -->
 	</statusEffectAttributeModifiers>
 	
