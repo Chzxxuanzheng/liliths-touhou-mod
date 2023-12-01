@@ -24,10 +24,10 @@
 		<pattern weighting="1">EYE_IRISES_HETEROCHROMATIC</pattern>
 	</extraPatterns>
 	
-	<naturalColoursPrimary values="allCoveringColours"/> 
-	<extraColoursPrimary values="allCoveringColours"/>
+	<naturalColoursPrimary values="naturalPredatorIrisColours"/> 
+	<extraColoursPrimary values="dyePredatorIrisColours"/>
 	
-	<naturalColoursSecondary values="allCoveringColours"/>
-	<extraColoursSecondary values="allCoveringColours"/>
+	<naturalColoursSecondary values="naturalPredatorIrisColours"/>
+	<extraColoursSecondary values="dyePredatorIrisColours"/>
 	
 </coveringType>
