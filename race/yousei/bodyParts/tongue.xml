@@ -2,7 +2,7 @@
 <tongue>
 	<race>touhou_yousei</race>
 	<coveringType>TONGUE</coveringType>
-	<defaultLength><![CDATA[8]]></defaultLength>
+	<defaultLength><![CDATA[4]]></defaultLength>
 	<name><![CDATA[舌头]]></name>
 	<namePlural><![CDATA[舌头]]></namePlural>
 	<descriptorsMasculine>
