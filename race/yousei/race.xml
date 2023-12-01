@@ -26,6 +26,8 @@
 	<!-- 该种族的非性别名称和复数名称，当采用拟人化形式时 -->
 	<name><![CDATA[妖精]]></name><!-- 估计是非性别名称 -->
 	<namePlural><![CDATA[妖精]]></namePlural><!-- 复数 -->
+	<nameSillyMode><![CDATA[baka]]></nameSillyMode><!-- 估计是非性别名称 -->
+	<namePluralSillyMode><![CDATA[baka]]></namePluralSillyMode><!-- 复数 -->
 	<!-- 你也可以按照上面的模式定义 -->
 	
 	<!-- 该种族在野兽形态时的非性别名称和复数名称

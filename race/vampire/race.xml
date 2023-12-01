@@ -17,7 +17,8 @@
 	<!-- 该种族的非性别名称和复数名称，当采用拟人化形式时 -->
 	<name><![CDATA[血族]]></name><!-- 估计是非性别名称 -->
 	<namePlural><![CDATA[血族]]></namePlural><!-- 复数 -->
-	
+	<nameSillyMode><![CDATA[飞天小蝙蝠]]></nameSillyMode><!-- 估计是非性别名称 -->
+	<namePluralSillyMode><![CDATA[飞天小蝙蝠]]></namePluralSillyMode><!-- 复数 -->
 	<!-- The non-gendered name and plural name of this race when in feral form.
 	该种族的非性别名称和复数名称，当不礼貌的时刻?(野蛮,不会译捏)
 	The name corresponds to the name of this race when in the 'legConfiguration' form defined.
