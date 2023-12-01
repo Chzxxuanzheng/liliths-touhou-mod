@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<leg>
+	<!-- GENERAL INFORMATION: If you are unsure of anything, please use the LT Discord to ask for help! -->
+	
+	<!-- If you want to see the part of the code where this type is defined, then please look here:
+	https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/body/abstractTypes/AbstractLegType.java -->
+	
+	<!-- The id of the race which this leg belongs to.
+	This will almost always be the id of the race in which this type is found (in this case hyena). -->
+	<race>touhou_yurei</race>
+	
+	<!-- The name that will be used when referring to transformations related to this type (such as when changing body parts in the self-TF menu). -->
+	<transformationName><![CDATA[幽灵]]></transformationName>
+	
+	<!-- The id of the material covering this leg.
+	The id will typically take the form of 'innoxia_hyena_fur'.
+	Hard-coded values can be found here: https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/body/coverings/BodyCoveringType.java -->
+	<coveringType>touhou_yurei_skin</coveringType>
+	
+	<!-- The default structure of the foot that's on the end of this leg.
+    NONE("无", "[npc.She]没有脚。"),
+    PLANTIGRADE("跖行", "[npc.She]使用脚掌在陆地上行走。"),
+    DIGITIGRADE("趾行", "[npc.She]使用[npc.toes]行走,脚跟总是高高抬起。"),
+    UNGULIGRADE("蹄行", "[npc.She]使用[npc.toes]行走,而脚的其他部分则总是高高抬起。"),
+    ARACHNOID("蛛形", "[npc.She]使用蛛化的节肢末端行走。"),
+    TENTACLED("触手", "[npc.She]使用触手的下半段行走。");
+	Values can be found here: https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/body/valueEnums/FootStructure.java -->
+	<defaultFootStructure>PLANTIGRADE</defaultFootStructure>
+	<!-- You can define multiple elements of a related 'additionalFootStructure' type and add a 'legConfiguration' attribute to them, e.g.:
+			<additionalFootStructure legConfiguration="QUADRUPEDAL">DIGITIGRADE</additionalFootStructure>
+		The value within this element will then override the default foot structure when the character has a "QUADRUPEDAL" foot structure.
+		For an example of this in practice, see: res/race/charisma/spider/bodyParts/leg.xml-->
+	
+	<!-- The type of the foot that's on the end of this leg.
+	https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/body/types/FootType.java -->
+	<footType>HUMANOID</footType>
+	
+	<!-- Whether this leg type has a spinneret when transformed into the 'ARACHNID' leg configuration. -->
+	<!-- 是否有丝囊. -->
+	<spinneret>false</spinneret>
+	
+	<!-- If this leg type consists of tentacles instead of legs, then define the type of the tentacle here.
+	触手相关
+	For everything except cephalopod leg types, this should most likely be left as NONE.
+	Any value other than NONE replaces the character's legs with tentacles of this type.
+	https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/body/types/FootType.java -->
+	<tentacleType>NONE</tentacleType>
+	
+	<!-- 触手相关The number of tentacles that this leg type has, with an upper limit of 100. -->
+	<tentacleCount>0</tentacleCount>
+	
+	<!-- The configurations which this leg type can be transformed into.
+	Values can be found here: https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/body/valueEnums/LegConfiguration.java -->
+	<allowedLegConfigurations>
+		<configuration>BIPEDAL</configuration>
+	</allowedLegConfigurations>
+	
+	<!-- The singular and plural name of this leg type.
+	These should be left as 'leg' and 'legs' for standard leg types.
+	The values 'tail/tails', 'tentacle/tentacles' should be used if this leg type is a serpent/fish tail or a collection of tentacles, respectively.
+	UPDATE: As of version 0.3.14, these values are overridden based on the character's leg configuration, so it doesn't really matter what you put here (although you should probably leave it as a sensible value).-->
+	<name><![CDATA[腿]]></name>
+	<namePlural><![CDATA[腿]]></namePlural> 
+	
+	<!-- The descriptors which should be drawn upon when describing a masculine character's leg of this type.
+	Can be left blank. -->
+	<descriptorsMasculine>
+		<descriptor><![CDATA[健壮的]]></descriptor>
+		<descriptor><![CDATA[强有力的]]></descriptor>
+		<descriptor><![CDATA[冰冷的]]></descriptor>
+	</descriptorsMasculine>
+	<!-- Same as above, but for feminine characters. -->
+	<descriptorsFeminine>
+		<descriptor><![CDATA[强有力的]]></descriptor>
+		<descriptor><![CDATA[纤细的]]></descriptor>
+		<descriptor><![CDATA[性感的]]></descriptor>
+		<descriptor><![CDATA[冰冷的]]></descriptor>
+	</descriptorsFeminine>
+	
+	<!-- Same descriptor formats as those for the leg type above, but these describe the leg's feet.
+	Foot type descriptors are also used, so these are extra definitions related to this leg type's race. -->
+	<footDescriptorsMasculine>
+		<descriptor><![CDATA[健壮的]]></descriptor>
+		<descriptor><![CDATA[冰冷的]]></descriptor>
+		<descriptor><![CDATA[强有力的]]></descriptor>
+	</footDescriptorsMasculine>
+	<footDescriptorsFeminine>
+		<descriptor><![CDATA[纤细的]]></descriptor>
+		<descriptor><![CDATA[性感的]]></descriptor>
+		<descriptor><![CDATA[冰冷的]]></descriptor>
+	</footDescriptorsFeminine>
+	
+	<!-- Same naming formats as those for the leg type above, but these describe the leg's toes.
+	Foot type's toe descriptors are also used, so these are extra definitions related to this leg type's race. -->
+	<toeDescriptorsMasculine/>
+	<toeDescriptorsFeminine/>
+	
+	<!-- The description which is shown when a character transforms to obtain this leg type.
+	This description immediately follows a brief description of the leg type beginning to transform. -->
+	<transformationDescription><![CDATA[	
+	<br/>[npc.Name]现在拥有了[style.boldHyena(幽灵的腿)],[npc.materialDescriptor][npc.legFullDescription]。
+]]></transformationDescription>
+	
+	<!-- How these legs are described in a character's description page. -->
+	<bodyDescription><![CDATA[
+		[npc.Her]的腿[npc.materialCompositionDescriptor][npc.legFullDescription(true)]。
+	]]></bodyDescription>
+</leg>

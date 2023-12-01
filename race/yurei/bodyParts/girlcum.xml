@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fluid>
+	<race>touhou_yurei</race>
+	
+	<transformationName><![CDATA[幽灵]]></transformationName>
+	
+	<baseFluidType>GIRLCUM</baseFluidType>
+	
+	<flavour>CHERRY</flavour>
+	
+	<namesMasculine/>
+	
+	<namesFeminine/>
+	
+	<descriptorsMasculine>
+		<name><![CDATA[幽灵]]></name>
+	</descriptorsMasculine>
+	
+	<descriptorsFeminine>
+		<name><![CDATA[幽灵]]></name>
+	</descriptorsFeminine>
+	
+	<defaultFluidModifiers/>
+	
+</fluid>

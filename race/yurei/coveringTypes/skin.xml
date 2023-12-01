@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<coveringType>
+	<!-- GENERAL INFORMATION: If you are unsure of anything, please use the LT Discord to ask for help! -->
+	
+	<!-- If you want to see the part of the code where the default hard-coded values for BodyCoveringType are found, then please look here: https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/body/coverings/BodyCoveringType.java -->
+	
+	<!-- The category of this covering type, as defined here: https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/body/coverings/BodyCoveringCategory.java -->
+	<!-- 定义覆盖的类型 -->
+	<!-- (23.11.26)
+	//主要覆盖类型
+	MAIN_SKIN			皮肤
+	MAIN_HAIR			头发
+	MAIN_FUR			毛
+	MAIN_SCALES
+	MAIN_FEATHER		羽毛
+	MAIN_CHITIN			甲壳
+	//眼睛
+	EYE_IRIS			虹膜
+	EYE_PUPIL			瞳孔
+	EYE_SCLERA			眼白
+	//头
+	ANTENNAE			触角
+	HORN				
+	ANTLER				角
+	HAIR				头发
+	//洞
+	ANUS				肛门
+	MOUTH				嘴
+	TONGUE				舌头
+	NIPPLE				乳头
+	NIPPLE_CROTCH		胯乳乳头
+	VAGINA				阴道
+	PENIS				阴茎
+	SPINNERET
+	//其他
+	BODY_HAIR			体毛
+	//独有的
+	ARTIFICIAL			人工的?
+	FLUID				流体?感觉像是史莱姆用的
+	MAKEUP				化妆? -->
+	<category>MAIN_SKIN</category>
+	
+	<!-- The determiner which should be used when describing this covering.
+	描述此覆盖时应使用的限定词。
+	例如,对羽毛而言它应该是'一缕''
+	For feathers, it would be something like 'a plume of'. -->
+	<determiner><![CDATA[一层]]></determiner>
+	
+	<!-- The name of this covering. -->
+	<!-- 覆盖物的名称 -->
+	<name><![CDATA[皮肤]]></name>
+	
+	<!-- The plural of this covering.
+	覆盖物的复数名称
+	'pluralByDefault'决定覆盖物默认情况下是否被称为复数
+	为true默认是复数
+	The 'pluralByDefault' attribute determines whether or not this covering is by default referred to as a plural.
+	For example, a covering of feathers would be pluralByDefault="true", as it should be referred to as 'a plume of feathers', not 'a plume of feather'. -->
+	<namePlural pluralByDefault="false"><![CDATA[皮肤]]></namePlural> 
+	
+	<!-- Which modifiers this covering should *naturally* have available to it.
+	覆盖物应该有那些的属性?
+	第一个定义的是默认值
+	(23.11.26)
+	EYE				眼睛
+	FLUID			流体
+	MAKEUP			妆容
+	GLOSSY			光亮
+	MATTE			哑光
+	SPARKLY			闪闪发光的
+	METALLIC		金属光泽
+
+	BLAZING			耀眼
+	SHIMMERING		闪烁
+	GLITTERING		晶莹剔透
+	SWIRLING		旋动
+	GOOEY			软黏
+	
+	// Generic:
+	SMOOTH			光滑的
+	ROUGH			粗糙的
+	
+	//Skin:
+	LEATHERY		坚韧粗糙的
+	
+	// Fur/hair:
+	SHORT			短
+	SILKEN			柔顺
+	FLUFFY			松软
+	SHAGGY			蓬乱
+	FURRY			类皮毛(只能用于头发)
+	COARSE			凌乱
+	The first modifier defined will be used as the default modifier, which in this case is 'FLUFFY'.
+	i.e. Which modifiers can be randomly applied to this covering when first created.
+	Values for covering modifiers can be found here: https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/body/valueEnums/CoveringModifier.java -->
+	<naturalCoveringModifiers>
+		<modifier>SMOOTH</modifier>
+	</naturalCoveringModifiers>
+	
+	<!-- Which modifiers this covering should have available to it under special transformative circumstances.
+	If you want some modifiers to only be available via transformations, and not applied randomly during the natural creation process, then define them here in the same way as the natural modifiers are defined above.-->
+	<extraCoveringModifiers/>
+	
+	<!-- The patterns which can be applied to this covering type.
+	The 'weighting' attribute determines the weighted chance of the pattern being randomly chosen when first created for a character. -->
+	<naturalPatterns/>
+	
+	<!-- In the same manner as covering modifiers above, you can define extra patterns which will only be available via transformations.
+	If you want to add any, then define them here in the same way as the natural patterns are defined above. -->
+	<extraPatterns/>
+	
+	
+	<!-- The colours which this covering has available to it.
+	'natural' colours are those which can be chosen when a race with this covering is spawning in naturally.
+	The 'extra' colours are those which are available via transformation.
+	Colour values can be found here: https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/utils/colours/PresetColour.java
+	Instead of defining colours individually, you can use the 'values' attribute to apply pre-defined colours.
+	Acceptable 'values' are found here: https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/utils/colours/ColourListPresets.java -->
+	
+	<naturalColoursPrimary>
+		<colour>SKIN_LIGHT</colour> 
+	</naturalColoursPrimary> 
+	<extraColoursPrimary values="humanSkinColours"/>
+	
+	<naturalColoursSecondary>
+		<colour>SKIN_LIGHT</colour> 
+	</naturalColoursSecondary>
+	<extraColoursSecondary values="humanSkinColours"/>
+
+	
+</coveringType>

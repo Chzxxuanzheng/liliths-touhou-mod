@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<torso>
+	<race>touhou_yurei</race>
+	<transformationName><![CDATA[幽灵]]></transformationName>
+	
+	<coveringType>touhou_yurei_skin</coveringType>
+	
+	<descriptorsMasculine>
+		<descriptor>健壮的</descriptor>
+		<descriptor>冰凉的</descriptor>
+	</descriptorsMasculine>
+	<descriptorsFeminine>
+		<descriptor>性感的</descriptor>
+		<descriptor>曼妙的</descriptor>
+		<descriptor>冰凉的</descriptor>
+	</descriptorsFeminine>
+	
+	<transformationDescription><![CDATA[
+		</br>[npc.Name]现在拥有[style.boldHuman(幽灵的)][npc.skinFullDescription]
+	]]></transformationDescription>
+	
+	<bodyDescription><![CDATA[
+		[npc.Her]有一个[npc.a_femininity(true)]的独属于幽灵的身躯,[npc.materialCompositionDescriptor][npc.skinFullDescription(true)]。
+	]]></bodyDescription>
+	
+	<tags>
+		<tag>ALLOWS_FLIGHT</tag>
+	</tags>
+</torso>
