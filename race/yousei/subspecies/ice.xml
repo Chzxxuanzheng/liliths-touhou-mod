@@ -182,7 +182,7 @@
 		<sizeHeight>true</sizeHeight>
 		<!-- The height/length of this subspecies' feral form, measured in cm. -->
 		<!-- 身高,单位:cm. -->
-		<size>61</size>
+		<size>40</size>
 		
 		<!-- The number of breast rows this feral form has on their chest.
 		野生动物的乳房数

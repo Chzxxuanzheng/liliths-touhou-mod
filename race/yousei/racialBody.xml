@@ -138,12 +138,12 @@
 	
 	The	values for BodySize and Muscle are used to determine a character's BodyShape, as defined here: https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/body/valueEnums/BodyShape.java -->
 	
-	<maleHeight>61</maleHeight>
+	<maleHeight>40</maleHeight>
 	<maleFemininity>80</maleFemininity>
 	<maleBodySize>20</maleBodySize>
 	<maleMuscle>20</maleMuscle>
 	
-	<femaleHeight>61</femaleHeight>
+	<femaleHeight>40</femaleHeight>
 	<femaleFemininity>80</femaleFemininity>
 	<femaleBodySize>20</femaleBodySize>
 	<femaleMuscle>20</femaleMuscle>

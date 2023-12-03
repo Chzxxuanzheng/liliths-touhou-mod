@@ -76,6 +76,6 @@
 	
 	<!-- How this wing is described in a character's description page. -->
 	<bodyDescription><![CDATA[
-		[npc.sheHasFull]拥有一对相对身体而言的[npc.wingSize]的即像[npc.coloryouseiSun(太阳)]又宛如蝴蝶般妖精之翼,[npc.materialDescriptor][npc.wingFullDescription(true)]。
+		[npc.sheHasFull]拥有一对相对身体而言的[npc.wingSize]的即像[npc.coloryouseiSun(太阳)]又宛如昆虫般的妖精之翼,[npc.materialDescriptor][npc.wingFullDescription(true)]。
 	]]></bodyDescription>
 </wing>
