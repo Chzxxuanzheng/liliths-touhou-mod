@@ -5,8 +5,6 @@
 	<!-- The race which this subspecies belongs to. -->
 	<!-- 这个亚种属于那个种族 -->
 	<race>touhou_vampire</race>
-	<!-- 头发id -->
-	<bodyHair>touhou_vampire_bodyHair</bodyHair>
 	<!-- The colour of this subspecies.
 	Will usually be the same as the race's colour.
 	The 'colour' value is used in most places as the base colour for this subspecies.
