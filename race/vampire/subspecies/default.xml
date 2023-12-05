@@ -115,7 +115,7 @@
 	<bookIconName>vampireBat</bookIconName>
 	
 	<!-- The name for the book. -->
-	<bookName><![CDATA[求闻史记(血族篇)]]></bookName>
+	<bookName><![CDATA[求闻史记(低级血族篇)]]></bookName>
 	
 	<!-- The element names which contain the book's basic and advanced descriptions.
 	描述元素,这里写名字,具体内容应当写到'bookEntries.xml'里
@@ -139,26 +139,26 @@
 	(可能应该由“namesDefault”元素覆盖) -->
 	<nameAnthro>
 		<namesDefault>
-			<name><![CDATA[血族]]></name>
-			<namePlural><![CDATA[血族]]></namePlural>
-			<singularMaleName><![CDATA[血族]]></singularMaleName>
+			<name><![CDATA[低级血族]]></name>
+			<namePlural><![CDATA[低级血族]]></namePlural>
+			<singularMaleName><![CDATA[低级血族]]></singularMaleName>
 			<singularFemaleName><![CDATA[吸血姬]]></singularFemaleName>
-			<pluralMaleName><![CDATA[血族]]></pluralMaleName>
+			<pluralMaleName><![CDATA[低级血族]]></pluralMaleName>
 			<pluralFemaleName><![CDATA[吸血姬]]></pluralFemaleName>
 		</namesDefault>
 	</nameAnthro>
 	
 	<!-- 描述 -->
-	<description><![CDATA[一种人形生物。相对于人类,有着血红色的双眼,更长的犬牙与指甲,以及一对巨大蝙蝠翅膀。血族无论是对自身肉体的掌握还是对魔法的理解都达到了人类无法超越的地步。]]></description>
+	<description><![CDATA[一种人形生物。相对于人类,有着血红色的双眼,更长的犬牙与指甲,以及一对巨大蝙蝠翅膀。低级血族无论是对自身肉体的掌握还是对魔法的理解都达到了人类无法超越的地步。]]></description>
 	
 	<!-- 变恶魔的称呼 -->
 	<nameHalfDemon>
 		<namesDefault>
-			<name><![CDATA[血族]]></name>
-			<namePlural><![CDATA[血族]]></namePlural>
-			<singularMaleName><![CDATA[血族]]></singularMaleName>
+			<name><![CDATA[低级血族]]></name>
+			<namePlural><![CDATA[低级血族]]></namePlural>
+			<singularMaleName><![CDATA[低级血族]]></singularMaleName>
 			<singularFemaleName><![CDATA[吸血姬]]></singularFemaleName>
-			<pluralMaleName><![CDATA[血族]]></pluralMaleName>
+			<pluralMaleName><![CDATA[低级血族]]></pluralMaleName>
 			<pluralFemaleName><![CDATA[吸血姬]]></pluralFemaleName>
 		</namesDefault>
 	</nameHalfDemon>
@@ -166,11 +166,11 @@
 	<!-- 野生的. -->
 	<feralAttributes>
 		<!-- Naming: -->
-		<feralName><![CDATA[血族]]></feralName>
-		<feralNamePlural><![CDATA[血族]]></feralNamePlural>
-		<feralSingularMaleName><![CDATA[血族]]></feralSingularMaleName>
+		<feralName><![CDATA[低级血族]]></feralName>
+		<feralNamePlural><![CDATA[低级血族]]></feralNamePlural>
+		<feralSingularMaleName><![CDATA[低级血族]]></feralSingularMaleName>
 		<feralSingularFemaleName><![CDATA[吸血姬]]></feralSingularFemaleName>
-		<feralPluralMaleName><![CDATA[血族]]></feralPluralMaleName>
+		<feralPluralMaleName><![CDATA[低级血族]]></feralPluralMaleName>
 		<feralPluralFemaleName><![CDATA[吸血姬]]></feralPluralFemaleName>
 		
 		<!-- The leg configuration that a feral form of this subspecies has.
@@ -216,7 +216,7 @@
 	<!-- 该亚种的提示工具. -->
 	<statusEffectDescription><![CDATA[
 	#IF (npc == pc)
-		血族异于常人的力量在你身上涌动着。
+		低级血族异于常人的力量在你身上涌动着。
 	#ELSE
 		[npc.NamePos]正在用那仿佛某种捕食者的深红竖瞳注视这你。
 	#ENDIF
@@ -267,7 +267,7 @@
 		<attribute value="30">MAJOR_PHYSIQUE</attribute>	<!-- 体格 -->
 		<attribute value="30">MAJOR_ARCANE</attribute>	<!-- 奥术 -->
 		<attribute value="30">SPELL_COST_MODIFIER</attribute>	<!-- 法术效率 -->
-		<attribute value="30">ENERGY_SHIELDING</attribute>	<!-- 生命护盾 -->
+		<attribute value="10">ENERGY_SHIELDING</attribute>	<!-- 生命护盾 -->
 		<attribute value="30">RESISTANCE_PHYSICAL</attribute>	<!-- 物理护盾 -->
 		<attribute value="-60">RESISTANCE_FIRE</attribute>	<!-- 火焰护盾 -->
 		<attribute value="30">DAMAGE_UNARMED</attribute>	<!-- 徒手伤害 -->

@@ -47,7 +47,7 @@
 		<modifier value="-20">MAJOR_PHYSIQUE</modifier>	<!-- 体格 -->
 		<modifier value="-20">MAJOR_ARCANE</modifier>	<!-- 奥术 -->
 		<modifier value="-20">SPELL_COST_MODIFIER</modifier>	<!-- 法术效率 -->
-		<modifier value="-20">ENERGY_SHIELDING</modifier>	<!-- 生命护盾 -->
+		<modifier value="-5">ENERGY_SHIELDING</modifier>	<!-- 生命护盾 -->
 		<modifier value="-20">RESISTANCE_PHYSICAL</modifier>	<!-- 物理护盾 -->
 	</attributeModifiers>
 	
