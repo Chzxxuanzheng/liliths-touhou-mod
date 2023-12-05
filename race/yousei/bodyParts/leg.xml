@@ -26,6 +26,7 @@
     TENTACLED("触手", "[npc.She]使用触手的下半段行走。");
 	Values can be found here: https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/body/valueEnums/FootStructure.java -->
 	<defaultFootStructure>PLANTIGRADE</defaultFootStructure>
+	<!-- <additionalFootStructure legConfiguration="PLANTIGRADE" minimumWingSizeForFlight="wing.ZERO_TINY">PLANTIGRADE</additionalFootStructure> -->
 	<!-- You can define multiple elements of a related 'additionalFootStructure' type and add a 'legConfiguration' attribute to them, e.g.:
 			<additionalFootStructure legConfiguration="QUADRUPEDAL">DIGITIGRADE</additionalFootStructure>
 		The value within this element will then override the default foot structure when the character has a "QUADRUPEDAL" foot structure.
