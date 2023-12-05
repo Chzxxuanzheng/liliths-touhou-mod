@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<statusEffect>
+	<!-- GENERAL INFORMATION: If you are unsure of anything, please use the LT Discord to ask for help! -->
+	
+	<!-- 一个整数表示这个状态的渲染优先级 -->
+	<renderingPriority>99</renderingPriority>
+	
+	<!-- 如果你希望它能显示在玩家buff栏里,应当设为true. -->
+	<renderInEffectsPanel>true</renderInEffectsPanel>
+	
+	<!-- 此效果的类别,你可以省略这个空,它将会被设为DEFAULT类别 -->
+	<category/>
+	
+	<!-- 'BENEFICIAL'表面这是个有利buff,'NEUTRAL'是中立buff,'DETRIMENTAL'是debuff. -->
+	<beneficial>DETRIMENTAL</beneficial>
+	
+	<!-- 如果你想要该状态效果仅在战斗中渲染,并且在战斗中每一回合都将 applyEffect 元素的内容施加给受影响角色,请设置为 true .
+	只有该状态效果 仅 在战斗中施加并使用时,才需要设置为“true”.被标记为战斗状态效果的,战斗外则不会施加效果. -->
+	<combatEffect>false</combatEffect>
+	
+	<!-- 如果你想要该状态效果在性交中渲染,请设置为 true. -->
+	<sexEffect>false</sexEffect>
+	
+	<!-- buff激活后,目标角色受到的tag. -->
+	<tags/>
+	
+	<!-- 该buff的名称(name).处于该效果下的角色会以'npc'作为解析变量传入.所以如果你想要引用,可以使用[npc.name]等类似形式. -->
+	<name><![CDATA[可怕的流水]]></name>
+	
+	<!-- 该buff的描述.处于该效果下的角色会以'npc'作为解析变量传入.所以如果你想要引用,可以使用[npc.name]等类似形式. -->
+	<description><![CDATA[
+            身为血族,身处于流水之中并不是一个正确的选择。
+]]></description>
+	
+	<!-- 图标,应和xml处于同一文件夹 -->
+	<imageName>set_template.svg</imageName>
+	
+	<!-- 颜色
+	可以在这里查内置颜色:https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/utils/colours/PresetColour.java -->
+	<colourPrimary>BASE_BLUE_DARK</colourPrimary> <!-- 必须要写,不然不能加载. -->
+	<colourSecondary>BASE_BLUE_DARK</colourSecondary> <!-- 可以留空,'colourTertiary'也一样. -->
+	<colourTertiary/>
+	
+	<!-- The 拥有该状态效果会影响的属性.modifier 节点必须包含会被影响的属性.你可以定义任意数量的属性修改项,但最好不要太多.
+	值可以从这里来查:https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/attributes/Attribute.java-->
+	<attributeModifiers>
+		<modifier value="-40">MAJOR_PHYSIQUE</modifier>	<!-- 体格 -->
+		<modifier value="-40">MAJOR_ARCANE</modifier>	<!-- 奥术 -->
+		<modifier value="-40">SPELL_COST_MODIFIER</modifier>	<!-- 法术效率 -->
+		<modifier value="-30">ENERGY_SHIELDING</modifier>	<!-- 生命护盾 -->
+		<modifier value="-30">RESISTANCE_PHYSICAL</modifier>	<!-- 物理护盾 -->
+		<modifier value="-1">ACTION_POINTS</modifier>	<!-- AP -->
+	</attributeModifiers>
+	
+	<!-- 拥有此buff时可以解锁的战斗动作(combatMoves).
+	CombatMoves标识符在构造函数中定义.
+	可以在这里查内置的战斗动作:https://github.com/Innoxia/liliths-throne-public/tree/dev/src/com/lilithsthrone/game/combat/moves
+	不需要添加战斗动作可以留空: -->
+	<combatMoves/>
+	
+	<!-- 受到该状态效果影响的角色将会解锁那些法术..
+	可以在这里查内置的法术: https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/combat/spells/Spell.java
+	不需要添加战斗动作可以留空: -->
+	<spells/>
+	
+	<!-- 你可以使用这一部分来描述状态效果可能附带的额外效果.
+	当玩家将鼠标悬浮在状态效果的图标上,这些效果将会显示在提示中.处于该效果下的角色会以'npc'作为解析变量传入.
+	所以如果你想要引用,可以使用[npc.name]等类似形式.对于该状态效果,没有需要描述的额外效果,但如果想要使用该部分,请遵循以下格式:-->
+	<extraEffects>
+		<effect><![CDATA[[npc.name]的体力正在岁时间流逝。]]></effect>
+	</extraEffects>
+	
+	
+	<!-- 效果逻辑 -->
+	
+	<!-- 状态效果被施加的条件默认设置为'false',意味着你只能通过代码:'GameCharacter.addStatusEffect(AbstractStatusEffect statusEffect, int seconds)'来施加这个buff'
+	返回false时不会被施加这个buff,返回true时自动施加buff -->
+	<!-- 白天普通吸血鬼会被添加这个debuff -->
+	<!-- npc.getWorldLocation() == WORLD_TYPE_WORLD_MAP ||
+	npc.getWorldLocation() == WORLD_TYPE_DOMINION ||
+	npc.getWorldLocation() == WORLD_TYPE_SLAVER_ALLEY ||
+	npc.getWorldLocation() == WORLD_TYPE_HARPY_NEST ||
+	npc.getWorldLocation() == WORLD_TYPE_SUBMISSION -->
+	<applicationCondition><![CDATA[
+	[##'(不能防护奥术风暴的地方一定防水吧+雨天 || 站水里)+普通吸血鬼']
+	#IF (
+	npc.getLocationPlace().getPlaceType().isStormImmune() == false && 
+	npc.hasStatusEffect(SE_WEATHER_RAIN) && 
+	npc.getSubspecies() == SUBSPECIES_touhou_vampire_subspecies_default)
+		true
+	[##'有流动的水的地方']
+	#ELSEIF (
+		npc.getLocationPlace().getPlaceType() == PLACE_TYPE_DOMINION_ALLEYS_CANAL_CROSSING ||
+		npc.getLocationPlace().getPlaceType() == PLACE_TYPE_DOMINION_CANAL ||
+		npc.getLocationPlace().getPlaceType() == PLACE_TYPE_DOMINION_CANAL_END ||
+		npc.getLocationPlace().getPlaceType() == PLACE_TYPE_LILAYA_HOME_FOUNTAIN ||
+		npc.getLocationPlace().getPlaceType() == PLACE_TYPE_BAT_CAVERN_RIVER ||
+		npc.getLocationPlace().getPlaceType() == PLACE_TYPE_BAT_CAVERN_RIVER_END
+	)
+		true
+	#ELSE
+		false
+	#ENDIF
+	]]></applicationCondition>
+	<!--The above example is meant to show that you can use the parser to create more "complex" conditionals, but an alternate, simpler example to achieve the same effect would be to just do:
+	<applicationCondition shortConditionalCheck="true"><![CDATA[
+		SET_BONUS_innoxia_kitty.isCharacterWearingCompleteSet(npc)
+	]]></applicationCondition>
+	-->
+	
+	<!-- 条件满足时这个buff应当被施加多久时间.
+	这是以s为单位计算的,应当为一个int.
+	值为'-1'表示只要'applicationCondition'返回1这个buff就会一直有效
+	大部分的游戏效果该字段都为-1.
+	如果'constantRefresh'为'true',当applicationCondition返回true时那么buff持续时间将被刷新(例:泰拉瑞亚的岩浆,站进去始你的灼烧buff时间总是被设为5s)
+	如果'constantRefresh'为'false',当applicationCondition返回true时,持续时间不会刷新
+	如果该值为'-1',那么'constantRefresh'不会生效,但为了格式统一,应设为'false. -->
+	<applicationLength constantRefresh="false">-1</applicationLength>
+	
+	
+	<!-- 每当游戏回合结束时'applyEffect(GameCharacter target, int secondsPassed)'便会被执行.
+	npc						是受到效果影响的角色
+	SECONDS_PASSED			经过了多少秒,战斗时恒定为1.
+	TOTAL_SECONDS_PASSED	这个buff被施加了多长时间,'TOTAL_SECONDS_PASSED == 0'可以用来实现只有效果刚被施加时才生效
+	返回的字符串会进入内置解释器处理,处理后显示的字符串在'重要状态效果'屏幕中显示.-->
+	<applyEffect interval="60"><![CDATA[
+		#IF(SECONDS_PASSED>0)
+			[##npc.incrementHealth(-1 * SECONDS_PASSED / 60)]
+		#ENDIF
+	]]></applyEffect>
+	
+	<!-- 与上方的'applyEffect'元素行为相似,游戏本体会在该状态效果被移除前执行逻辑.
+	逻辑执行时,角色实际上依然还处于该状态效果的影响下. -->
+	<applyRemovalEffect/>
+	
+	<!-- 与上方的'applyEffect'元素行为相似,游戏本体会在该状态效果被移除后执行逻辑.
+	逻辑执行时,角色实际上已经不再处于该状态效果的影响. -->
+	<applyPostRemovalEffect/>
+	
+</statusEffect>
