@@ -38,18 +38,17 @@
 	<!-- 颜色
 	可以在这里查内置颜色:https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/utils/colours/PresetColour.java -->
 	<colourPrimary>BASE_BLUE_DARK</colourPrimary> <!-- 必须要写,不然不能加载. -->
-	<colourSecondary>BASE_BLUE_DARK</colourSecondary> <!-- 可以留空,'colourTertiary'也一样. -->
+	<colourSecondary/> <!-- 可以留空,'colourTertiary'也一样. -->
 	<colourTertiary/>
 	
 	<!-- The 拥有该状态效果会影响的属性.modifier 节点必须包含会被影响的属性.你可以定义任意数量的属性修改项,但最好不要太多.
 	值可以从这里来查:https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/attributes/Attribute.java-->
 	<attributeModifiers>
-		<modifier value="-40">MAJOR_PHYSIQUE</modifier>	<!-- 体格 -->
-		<modifier value="-40">MAJOR_ARCANE</modifier>	<!-- 奥术 -->
-		<modifier value="-40">SPELL_COST_MODIFIER</modifier>	<!-- 法术效率 -->
-		<modifier value="-30">ENERGY_SHIELDING</modifier>	<!-- 生命护盾 -->
-		<modifier value="-30">RESISTANCE_PHYSICAL</modifier>	<!-- 物理护盾 -->
-		<modifier value="-1">ACTION_POINTS</modifier>	<!-- AP -->
+		<modifier value="-20">MAJOR_PHYSIQUE</modifier>	<!-- 体格 -->
+		<modifier value="-20">MAJOR_ARCANE</modifier>	<!-- 奥术 -->
+		<modifier value="-20">SPELL_COST_MODIFIER</modifier>	<!-- 法术效率 -->
+		<modifier value="-20">ENERGY_SHIELDING</modifier>	<!-- 生命护盾 -->
+		<modifier value="-20">RESISTANCE_PHYSICAL</modifier>	<!-- 物理护盾 -->
 	</attributeModifiers>
 	
 	<!-- 拥有此buff时可以解锁的战斗动作(combatMoves).
