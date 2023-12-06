@@ -176,54 +176,7 @@
 	</nameHalfDemon>
 	
 	<!-- 野生的. -->
-	<feralAttributes>
-		<!-- Naming: -->
-		<feralName><![CDATA[冰妖精]]></feralName>
-		<feralNamePlural><![CDATA[冰妖精]]></feralNamePlural>
-		<feralSingularMaleName><![CDATA[冰妖精]]></feralSingularMaleName>
-		<feralSingularFemaleName><![CDATA[冰妖精]]></feralSingularFemaleName>
-		<feralPluralMaleName><![CDATA[冰妖精]]></feralPluralMaleName>
-		<feralPluralFemaleName><![CDATA[冰妖精]]></feralPluralFemaleName>
-		
-		<!-- The leg configuration that a feral form of this subspecies has.
-		腿的形状,决定了这个亚种的体型
-		This determines their overall body shape. -->
-		<legConfiguration>BIPEDAL</legConfiguration>
-		<!-- Whether or not this feral form's size is measured as height from floor to head, as for most mammals (true), or from head to tail (false), as for alligators and other low-lying animals which are far longer than they are tall. -->
-		<!-- 长度怎么计算
-		true:从头到脚底的长度
-		false:从头到尾巴的长度 -->
-		<sizeHeight>true</sizeHeight>
-		<!-- The height/length of this subspecies' feral form, measured in cm. -->
-		<!-- 身高,单位:cm. -->
-		<size>40</size>
-		
-		<!-- The number of breast rows this feral form has on their chest.
-		野生动物的乳房数
-		这通常是0,因为它指的是处于人类位置的乳房,而大多数动物都没有
-		This will usually be 0, as it refers to breasts in the position of humans, which most animals lack. -->
-		<breastRowCount>0</breastRowCount>
-		<!-- The number of nipples per breast.
-		每个乳房的乳头数量
-		'breastRowCount'为0是,整个数值没意义
-		If the 'breastRowCount' is 0, this value is never used. -->
-		<nipplesPerBreastCount>1</nipplesPerBreastCount>
-		<!-- The number of breast rows this feral form has near their crotch. -->
-		<!-- 胯胸,同时 -->
-		<crotchBreastRowCount>0</crotchBreastRowCount>
-		<!-- The number of nipples per crotch breast. -->
-		<nipplesPerCrotchBreastCount>1</nipplesPerCrotchBreastCount>
-		
-		<!-- Whether this feral form has arms or wings. -->
-		<!-- 这种野兽是否有胳膊或者翅膀 -->
-		<armsOrWingsPresent>true</armsOrWingsPresent>
-		<!-- Whether this feral form has fingers which they can use to manipulate objects. -->
-		<!-- 这种野性形态是否有手指可以用来操纵物体 -->
-		<fingerActionsAvailable>false</fingerActionsAvailable>
-		<!-- Whether or not this feral form has hair on its head that's clearly distinct from the rest of its fur (which also includes manes). -->
-		<!-- 无论这种野生动物的头上是否有与其他皮毛(也包括鬃毛)明显不同的毛发. -->
-		<hairPresent>false</hairPresent>
-	</feralAttributes>
+	<feralAttributes/>
 	
 	<!-- 该亚种的提示工具. -->
 	<statusEffectDescription><![CDATA[
