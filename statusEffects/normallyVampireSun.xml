@@ -15,12 +15,6 @@
 	<!-- 如果你希望它能显示在玩家buff栏里,应当设为true. -->
 	<renderInEffectsPanel>true</renderInEffectsPanel>
 	
-	<!-- 此效果的类别,你可以省略这个空,它将会被设为DEFAULT类别
-	类的含义可以查这里:https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/effects/StatusEffectCategory.java -->
-	<!-- (23.12.3)
-	DEFAULT
-    ATTRIBUTE
-    INVENTORY 	可用于套装奖励-->
 	<category>DEFAULT</category>
 	
 	<!-- 'BENEFICIAL'表面这是个有利buff,'NEUTRAL'是中立buff,'DETRIMENTAL'是debuff. -->

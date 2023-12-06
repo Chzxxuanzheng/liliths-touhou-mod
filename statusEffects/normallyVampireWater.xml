@@ -9,7 +9,7 @@
 	<renderInEffectsPanel>true</renderInEffectsPanel>
 	
 	<!-- 此效果的类别,你可以省略这个空,它将会被设为DEFAULT类别 -->
-	<category/>
+	<category>DEFAULT</category>
 	
 	<!-- 'BENEFICIAL'表面这是个有利buff,'NEUTRAL'是中立buff,'DETRIMENTAL'是debuff. -->
 	<beneficial>DETRIMENTAL</beneficial>
