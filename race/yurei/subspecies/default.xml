@@ -47,6 +47,16 @@
 	应该只对恶魔有用,除非你真的这是是干啥的,否则填0-->
 	<subspeciesOverridePriority>0</subspeciesOverridePriority>
 	
+	<!-- 该亚种的夜间行为。
+	如果忽略此值，则它将默认为DIURNAL。
+	DIURNAL("白天活动", "白天活动，夜晚休息。")
+    NOCTURNAL("夜晚活动", "夜晚活动，白天休息。")
+    CREPUSCULAR("黄昏活动", "在早晨和傍晚的黄昏时段活动。")
+    MATUTINAL("早晨活动", "在黎明时段活动。")
+    VESPERTINE("晚间活动", "在晚间黄昏时段活动。")
+    CATHEMERAL("无规律", "在白天和夜晚不规律地活动。") -->
+	<nocturnality>DIURNAL</nocturnality>
+
 	<!-- Whether this race is of a small stature or not.
 	是否身材矮小?不会翻
 	If set to true, then this race is limited to the game's smallest height categories (as is the case for imps). -->
@@ -57,10 +67,12 @@
 	Set to false for subspecies like centaurs. -->
 	<bipedalSubspecies>true</bipedalSubspecies>
 	
-	<!-- Whether or not this is a subspecies which prefers to live in an aquatic environment.
-	这个亚种是否喜欢水生环境
-	If set to true, then this subspecies will have the positive & negative aquatic status effects applied to it when in a tile with and without access to water, respectively. -->
-	<aquatic>false</aquatic>
+	<!-- 亚种的栖息地分类
+		默认为AMPHIBIOUS
+		AQUATIC（"水生的"）
+		AMPHIBIOUS（"两栖的"）
+		TERRESTRIAL（"陆生的"） -->
+	<affinity>AMPHIBIOUS</affinity>
 	
 	<!-- Any special changes which should be applied to a newly-spawned character of this subspecies.
 	This is applied *after* the parent race's 'applyRaceChanges' method.

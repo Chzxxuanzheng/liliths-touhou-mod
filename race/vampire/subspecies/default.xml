@@ -1,30 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <subspecies>
-	<!-- GENERAL INFORMATION: If you are unsure of anything, please use the LT Discord to ask for help! -->
-	
-	<!-- The race which this subspecies belongs to. -->
-	<!-- 这个亚种属于那个种族 -->
 	<race>touhou_vampire</race>
-	<!-- The colour of this subspecies.
-	Will usually be the same as the race's colour.
-	The 'colour' value is used in most places as the base colour for this subspecies.
-	The 'secondaryColour' and 'tertiaryColour' are used alongside 'colour' in recolouring this subspecies' icon and background.
-	这个亚种的颜色
-	通常与种族的颜色相似
-	这个亚种大部分都会使用这个颜色
-	'secondaryColour' 和 'tertiaryColour' 与 'colour'一起用于这个亚种的图标和背景 -->
+
 	<colour>BASE_RED_DARK</colour>
 	<secondaryColour>BASE_RED_DARK</secondaryColour>
 	<tertiaryColour>BASE_RED_DARK</tertiaryColour>
 	
-	<!-- Whether or not this subspecies is considered the 'main' subspecies of its parent race.
-	这个亚种是否是这个种族的主要亚种
-	如果这个种族只有这一个亚种,应当设置为true
-	One subspecies, no more, of each race should have this set as true. -->
 	<mainSubspecies>true</mainSubspecies>
 	
-	<!-- The base value of this subspecies when sold as a slave. -->
-	<!-- 被作为奴隶售卖的价格 -->
 	<baseSlaveValue>150000</baseSlaveValue>
 	
 	<!-- The id of the item associated with this race which can be enchanted to modify attributes.
@@ -45,40 +28,33 @@
 	应该只对恶魔有用,除非你真的这是是干啥的,否则填0-->
 	<subspeciesOverridePriority>0</subspeciesOverridePriority>
 	
-	<!-- Whether this race is of a small stature or not.
-	是否身材矮小?不会翻
-	If set to true, then this race is limited to the game's smallest height categories (as is the case for imps). -->
+	<!-- 该亚种的夜间行为。
+	如果忽略此值，则它将默认为DIURNAL。
+	DIURNAL("白天活动", "白天活动，夜晚休息。")
+    NOCTURNAL("夜晚活动", "夜晚活动，白天休息。")
+    CREPUSCULAR("黄昏活动", "在早晨和傍晚的黄昏时段活动。")
+    MATUTINAL("早晨活动", "在黎明时段活动。")
+    VESPERTINE("晚间活动", "在晚间黄昏时段活动。")
+    CATHEMERAL("无规律", "在白天和夜晚不规律地活动。") -->
+	<nocturnality>NOCTURNAL</nocturnality>
+
+	<!-- 身材矮小 -->
 	<shortStature>false</shortStature>
 	
-	<!-- Whether or not this subspecies has the bipedal leg configuration by default.
-	是否两足行走
-	Set to false for subspecies like centaurs. -->
+	<!-- 是否两足行走 -->
 	<bipedalSubspecies>true</bipedalSubspecies>
 	
-	<!-- Whether or not this is a subspecies which prefers to live in an aquatic environment.
-	这个亚种是否喜欢水生环境
-	If set to true, then this subspecies will have the positive & negative aquatic status effects applied to it when in a tile with and without access to water, respectively. -->
-	<aquatic>false</aquatic>
+	<!-- 亚种的栖息地分类
+		默认为AMPHIBIOUS。
+		AQUATIC（"水生的"）
+		AMPHIBIOUS（"两栖的"）
+		TERRESTRIAL（"陆生的"） -->
+	<affinity>TERRESTRIAL</affinity>
 	
-	<!-- Any special changes which should be applied to a newly-spawned character of this subspecies.
-	This is applied *after* the parent race's 'applyRaceChanges' method.
-	The character's body that's being changed can be accessed via using 'targetedBody'.
-	The code here is redundant, as clitoris girth & size is set to 4 & 18 in both the race.xml and the racialBody.xml files, but I've added it in here to show a working example. -->
 	<applySubspeciesChanges>
 	<![CDATA[]]>
 	</applySubspeciesChanges>
 	
-	<!-- This conditional statement determines if a body is detected as being an instance of this subspecies.
-	It should return an integer value, with 0 being returned if this subspecies' requirements are not met by the supplied body/race.
-	You should usually return a value of 100 if the requirements are met, or something higher if this subspecies should have a higher priority than other subspecies which may also detect this body as being an instance of their subspecies.
-	The body that's being checked can be accessed via using 'targetedBody'.
-	The race of the body that's being checked SHOULD NOT be accessed via targetedBody.getRace(), and should instead be accessed via using 'targetedRace'. 
-	这个条件语句确定一个身体是否被检测为该亚种的一个实例。
-	它应该返回一个整数值，如果提供的身体/种族不满足该亚种的要求，则返回0。
-	如果满足要求，你通常应该返回100的值，或者如果这个亚种比其他亚种有更高的优先级，则返回更高的值，其他亚种也可能检测到这个身体是他们亚种的一个实例。
-	可以使用“targetedBody”访问正在检查的正文。
-	不应通过targetedBody.getRace()访问正在检查的主体的种族，而应使用'targetedRace'访问。
-	-->
 	<subspeciesWeighting><![CDATA[
 		#IF(targetedRace==RACE_touhou_vampire)
 			100
@@ -87,51 +63,23 @@
 		#ENDIF
 	]]></subspeciesWeighting>
 
-	<!-- All non-striped hyenas are classified as spotted just to catch any which have accidentally had their covering set to something other than spotted or striped. -->
-	
-	<!-- The name of the svg file which represents this subspecies' icon.
-	这个亚种的图标
-	It should be located in the same folder as this xml file. -->
 	<iconName displaySize="80">vampireBat</iconName>
 	
-	<!-- The name of the svg file which represents the background for this subspecies' icon.
-	It should be located in the same folder as this xml file.
-	图标背景,留空代表使用默认
-	You can leave this blank to use the game's default background. -->
 	<backgroundName></backgroundName>
 	
-	<!-- Book information:
-	百科全书
-	Books are automatically-generated items which reveal information about the game's subspecies.
-	书是自动生成的,用来显示关于这个亚种的详细信息
-	There is a unique book created for every unique value defined for each subspecies' 'advancedDescriptionId' field.
-	i.e. If I defined a different 'advancedDescriptionId' for spotted and striped hyenas, the game would make a book for each of them.
-		As it stands, I have defined both spotted and striped hyena subspecies to use the 'hyena_advanced' xml file, so there will only be one book type generated.	-->
-		
-	<!-- The icon to be used on the book's front cover.
-	It should be located in the same folder as this xml file. -->
 	<bookIconName>vampireBat</bookIconName>
-	
-	<!-- The name for the book. -->
-	<bookName><![CDATA[求闻史记(低级血族篇)]]></bookName>
-	
-	<!-- The element names which contain the book's basic and advanced descriptions.
-	描述元素,这里写名字,具体内容应当写到'bookEntries.xml'里
-	These should be entered into the 'bookEntries.xml' file in the same folder location as this file. -->
+	<bookName><![CDATA[求闻史记(血族篇)]]></bookName>
 	<basicDescriptionId>touhou_VAMPIRE_BASE</basicDescriptionId>
 	<advancedDescriptionId>touhou_VAMPIRE_ADVANCED</advancedDescriptionId>
 	
-	<!-- The default preference for this subspecies spawning.
-	该亚种产卵偏好
+	<!-- 刷新率
 	(23.11.22)
 	ZERO_NONE
 	ONE_LOW
 	TWO_AVERAGE
 	THREE_HIGH
-	FOUR_ABUNDANT
-	不懂捏,源码不写注释,差评差评
-	Values can be found here: https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/race/SubspeciesPreference.java -->
-	<defaultPreference>TWO_AVERAGE</defaultPreference>
+	FOUR_ABUNDANT -->
+	<defaultPreference>ONE_LOW</defaultPreference>
 	
 	<!-- 该亚种在非野生形态时的名称。
 	(可能应该由“namesDefault”元素覆盖) -->
@@ -171,9 +119,7 @@
 		<feralPluralMaleName><![CDATA[低级血族]]></feralPluralMaleName>
 		<feralPluralFemaleName><![CDATA[吸血姬]]></feralPluralFemaleName>
 		
-		<!-- The leg configuration that a feral form of this subspecies has.
-		腿的形状,决定了这个亚种的体型
-		This determines their overall body shape. -->
+		<!-- 腿的形状,决定了这个亚种的体型 -->
 		<legConfiguration>BIPEDAL</legConfiguration>
 		<!-- Whether or not this feral form's size is measured as height from floor to head, as for most mammals (true), or from head to tail (false), as for alligators and other low-lying animals which are far longer than they are tall. -->
 		<!-- 长度怎么计算
