@@ -51,6 +51,11 @@
 		TERRESTRIAL（"陆生的"） -->
 	<affinity>TERRESTRIAL</affinity>
 	
+	<!--有翅膀的前缀，默认设置为false
+		无论这个亚种是否原本有翅膀，如果NPC或玩家是有翅膀的，它都将显示为“有翅膀的亚种”（例如“有翼鬣狗男孩”）
+		如果是true，则只有初始有翅膀或者手翼的才会显示-->
+	<winged>true</winged>
+
 	<applySubspeciesChanges>
 	<![CDATA[]]>
 	</applySubspeciesChanges>

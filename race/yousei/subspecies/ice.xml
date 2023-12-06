@@ -71,6 +71,11 @@
 		TERRESTRIAL（"陆生的"） -->
 	<affinity>AMPHIBIOUS</affinity>
 	
+	<!--有翅膀的前缀，默认设置为false
+		无论这个亚种是否原本有翅膀，如果NPC或玩家是有翅膀的，它都将显示为“有翅膀的亚种”（例如“有翼鬣狗男孩”）
+		如果是true，则只有初始有翅膀或者手翼的才会显示-->
+	<winged>true</winged>
+
 	<applySubspeciesChanges><![CDATA[
 	[##npc.getBody().setWingType(WING_TYPE_touhou_yousei_wingIce)]
 	]]></applySubspeciesChanges>
@@ -132,17 +137,14 @@
 	<basicDescriptionId>touhou_YOUSEI_ICE</basicDescriptionId>
 	<advancedDescriptionId/>
 	
-	<!-- The default preference for this subspecies spawning.
-	该亚种产卵偏好
+	<!-- 刷新率
 	(23.11.22)
 	ZERO_NONE
 	ONE_LOW
 	TWO_AVERAGE
 	THREE_HIGH
-	FOUR_ABUNDANT
-	不懂捏,源码不写注释,差评差评
-	Values can be found here: https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/race/SubspeciesPreference.java -->
-	<defaultPreference>TWO_AVERAGE</defaultPreference>
+	FOUR_ABUNDANT -->
+	<defaultPreference>ZERO_NONE</defaultPreference>
 	
 	<!-- 该亚种在非野生形态时的名称。
 	(可能应该由“namesDefault”元素覆盖) -->
