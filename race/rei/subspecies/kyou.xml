@@ -166,6 +166,7 @@
 	<statusEffectAttributeModifiers>
 		<attribute value="15">MAJOR_PHYSIQUE</attribute>	<!-- 体格 -->
 		<attribute value="9999">RESISTANCE_LUST</attribute>	<!-- 性欲护盾 -->
+		<attribute value="-10">RESISTANCE_ICE</attribute>	<!-- 冰抗 -->
 	</statusEffectAttributeModifiers>
 	
 	<!-- 该亚种的额外属性加成
