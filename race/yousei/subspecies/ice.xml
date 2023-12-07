@@ -247,7 +247,7 @@
 	三种主要攻击的权重
 	The weightings are relative to each other, and so you can use whatever values you want, but be aware that negative numbers, or a total number weight greater than 2,147,483,647 will produce unexpected results. -->
 	<perkWeightings>
-		<category masculineWeighting="10" feminineWeighting="3">PHYSICAL</category>
+		<category masculineWeighting="10" feminineWeighting="10">PHYSICAL</category>
 		<category masculineWeighting="1" feminineWeighting="1">LUST</category>
 		<category masculineWeighting="10" feminineWeighting="10">ARCANE</category>
 	</perkWeightings>
