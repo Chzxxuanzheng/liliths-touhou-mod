@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<bookText>
+	
+	<!-- 您可以通过设置“author”属性来定义要在游戏中显示的作者名称(不是你的名字，当然也可以是)
+		 我建议使用一个对传说友好的名字，以免破坏沉浸感 -->
+	<!-- 基本描述 -->
+	<htmlContent tag="touhou_tengu_BASE" author="稗田阿求"><![CDATA[
+	<div class='container-full-width' style='width:35%; float:left;'>
+		<p style='width:100%; text-align:left;'>
+			<b>卷起狂风的山神</b><br>
+			<b>天狗</b>
+		</p>
+		<hr/>
+		<table align='left'>
+			<tr>
+				<td style='width:50%; text-align:left;'>主要危险度</td>
+				<td style='text-align:left;'>极高</td>
+			</tr>
+			<tr>
+				<td style='width:50%; text-align:left;'>遭遇频度</td>
+				<td style='text-align:left;'>中</td>
+			</tr>
+			<tr>
+				<td style='width:50%; text-align:left;'>多样性</td>
+				<td style='text-align:left;'>普通</td>
+			</tr>
+			<tr>
+				<td style='width:50%; text-align:left;'>主要遭遇场所</td>
+				<td style='text-align:left;'>妖怪之山</td>
+			</tr>
+			<tr>
+				<td style='width:50%; text-align:left;'>主要遭遇时间</td>
+				<td style='text-align:left;'>任何时间</td>
+			</tr>
+		</table>	
+	</div>
+	<br><br><br><br><br><br><br><br><br><br><br>
+	]]></htmlContent>	
+	<!-- 高级描述(看书才会出现) -->
+	<!-- 你可以写多个不同tag也就是id的高级描述以对应你的每一个亚种里的<advancedDescriptionId> -->
+	<htmlContent tag="touhou_tengu_ADVANCED" author="稗田阿求"><![CDATA[
+	<hr>
+	<h6>特征</h6>
+	<br>
+	天狗是栖息在山中的神格化的妖怪。在幻想乡之中也是和古代渊源密切的妖怪，过着独自排外的社会生活。<br>
+	天狗有好多种类，包括首脑天魔，担任管理职位的大天狗，速度极快的报道部队鸦天狗，擅长业务的鼻高天狗，担任山中侍卫的白狼天狗，从事印刷事业的山伏天狗等等。<br>
+	基本上外表和人类无差别。除了极大型的大天狗和鼻很高的鼻高天狗。<br>
+	他们有着高度的文明，知性比人类高得多，也有社会性。单只的身体能力也有不输幻想乡妖怪的强大。尤其是空中飞行速度极快，能相比的人寥寥可数（×1例如吸血鬼。）。<br>
+	天狗的特征就是全体都是豪迈的酒豪。酒量非比寻常，据说见面打招呼就互相一气干下一斗酒。<br>
+	还有就是同伴意识强，有同伴被袭击就会形成敌意。山中出现入侵者，就会全体出击，迅速排除敌人。这也是其它妖怪所没有的特征。<br>
+	平日里只要有事件发生，天狗会以最快的速度第一时间奔赴现场，拍摄照片将事件记载，最后整理排版并印刷成册。<br>
+	<br>
+	<h6>危害内容</h6>
+	<br>
+	>天狗风，散布流言，偷拍等<br>
+	天狗经过所带起的风，强到能吹起小孩子。<br>
+	虽然很少见，天狗发怒时扬起的风像龙卷风，将事物破坏殆尽。<br>
+	还有更可怕的就是常说些有的没的，从而引起奇怪的流言。<br>
+	天狗的流言，就像字面意思那样有时会通过风直接传到人们的耳中。被流言缠绕的人在村庄里也会没有面子见人。<br>
+	完全无法防范，没东西比他们可怕。<br>
+	<br>
+	<h6>应对方法</h6>
+	<br>
+	第一不要贸然进入山中，天狗对于外人进入他们的地盘是异常反感的。<br>
+	要正当地防止流言发生是不可能的。若发生流言，只有用“大家都知道这是假的”来安慰自己了。就算真的全是假的，也会有人想“他的话，有可能哟”。这时就会产生内疚感。<br>
+	还有就是偷拍，这个就死心吧（×2老实说，现今还没有对抗天狗的有效手段。）。<br>
+	]]></htmlContent>
+</bookText>

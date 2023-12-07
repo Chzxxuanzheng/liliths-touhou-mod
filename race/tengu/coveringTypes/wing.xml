@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<coveringType>
+	<!-- GENERAL INFORMATION: If you are unsure of anything, please use the LT Discord to ask for help! -->
+	
+	<!-- See fur.xml for a fully-commented coveringType example. -->
+	
+	<category>MAIN_FEATHER</category>
+	
+	<determiner><![CDATA[一片]]></determiner>
+	<name><![CDATA[羽毛]]></name>
+	<namePlural pluralByDefault="false"><![CDATA[羽毛]]></namePlural> 
+	
+	<naturalCoveringModifiers>
+		<modifier>SILKEN</modifier>
+	</naturalCoveringModifiers>
+	
+	<extraCoveringModifiers/>
+	
+	<naturalPatterns/>
+	
+	<extraPatterns/>
+	
+	<naturalColoursPrimary>
+		<colour>MAP_BACKGROUND_DARK</colour>
+	</naturalColoursPrimary>
+	<extraColoursPrimary>
+		<colour>MAP_BACKGROUND_DARK</colour>
+	</extraColoursPrimary>
+	
+	<naturalColoursSecondary>
+		<colour>MAP_BACKGROUND_DARK</colour>
+	</naturalColoursSecondary>
+	<extraColoursSecondary>
+		<colour>MAP_BACKGROUND_DARK</colour>
+	</extraColoursSecondary>
+	
+</coveringType>

@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<leg>
+	<!-- GENERAL INFORMATION: If you are unsure of anything, please use the LT Discord to ask for help! -->
+
+	<!-- 种族id -->
+	<race>touhou_tengu</race>
+
+	<!-- 种族部件转化时候显示的名称 一般是 种族名称 -->
+	<transformationName><![CDATA[天狗]]></transformationName>
+
+	<!-- 参考原版coveringType 可以填	皮肤coveringTypes
+	如果要自定义
+	皮肤覆盖id 推荐命名 作者_种族名字_skin 其中“作者_种族名字”与race文件中的相同
+	需要coveringTypes(没有这个文件夹自己创建)中建立并填写skin.xml文件
+	 -->
+	<coveringType>touhou_tengu_skin</coveringType>
+	
+	<!-- 行走方式:
+	NONE("无")
+    PLANTIGRADE("跖行")
+    DIGITIGRADE("趾行")
+    UNGULIGRADE("蹄行")
+    ARACHNOID("蛛形")
+    TENTACLED("触手")
+	 -->
+	<defaultFootStructure>PLANTIGRADE</defaultFootStructure>
+	
+	<!-- 脚部样式：
+	NONE("无")
+    HUMANOID("人类")
+    PAWS("脚爪")
+    HOOFS("蹄子")
+    REPTILIAN("爬行类")
+    AMPHIBIAN("两栖类")
+    TALONS("鸟爪")
+    ARACHNID("蛛形")
+    TENTACLE("触手")
+	 -->
+	<footType>HUMANOID</footType>
+	
+	<!-- 腿类型是否有丝囊（仅适用于仅限于“ARACHNID”蜘蛛腿类型） -->
+	<spinneret>false</spinneret>
+	
+	<!-- 不是触手脚就填 NONE,
+	NONE("无")
+	DEMON_COMMON("恶魔")
+	LEG_DEMON_OCTOPUS("章鱼")
+	-->
+	<tentacleType>NONE</tentacleType>
+	
+	<!-- 触手数量,最大100,没有就填0 -->
+	<tentacleCount>0</tentacleCount>
+	
+	<!-- 可能出现的腿部类型 -->
+	<allowedLegConfigurations>
+		<configuration>BIPEDAL</configuration>
+	</allowedLegConfigurations>
+
+	<!-- 单数名称 -->
+	<name><![CDATA[腿]]></name>
+	<!-- 复数名称 -->
+	<namePlural><![CDATA[腿]]></namePlural>
+
+	<!-- 对男性的描述 -->
+	<descriptorsMasculine/>
+	<!-- 对女性的描述 -->
+	<descriptorsFeminine>
+		<descriptor><![CDATA[女性化]]></descriptor>
+	</descriptorsFeminine>
+
+	<!-- 对男性脚的描述 -->
+	<footDescriptorsMasculine/>
+	<!-- 对女性脚的描述 -->
+	<footDescriptorsFeminine/>
+
+	<!-- 对男性脚趾的描述 -->
+	<toeDescriptorsMasculine/>
+	<!-- 对女性脚趾的描述 -->
+	<toeDescriptorsFeminine/>
+
+	<!-- 当一个角色转变成这种腿的时候的描述语句
+		<br/> 转变语句之后便是对这种触角的形容
+		其中 <br/> 是换行符号
+		可以在<![CDATA[ ]]中使用解析指令
+		-->
+	<transformationDescription><![CDATA[
+	<br/>[npc.Name]现在拥有了[style.boldtengu(属于天狗的腿和脚)],[npc.materialDescriptor][npc.legFullDescription]。
+]]></transformationDescription>
+
+	<!-- 角色的描述页面对腿的描述。 -->
+	<bodyDescription><![CDATA[
+		[npc.Her]的腿[npc.materialCompositionDescriptor][npc.legFullDescription(true)]。
+	]]></bodyDescription>
+	
+</leg>

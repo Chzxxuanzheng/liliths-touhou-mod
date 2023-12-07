@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<wing>
+	<race>touhou_tengu</race>
+	
+	<transformationName><![CDATA[天狗]]></transformationName>
+	
+	<!-- The id of the material covering this wing.
+	The id will typically take the form of 'innoxia_hyena_fur'.
+	Hard-coded values can be found here: https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/body/coverings/BodyCoveringType.java -->
+	<coveringType>touhou_tengu_wing</coveringType>
+	
+	<!-- Whether this is a generic wing type or not (use the values 'true' or 'false' here).
+		是否是通用翅膀,通用翅膀可以被任何种族使用
+		Generic wing types are not associated with any race and therefore can be inherited by any race of wingless offspring, and should be defined as true if this wing type could be applied to any sort of race (such as the default 'feathered', 'leathery', and 'insect' wing types in the base game).
+		Will most likely be left as false here.  -->
+	<genericType>false</genericType>
+	
+	<!-- Whether this wing type grants the ability to fly. -->
+	<allowsFlight>true</allowsFlight>
+	
+	<!-- The minimum and maximum size that this wing type can be transformed into.
+	Default values are ZERO_TINY and FOUR_HUGE.
+	(23.11.26)
+	ZERO_TINY	微型
+	ONE_SMALL	小型
+	TWO_AVERAGE	中型
+	THREE_LARGE	大型
+	FOUR_HUGE	巨型
+	Values for wing sizes can be found here: https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/body/valueEnums/WingSize.java -->
+	<minimumSize>THREE_LARGE</minimumSize>
+	<maximumSize>FOUR_HUGE</maximumSize>
+	
+	<!-- The singular and plural names of this wing. -->
+	<name><![CDATA[天狗之翼]]></name>
+	<namePlural><![CDATA[天狗之翼]]></namePlural>
+	
+	<!-- The descriptors which should be drawn upon when describing a masculine character's wing of this type.
+	Can be left blank. -->
+	<descriptorsMasculine>
+		<descriptor><![CDATA[丰盈的]]></descriptor>
+		<descriptor><![CDATA[乌黑光亮的]]></descriptor>
+	</descriptorsMasculine>
+	<!-- Same as above, but for feminine characters. -->
+	<descriptorsFeminine>
+		<descriptor><![CDATA[丰盈的]]></descriptor>
+		<descriptor><![CDATA[乌黑光亮的]]></descriptor>
+	</descriptorsFeminine>
+	
+	<!-- The description which is shown when a character transforms to obtain this wing type.
+	This description immediately follows a brief description of the wing type beginning to transform. -->
+	<transformationDescription><![CDATA[
+		在天狗的强横力量涌动下,[npc.She]紧咬下唇,忍受着来自全身的疼痛,
+		在不知不觉中,
+		一对[npc.wingSize][npc.materialDescriptor][npc.wingFullDescription(true)]的天狗之翼从从[npc.her][npc.legConfiguration]
+		#IF (npc.getLegConfiguration().isWingsOnLegConfiguration())
+			身体的两侧长了出来。
+		#ELSE
+			的肩胛骨位置长了出来。
+		#ENDIF
+		<br/>[npc.Name]现在拥有[style.boldTfGeneric(一对乌鸦般的天狗之翼)]。
+	]]></transformationDescription>
+	
+	<!-- How this wing is described in a character's description page. -->
+	<bodyDescription><![CDATA[
+		[npc.sheHasFull]拥有一对[npc.wingSize]的乌鸦翅膀,[npc.materialDescriptor][npc.wingFullDescription(true)]。
+	]]></bodyDescription>
+	
+</wing>

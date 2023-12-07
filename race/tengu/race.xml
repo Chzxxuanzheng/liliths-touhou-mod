@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<race>
+	<!-- 不要用CRLF,用LF -->
+
+	<!-- Core definitions: -->
+	
+	<!-- The id for this race's associated RacialBody.
+	This should most often be the 'racialBody.xml' file found alongside this 'race.xml' file, and will follow the id generation of 'touhou_tengu'. -->
+	<racialBody>touhou_tengu</racialBody>
+	
+	<!-- Any special changes which should be applied to a newly-spawned character of this race.
+	This is applied *before* individual Subspecies' 'applySubspeciesChanges' method.
+	The character's body that's being changed can be accessed via using 'targetedBody'.
+	The code here is redundant, as clitoris girth is set to 4 in the racialBody.xml file, and modified in the spotted and striped subspecies files, but I've added it in here to show a working example. -->
+	<applyRaceChanges/>
+	<!-- The non-gendered name and plural name of this race when in anthropomorphic form. -->
+	<!-- 该种族的非性别名称和复数名称，当采用拟人化形式时 -->
+	<name><![CDATA[天狗]]></name><!-- 估计是非性别名称 -->
+	<namePlural><![CDATA[天狗]]></namePlural><!-- 复数 -->
+	<!-- 不礼貌的名称 -->
+	<nameFeral>
+		<name legConfiguration="BIPEDAL"><![CDATA[天狗]]></name>
+	</nameFeral>
+	<!-- 不礼貌的名称复数 -->
+	<nameFeralPlural>
+		<name legConfiguration="BIPEDAL"><![CDATA[天狗]]></name>
+	</nameFeralPlural>
+	
+	<!-- The name that will be used when referring to transformations related to this race (such as when changing body parts in the self-TF menu).
+	在引用与此种族相关的转换时将使用的名称
+	(例如在self-TF菜单中更改身体部位时)
+	It should most likely be the same value as that defined as 'nameFeral'. 
+	它应当与nameFeral的值相同
+	-->
+	<defaultTransformName><![CDATA[天狗]]></defaultTransformName>
+	
+	<!-- The colour of this race.
+	种族的颜色
+	A PresetColour value should be used here, defined as a modded colour, or drawn from: https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/utils/colours/PresetColour.java
+	颜色定义看上述链接(自定义颜色要写到colours) -->
+	<colour>touhou_tengu</colour>
+	
+	<!-- How this race will typically treat strangers.
+	This value is not really used much in the game, so don't worry if you're unsure of which value to use.
+	这场比赛通常会如何对待陌生人。
+	这个值在游戏中使用得并不多，所以如果你不确定该使用哪个值，不要担心。
+	值可以看下面链接
+	我查出来的值(23.11.21日查阅)
+	CIVILIZED		文明的
+	NEUTRAL			中立的
+	UNPREDICTABLE	不可预测的
+	SAVAGE			粗鲁的
+	Values can be found here: https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/race/Disposition.java -->
+	<disposition>CIVILIZED</disposition>
+	
+	<!-- What kind of animal this race is based on.
+	这个种族是以什么样的动物为基础的?
+	值还是可以从这个链接查
+	我查出来的值(23.11.21日查阅)
+	MAMMAL(true, true),			哺乳类
+	BIRD(true, true),			鸟
+	REPTILE(false, false),		爬行动物
+	AMPHIBIAN(false, false),	两栖动物
+	FISH(false, false),			鱼
+	INSECT(false, false),		昆虫
+	OTHER(true, true); // 可以用来指代元素生物
+	据说这帮东西不影响泌乳,有木有翅膀之类的
+	Values can be found here: https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/race/RacialClass.java -->
+	<racialClass>MAMMAL</racialClass>
+	
+	<!-- Whether this race can be transformed into a feral form or not.
+	这个种族是否可以转变成一个野性的形式。(变动物?)
+	这个值通常应该是true,除非你写的种族没动物形态
+	This should typically be left as true, unless the race you are creating has no animal equivalent (examples of a false value would be for humans, demons, and angels). -->
+	<feralPartsAvailable>false</feralPartsAvailable>
+	
+	<!-- Whether this race has access to the self-transformation menu or not.
+	这个种族是否可以访问变形菜单?(好像是能决定是否变形)
+	这通常应保留为false
+	This should typically be left as false. -->
+	<ableToSelfTransform>false</ableToSelfTransform>
+	
+	<!-- Whether this is a race capable of flight or not. -->
+	<!-- 是否有能力飞行? -->
+	<flyingRace>false</flyingRace>
+	
+	
+	<!-- Combat: -->
+	<!-- 战斗: -->
+	
+	<!-- This race's typical behaviour in combat can be defined here.
+	这个种族战斗时的行为在这里定义
+	This behaviour will determine what attacks the race typically prefers to use in combat, and will be used if no specific combat behaviour has been defined for a character.
+	这种行为将决定种族在战斗中通常喜欢使用什么攻击，如果没有为角色定义特定的战斗行为，则会使用默认值BALANCED
+	The default value is 'BALANCED'.
+	可以在下面链接查值
+	我查出来的值(23.11.21日查阅)
+	BALANCED	平衡的
+	ATTACK		攻击
+	DEFEND		防御
+	SEDUCE		勾引
+	SPELLS		奥数
+	SUPPORT		帮盟友
+	Values can be found here: https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/combat/CombatBehaviour.java -->
+	<combatBehaviour>BALANCED</combatBehaviour>
+	
+	
+	<!-- Breeding: -->
+	<!-- 生育: -->
+	
+	<!-- The percentage chance for offspring of this race to be male.
+	Acceptable values are floats between 0 and 1, representing 0% to 100%, with the standard value being 0.5 (representing 50%).
+	这个种族的后代成为雄性的几率百分比。
+	可接受的值是介于0和1之间的浮动值，表示0%到100%，标准值为0.5（表示50%）。 -->
+	<chanceForMaleOffspring>0</chanceForMaleOffspring>
+	
+	<!-- The minimum and maximum number of offspring in each litter which females of this race produce. -->
+	<numberOfOffspringLow>1</numberOfOffspringLow>
+	<numberOfOffspringHigh>3</numberOfOffspringHigh>
+	
+	
+	<!-- Gameplay preferences: -->
+	<!-- 游戏偏好: -->
+	
+	<!-- 在一款使用完全默认设置的新游戏中,雌性和雄性的“毛茸茸”级别应该是多少。
+	Provided that you allow the player to adjust this via the content settings, this value isn't really too important, and should probably be left as 'NORMAL' unless there's a specific reason to change it.
+	如果你允许玩家通过内容设置进行调整，这个值其实并不太重要，除非有特定的原因需要更改，否则可能会保留为“NORMAL”
+	又是查值环节
+	(23.11.21)
+	HUMAN		没福瑞(NPC将以正常人的身份繁殖)
+	MINIMUM		有会有毛茸茸的尾巴,角,天线和翅膀,不会用毛茸茸的乳房或生殖器
+	懒得翻了,摆烂,反正芙兰用不上
+	/**NPCs will spawn with all of the furry parts that the 'Minimum' setting enables (ears, eyes, tails, horns, antenna, and wings). They also have the chance to spawn with furry breasts, genitalia, arms, and legs.*/
+	REDUCED("Lesser", PresetColour.TRANSFORMATION_PARTIAL_FULL, "-") {
+	/**NPCs will spawn with all of the furry parts that the 'Minimum' setting enables (ears, eyes, tails, horns, antenna, and wings). They also have the chance to spawn with furry breasts, genitalia, arms, legs, skin/fur, and faces.*/
+	NORMAL("Greater", PresetColour.TRANSFORMATION_LESSER, "+") {
+	/**NPCs will <b>always</b> spawn with as many furry parts as is possible (ears, eyes, tails, horns, antenna, wings, breasts, genitalia, arms, legs, skin/fur, and face).*/
+	MAXIMUM
+	Values can be found here: https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/race/FurryPreference.java -->
+	<defaultFemininePreference>HUMAN</defaultFemininePreference>
+	<defaultMasculinePreference>HUMAN</defaultMasculinePreference>
+	
+	<!-- Whether or not the player can change this race's default furry level via the content settings screen.
+	This should probably be left as 'true', but if you want to make a race like harpies, which requires all newly-spawned characters to be created at a 'NORMAL' level of FurryPreference, then set this to false. -->
+	<affectedByFurryPreference>true</affectedByFurryPreference>
+	
+</race>
