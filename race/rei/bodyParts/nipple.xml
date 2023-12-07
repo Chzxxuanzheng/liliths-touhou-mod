@@ -7,7 +7,7 @@
 	
 	<!-- The id of the race which this nipple belongs to.
 	This will almost always be the id of the race in which this type is found (in this case hyena). -->
-	<race>touhou_yurei</race>
+	<race>touhou_rei</race>
 	
 	<!-- The id of the material covering this nipple.
 	This should always be left as 'NIPPLES'.

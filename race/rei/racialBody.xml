@@ -101,7 +101,7 @@
 	
 	<!-- The id of the body covering which should be used for this race's body hair. -->
 	<!-- 头发id -->
-	<bodyHair>touhou_yurei_bodyHair</bodyHair>
+	<bodyHair>touhou_rei_bodyHair</bodyHair>
 	<!--
 	(23.11.22)
 	NORMAL			普通
@@ -188,7 +188,7 @@
 	RABBIT_MORPH
 	BAT_MORPH
 	HARPY -->
-	<armType>touhou_yurei_arm</armType>
+	<armType>touhou_rei_arm</armType>
 	<!-- 这个种族有多少个手臂 -->
 	<armRows>1</armRows>
 	
@@ -212,7 +212,7 @@
 	BAT_MORPH
 	HARPY -->
 	<!-- https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/body/types/ArmType.java -->
-	<assType>touhou_yurei_ass</assType>
+	<assType>touhou_rei_ass</assType>
 	
 	<!-- 屁股大小 are from 0 to 7. Values: https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/body/valueEnums/AssSize.java -->
 	<maleAssSize>2</maleAssSize>
@@ -250,7 +250,7 @@
 	REINDEER_MORPH
 	HARPY -->
 	<!-- https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/body/types/BreastType.java -->
-	<breastType>touhou_yurei_breast</breastType>
+	<breastType>touhou_rei_breast</breastType>
 	
 	<!-- The shape which this race's breasts can be.
 	那些形状这个种族可以有
@@ -354,13 +354,13 @@
 	<!-- 脸: -->
 	
 	<!-- https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/body/types/FaceType.java -->
-	<faceType>touhou_yurei_face</faceType>
+	<faceType>touhou_rei_face</faceType>
 	
 	<!-- https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/body/types/EyeType.java -->
-	<eyeType>touhou_yurei_eye</eyeType>
+	<eyeType>touhou_rei_eye</eyeType>
 	
 	<!-- https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/body/types/EarType.java -->
-	<earType>touhou_yurei_ear</earType>
+	<earType>touhou_rei_ear</earType>
 	
 	<!-- 唇部尺寸从0到7 Values: https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/body/valueEnums/LipSize.java -->
 	<maleLipSize>1</maleLipSize> <!-- 男 -->
@@ -370,7 +370,7 @@
 	<!-- 头发: -->
 	
 	<!-- https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/body/types/HairType.java -->
-	<hairType>touhou_yurei_hair</hairType>
+	<hairType>touhou_rei_hair</hairType>
 	
 	<!-- 头发长度,单位cm. Values: https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/body/valueEnums/HairLength.java -->
 	<maleHairLength>4</maleHairLength>
@@ -393,7 +393,7 @@
 	<!-- 腿: -->
 	
 	<!-- https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/body/types/LegType.java -->
-	<legType>touhou_yurei_leg</legType>
+	<legType>touhou_rei_leg</legType>
 	
 	<!-- (23.11.22)
 	BIPEDAL		人类、恶魔、天使用这个
@@ -411,7 +411,7 @@
 	<!-- 阴茎: -->
 	
 	<!-- https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/body/types/PenisType.java -->
-	<penisType>touhou_yurei_penis</penisType>
+	<penisType>touhou_rei_penis</penisType>
 	
 	<!-- 长度,单位cm,Values from 0 to 100, measured in cm (don't use -1). Values: https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/body/valueEnums/PenisLength.java -->
 	<penisLength>10</penisLength>
@@ -445,13 +445,13 @@
 	<!-- 躯干: -->
 	
 	<!-- https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/body/types/TorsoType.java -->
-	<torsoType>touhou_yurei_torso</torsoType>
+	<torsoType>touhou_rei_torsoYurei</torsoType>
 	
 	
 	<!-- 阴道: -->
 	
 	<!-- https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/body/types/VaginaType.java -->
-	<vaginaType>touhou_yurei_vagina</vaginaType>
+	<vaginaType>touhou_rei_vagina</vaginaType>
 	
 	<!-- 阴蒂大小Values from 0 to 100, with any value over 0 enabling the clit to be used as a penetrative object in sex (i.e. as a pseudo-penis).
 	Values: https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/body/valueEnums/ClitorisSize.java -->

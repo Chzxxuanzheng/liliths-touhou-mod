@@ -6,7 +6,7 @@
 	
 	<!-- The id for this race's associated RacialBody.
 	This should most often be the 'racialBody.xml' file found alongside this 'race.xml' file, and will follow the id generation of 'author_raceName'. -->
-	<racialBody>touhou_yurei</racialBody>
+	<racialBody>touhou_rei</racialBody>
 	
 	<!-- Any special changes which should be applied to a newly-spawned character of this race.
 	This is applied *before* individual Subspecies' 'applySubspeciesChanges' method.

@@ -7,14 +7,14 @@
 	
 	<!-- The id of the race which this testicle belongs to.
 	This will almost always be the id of the race in which this type is found (in this case hyena). -->
-	<race>touhou_yurei</race>
+	<race>touhou_rei</race>
 	
 	<!-- The id of the material covering this testicle.
 	Hard-coded values can be found here: https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/body/coverings/BodyCoveringType.java -->
-	<coveringType>touhou_yurei_skin</coveringType>
+	<coveringType>touhou_rei_skin</coveringType>
 	
 	<!-- The id of the fluid that's associated with this testicle type. -->
-	<fluidType>touhou_yurei_cum</fluidType>
+	<fluidType>touhou_rei_cum</fluidType>
 	
 	<!-- Whether this testicle type is located internally or not by default. -->
 	<!-- 是否是内置的. -->

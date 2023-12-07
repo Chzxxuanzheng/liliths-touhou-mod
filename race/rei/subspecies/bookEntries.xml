@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<bookText>
+	
+	<htmlContent tag="touhou_yurei_BASE" author="稗田阿求"><![CDATA[
+	<div class='container-full-width' style='width:35%; float:left;'>
+		<p style='width:100%; text-align:left;'>
+			<b>超自然能力的具现</b><br>
+			<b>吸血鬼</b>
+		</p>
+		<hr/>
+		<table align='left'>
+			<tr>
+				<td style='width:50%; text-align:left;'>主要危险度</td>
+				<td style='text-align:left;'>低</td>
+			</tr>
+			<tr>
+				<td style='width:50%; text-align:left;'>遭遇频度</td>
+				<td style='text-align:left;'>高</td>
+			</tr>
+			<tr>
+				<td style='width:50%; text-align:left;'>多样性</td>
+				<td style='text-align:left;'>高</td>
+			</tr>
+			<tr>
+				<td style='width:50%; text-align:left;'>主要遭遇场所</td>
+				<td style='text-align:left;'>幻想乡任何地点</td>
+			</tr>
+			<tr>
+				<td style='width:50%; text-align:left;'>主要遭遇时间</td>
+				<td style='text-align:left;'>任何时间</td>
+			</tr>
+		</table>
+	</div>
+	<br><br><br><br><br><br><br><br><br><br><br>
+	]]>
+	</htmlContent>
+
+	<htmlContent tag="touhou_yurei_ADVANCED" author="稗田阿求"><![CDATA[
+	<hr>
+	<h6>特征</h6>
+	<br>
+	动植物气质的正体。所见所闻，所触所尝都转换成思维，就像感性转换器般的存在。<br>
+	它们没有肉体，形态就像不定形的空气。可以自由出入任何地方，也能按意志自由变换形状。<br>
+	人们很容易将死者的具现亡灵和幽灵混为一谈，幽灵并不一定是死者的灵。有的幽灵就这么出现，消失时直接消失。不同于亡灵，从死者处能产生复数的幽灵。这性质类似于妖精，妖精是大自然的具现，幽灵是气质的具现。<br>
+	生息场所（×1不知生息这说法是否正确。）是幻想乡的任何地方。喜欢热闹的幽灵会聚集在繁华的地方，喜欢幽静的幽灵会聚集在阴暗的地方，喜欢温泉的幽灵则聚集在温泉附近。<br>
+	活动时间多是夜晚。幽灵多数是介于快要消失与未消失之间的存在，是难以在日光下活动的。<br>
+	还有就是幽灵的体温非常低（×2心是冰冷的东西。）。贸然触碰，很可能会被冻伤的。<br>
+	相反，利用这低温进行的活动，就是试胆大会。在炎炎夏夜，前往幽灵聚集的地方探索，无疑是一服令人舒畅的清凉剂（×3冬天的幽灵是受忌讳的。）。<br>
+	<br>
+	<h6>危害内容</h6>
+	<br>
+	幽灵的可怕在于能够影响附近居民的精神。若附近有好多开朗的幽灵，不知何时起自己也会变得有活力。相反若附近聚集了好多阴气沉沉的幽灵，居民也会变得忧郁。<br>
+	例如一些常有人自杀的景点，那是因为那里聚集了很多阴气沉沉的幽灵。<br>
+	精神力不强的人若遇到强力的幽灵，有可能会被精神破坏。<br>
+	还有就是它们温度低，若一直被直接抱住，会冻伤的。<br>
+	<br>
+	<h6>应对方法</h6>
+	<br>
+	想不碰到幽灵是不可能的，唯一的方法就是撞见了也不要受影响。<br>
+	一般来说，幽灵是幻一般脆弱的存在。正常的人就算被数只幽灵包围，也没什么事。<br>
+	只是在精神脆弱的状态下（×4例如中了妖精恶作剧的时候。）被缠上的话，那就有危险了。<br>
+	应对方法就是拥有一颗坚强的心，不怕幽灵。<br>
+	不过聚集了大量幽灵的地方（×5例如墓地。常有幽灵现场大会。）还是不要因好奇而接近。可能会被精神破坏。若中招了，只有请专家（×6虽说巫女不太可靠……）来祈祝了。<br>
+	另一方面，现今正在研究驱使附灵的法术来矫正个人的性格。利用这技术，能阻止想自杀的人的意愿，让讨厌吃蔬菜的人克服能吃等等。若能确定捕获幽灵的方法，这技术能进展到实用阶段。<br>
+	可以说，人类未来丰富的精神社会，是和幽灵紧密相联的，这句话一点也不为过。<br>
+	]]>
+	</htmlContent>
+
+	<htmlContent tag="touhou_bourei_BASE" author="稗田阿求"><![CDATA[
+	<div class='container-full-width' style='width:35%; float:left;'>
+		<p style='width:100%; text-align:left;'>
+			<b>纯粹的人类精神</b><br>
+			<b>亡灵</b>
+		</p>
+		<hr/>
+		<table align='left'>
+			<tr>
+				<td style='width:50%; text-align:left;'>主要危险度</td>
+				<td style='text-align:left;'>极高</td>
+			</tr>
+			<tr>
+				<td style='width:50%; text-align:left;'>遭遇频度</td>
+				<td style='text-align:left;'>高</td>
+			</tr>
+			<tr>
+				<td style='width:50%; text-align:left;'>多样性</td>
+				<td style='text-align:left;'>低</td>
+			</tr>
+			<tr>
+				<td style='width:50%; text-align:left;'>主要遭遇场所</td>
+				<td style='text-align:left;'>幻想乡任何地点</td>
+			</tr>
+			<tr>
+				<td style='width:50%; text-align:left;'>主要遭遇时间</td>
+				<td style='text-align:left;'>任何时间</td>
+			</tr>
+		</table>
+	</div>
+	<br><br><br><br><br><br><br><br><br><br><br>
+	]]>
+	</htmlContent>
+
+	<htmlContent tag="touhou_bourei_ADVANCED" author="稗田阿求"><![CDATA[
+	<hr>
+	<h6>特征</h6>
+	<br>
+	当死者的灵不知道自己已死了，和不愿承认已死的意念太强烈时，就会无法成佛而变成亡灵。亡灵和幽灵是不一样的。亡灵能变成生前的模样，能对话和触碰事物，和正常人在一起无法区别。体温也不低，只有人类这种生物会变成亡灵。<br>
+	多数亡灵没有过河，一直留在现界，最后被送往冥界和地狱。那样子是绝对不能轮回转生的。<br>
+	一旦变成亡灵，在达成心愿和身体受供养前，是无法成佛的（×1有的亡灵不知道自己已死，发现自己的身体就会消失。）。<br>
+	亡灵的声音很容易对人造成影响，聊得忘形是很危险的。特别是有怨念的亡灵，是很大的威胁。一定要找到本体（×2尸体。），并供养起来。<br>
+	另一方面，亡灵的弱点就是本体（×3尸体是不会动的。）。亡灵都会隐藏自己的尸体，不会暴露人前。<br>
+	虽然没有身体，也不会像幽灵那么稀薄，能触碰事物。相反很难穿过事物（×4因为深信自己还没有死去。）。毕竟是没有身体，所以就算能触碰事物，也不会受伤。<br>
+	<br>
+	<h6>危害内容</h6>
+	<br>
+	>发狂、幽灵化<br>
+	缠绕在人的身边一起生活，身边有亡灵人们却不知道是很恐怖的。<br>
+	就算亡灵本身无恶意，触碰到死者人们会在不知不觉间步向死亡。<br>
+	而且若亡灵是家人或是好友，人们就会踌躇，有的人还会一起生活。<br>
+	表面看来死后也能在一起，不过亡灵是排除在轮回转生之外的，只能永远地彷徨，而且也有可能在不觉间，家族全体都死亡了。<br>
+	更为可怕是怀着怨恨的亡灵，假装是人类和持有善意，欺骗生者，来杀人报仇。<br>
+	<br>
+	<h6>应对方法</h6>
+	<br>
+	被亡灵纠缠上，只有请专家来供养。<br>
+	亡灵的可怕在于，被害者接受亡灵。无论是多熟识的人，如果对方是已死的人又再次出现的话，就要狠下心来请专家供养。<br>
+	要小心不要被怨恨。特别误杀了人时，要赶快进行供养和忏悔。若是故意杀人，那就算被杀也是自作自受了……<br>
+	]]>
+	</htmlContent>
+
+	<htmlContent tag="touhou_kyou_BASE" author="稗田阿求"><![CDATA[
+	<div class='container-full-width' style='width:35%; float:left;'>
+		<p style='width:100%; text-align:left;'>
+			<b>忠诚的尸体</b><br>
+			<b>宫古芳香 Miyako Yoshika</b>
+		</p>
+		<hr/>
+		<table align='left'>
+			<tr>
+				<td style='width:50%; text-align:left;'>能力</td>
+				<td style='text-align:left;'>什么都能吃的程度的能力</td>
+			</tr>
+			<tr>
+				<td style='width:50%; text-align:left;'>遭遇频度</td>
+				<td style='text-align:left;'>高</td>
+			</tr>
+			<tr>
+				<td style='width:50%; text-align:left;'>危险度</td>
+				<td style='text-align:left;'>极高</td>
+			</tr>
+			<tr>
+				<td style='width:50%; text-align:left;'>人类友好度</td>
+				<td style='text-align:left;'>完全没有</td>
+			</tr>
+			<tr>
+				<td style='width:50%; text-align:left;'>主要活动场所</td>
+				<td style='text-align:left;'>墓地</td>
+			</tr>
+		</table>
+	</div>
+	<br><br><br><br><br><br><br><br><br><br><br>
+	]]>
+	</htmlContent>
+
+	<htmlContent tag="touhou_kyou_ADVANCED" author="稗田阿求"><![CDATA[
+	<hr>
+	死后被邪仙操纵着的僵尸。僵尸因为是尸体所以也是放不久的。但是因为她的身体被施了防腐的咒语所以不会腐烂（×1 脑髓除外。）。<br>
+	因为是僵尸所以没有自我。由于不会感觉到痛楚和疲惫，所以能突破正常肉体的限制，发挥常人所以没有的力量（×2 人类一般来说只能使用极限的八分之一程度的力而已。）。<br>
+	性格不明。与其说是判断不到她在想什么、感觉到什么……不如说是什么都没在想，什么都感觉不到。行动上对邪仙言听计从，是因为对目前发生什么事都理解不了的缘故吧。曾经拜托她「烧条鱼来看看」但是只变成「直到鱼烧到变成炭为止都一直在盯着看」。虽然是忠诚的部下，但似乎不是能干的部下吧。<br>
+	<br>
+	<h6>生前的她</h6>
+	<br>
+	现在已经无法判断她是来自哪个时代的人了。<br>
+	现在幻想乡中一个记得她的人都没有，尸体就是邪仙的所有物（×3 把尸体作为东西操纵摆弄。通常来说只有亲属可以领回去。）。从邪仙给她施了防腐的咒语的地方来看，说不定并不是属于这个时代的人吧。<br>
+	眼看身体表面没什么瑕疵与伤口似乎是很年轻的时候就死去了，向懂医药的人问过后，推断怀疑是被毒杀的样子。虽然这么说，因为是连亲人都没有一个的尸体，谁都不会去寻根究底去的。所有事实也是有时效的。<br>
+	但是我想她还存在一些生前的记忆吧。当撕去符咒，从邪仙的咒缚中解放后，似乎她就会回到生前的行动模式吧。曾经在空旷墓地那如同毯子一般铺满地面的红叶上，看见她呆然站于其处的，咏唱着诗歌的身影。稍微有些被吓到呢。<br>
+	<br>
+	<h6>对应方法</h6>
+	<br>
+	因为就算没什么特别理由她也会突然袭击过来所以要特别注意。<br>
+	由于不会有痛感所以大部分的攻击都是无效的（×4 是会受伤，但她却不会胆怯。）。但是因为行动迟钝要逃走还是很容易的。要是被当作敌人的话，还是请尽快离开那地方吧。<br>
+	万一，要是被咬到的话就已经太迟了。<br>
+	虽然只是暂时性，但还是会变成僵尸而丑态尽现。更甚者，无意识地咬了别人，说不准自己也变成在帮忙一起增加僵尸同伴。光是这件事就不得不回避她。<br>
+	]]>
+	</htmlContent>
+
+	<htmlContent tag="touhou_sourei_BASE" author="稗田阿求"><![CDATA[
+	骚灵，别名Poltergeist，简单的说就是吵闹的灵的意思。骚灵发出的声音，不是普通的声音，而是音之幽灵。
+	]]>
+	</htmlContent>
+
+	<htmlContent tag="touhou_sourei_ADVANCED" author="稗田阿求"><![CDATA[
+	这响声不是耳朵听的，而是精神上的回响，没有身体的幽灵等也会喜欢。与此同时，需要注意这对人类也会造成强烈影响。另外，骚灵在安静的场所不会安分地呆着。
+	]]>
+	</htmlContent>
+</bookText>

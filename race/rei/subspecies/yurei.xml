@@ -4,9 +4,9 @@
 	
 	<!-- The race which this subspecies belongs to. -->
 	<!-- 这个亚种属于那个种族 -->
-	<race>touhou_yurei</race>
+	<race>touhou_rei</race>
 	<!-- 头发id -->
-	<bodyHair>touhou_yurei_bodyHair</bodyHair>
+	<bodyHair>touhou_rei_bodyHair</bodyHair>
 	<!-- The colour of this subspecies.
 	Will usually be the same as the race's colour.
 	The 'colour' value is used in most places as the base colour for this subspecies.
@@ -97,12 +97,8 @@
 	不应通过targetedBody.getRace()访问正在检查的主体的种族，而应使用'targetedRace'访问。
 	-->
 	<subspeciesWeighting><![CDATA[
-		#IF(targetedRace==RACE_touhou_yurei)
-			#IF(targetedBody.getTorsoType() == TORSO_TYPE_touhou_yurei_torsoY)
-				0
-			#ELSE
-				100
-			#ENDIF
+		#IF(targetedRace==RACE_touhou_rei)
+			50
 		#ELSE
 			0
 		#ENDIF
@@ -140,7 +136,7 @@
 	描述元素,这里写名字,具体内容应当写到'bookEntries.xml'里
 	These should be entered into the 'bookEntries.xml' file in the same folder location as this file. -->
 	<basicDescriptionId>touhou_yurei_BASE</basicDescriptionId>
-	<advancedDescriptionId></advancedDescriptionId>
+	<advancedDescriptionId>touhou_yurei_ADVANCED</advancedDescriptionId>
 	
 	<!-- 刷新率
 	(23.11.22)
@@ -149,7 +145,7 @@
 	TWO_AVERAGE
 	THREE_HIGH
 	FOUR_ABUNDANT -->
-	<defaultPreference>TWO_AVERAGE</defaultPreference>
+	<defaultPreference>ONE_LOW</defaultPreference>
 	
 	<!-- 该亚种在非野生形态时的名称。
 	(可能应该由“namesDefault”元素覆盖) -->
@@ -180,57 +176,10 @@
 	</nameHalfDemon>
 	
 	<!-- 野生的. -->
-	<feralAttributes>
-		<!-- Naming: -->
-		<feralName><![CDATA[幽灵]]></feralName>
-		<feralNamePlural><![CDATA[幽灵]]></feralNamePlural>
-		<feralSingularMaleName><![CDATA[幽灵]]></feralSingularMaleName>
-		<feralSingularFemaleName><![CDATA[幽灵]]></feralSingularFemaleName>
-		<feralPluralMaleName><![CDATA[幽灵]]></feralPluralMaleName>
-		<feralPluralFemaleName><![CDATA[幽灵]]></feralPluralFemaleName>
-		
-		<!-- The leg configuration that a feral form of this subspecies has.
-		腿的形状,决定了这个亚种的体型
-		This determines their overall body shape. -->
-		<legConfiguration>BIPEDAL</legConfiguration>
-		<!-- Whether or not this feral form's size is measured as height from floor to head, as for most mammals (true), or from head to tail (false), as for alligators and other low-lying animals which are far longer than they are tall. -->
-		<!-- 长度怎么计算
-		true:从头到脚底的长度
-		false:从头到尾巴的长度 -->
-		<sizeHeight>true</sizeHeight>
-		<!-- The height/length of this subspecies' feral form, measured in cm. -->
-		<!-- 身高,单位:cm. -->
-		<size>150</size>
-		
-		<!-- The number of breast rows this feral form has on their chest.
-		野生动物的乳房数
-		这通常是0,因为它指的是处于人类位置的乳房,而大多数动物都没有
-		This will usually be 0, as it refers to breasts in the position of humans, which most animals lack. -->
-		<breastRowCount>0</breastRowCount>
-		<!-- The number of nipples per breast.
-		每个乳房的乳头数量
-		'breastRowCount'为0是,整个数值没意义
-		If the 'breastRowCount' is 0, this value is never used. -->
-		<nipplesPerBreastCount>1</nipplesPerBreastCount>
-		<!-- The number of breast rows this feral form has near their crotch. -->
-		<!-- 胯胸,同时 -->
-		<crotchBreastRowCount>0</crotchBreastRowCount>
-		<!-- The number of nipples per crotch breast. -->
-		<nipplesPerCrotchBreastCount>1</nipplesPerCrotchBreastCount>
-		
-		<!-- Whether this feral form has arms or wings. -->
-		<!-- 这种野兽是否有胳膊或者翅膀 -->
-		<armsOrWingsPresent>true</armsOrWingsPresent>
-		<!-- Whether this feral form has fingers which they can use to manipulate objects. -->
-		<!-- 这种野性形态是否有手指可以用来操纵物体 -->
-		<fingerActionsAvailable>false</fingerActionsAvailable>
-		<!-- Whether or not this feral form has hair on its head that's clearly distinct from the rest of its fur (which also includes manes). -->
-		<!-- 无论这种野生动物的头上是否有与其他皮毛(也包括鬃毛)明显不同的毛发. -->
-		<hairPresent>true</hairPresent>
-	</feralAttributes>
+	<feralAttributes/>
 	
 	<!-- 该亚种的提示工具. -->
-	<statusEffectDescription><![CDATA[身为幽灵的[npc.NamePos]正缓缓的漂浮在空中,不自觉的释放着寒气]]></statusEffectDescription>
+	<statusEffectDescription><![CDATA[身为幽灵的[npc.NamePos]正在不自觉的释放着寒气。]]></statusEffectDescription>
 	
 	<!-- The core attributes which a character of this subspecies benefits from.
 	The text inside the 'attribute' element corresponds to an Attribute found here: https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/attributes/Attribute.java 
@@ -276,10 +225,8 @@
 	<statusEffectAttributeModifiers>
 		<attribute value="5">MAJOR_ARCANE</attribute>	<!-- 奥术 -->
 		<attribute value="5">SPELL_COST_MODIFIER</attribute>	<!-- 法术效率 -->
-		<attribute value="9999">RESISTANCE_PHYSICAL</attribute>	<!-- 物理护盾 -->
-		<attribute value="-30">RESISTANCE_FIRE</attribute>	<!-- 寒冰伤害 -->
+		<attribute value="-30">RESISTANCE_FIRE</attribute>	<!-- 寒冰护盾 -->
 		<attribute value="50">DAMAGE_ICE</attribute>	<!-- 寒冰伤害 -->
-		<attribute value="-100">DAMAGE_UNARMED</attribute>	<!-- 徒手伤害 -->
 	</statusEffectAttributeModifiers>
 	
 	<!--该亚种的状态效果工具提示中应列出的任何额外效果
@@ -291,7 +238,7 @@
 	三种主要攻击的权重
 	The weightings are relative to each other, and so you can use whatever values you want, but be aware that negative numbers, or a total number weight greater than 2,147,483,647 will produce unexpected results. -->
 	<perkWeightings>
-		<category masculineWeighting="10" feminineWeighting="0">PHYSICAL</category>
+		<category masculineWeighting="10" feminineWeighting="10">PHYSICAL</category>
 		<category masculineWeighting="1" feminineWeighting="1">LUST</category>
 		<category masculineWeighting="10" feminineWeighting="10">ARCANE</category>
 	</perkWeightings>

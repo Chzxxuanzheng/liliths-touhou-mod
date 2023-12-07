@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <torso>
-	<race>touhou_yurei</race>
+	<race>touhou_rei</race>
 	<transformationName><![CDATA[人(半灵)]]></transformationName>
 	
-	<coveringType>touhou_yurei_skin</coveringType>
+	<coveringType>touhou_rei_skin</coveringType>
 	
 	<descriptorsMasculine>
 		<descriptor>健壮的</descriptor>
@@ -16,7 +16,7 @@
 	</descriptorsFeminine>
 	
 	<transformationDescription><![CDATA[
-		</br>[npc.Name]现在拥有[style.boldHuman(幽灵的)][npc.skinFullDescription]
+		</br>[npc.Name]现在拥有[style.boldHuman([#npc.getSubspecies().getName(npc.getBody())]的)][npc.skinFullDescription]
 	]]></transformationDescription>
 	
 	<bodyDescription><![CDATA[

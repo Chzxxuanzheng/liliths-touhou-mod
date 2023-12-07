@@ -7,15 +7,15 @@
 	
 	<!-- The id of the race which this leg belongs to.
 	This will almost always be the id of the race in which this type is found (in this case hyena). -->
-	<race>touhou_yurei</race>
+	<race>touhou_rei</race>
 	
 	<!-- The name that will be used when referring to transformations related to this type (such as when changing body parts in the self-TF menu). -->
-	<transformationName><![CDATA[幽灵]]></transformationName>
+	<transformationName><![CDATA[[#npc.getSubspecies().getName(npc.getBody())]]]></transformationName>
 	
 	<!-- The id of the material covering this leg.
 	The id will typically take the form of 'innoxia_hyena_fur'.
 	Hard-coded values can be found here: https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/body/coverings/BodyCoveringType.java -->
-	<coveringType>touhou_yurei_skin</coveringType>
+	<coveringType>touhou_rei_skin</coveringType>
 	
 	<!-- The default structure of the foot that's on the end of this leg.
     NONE("无", "[npc.She]没有脚。"),
@@ -98,7 +98,7 @@
 	<!-- The description which is shown when a character transforms to obtain this leg type.
 	This description immediately follows a brief description of the leg type beginning to transform. -->
 	<transformationDescription><![CDATA[	
-	<br/>[npc.Name]现在拥有了[style.boldHyena(幽灵的腿)],[npc.materialDescriptor][npc.legFullDescription]。
+	<br/>[npc.Name]现在拥有了[style.boldHyena([#npc.getSubspecies().getName(npc.getBody())]的腿)],[npc.materialDescriptor][npc.legFullDescription]。
 ]]></transformationDescription>
 	
 	<!-- How these legs are described in a character's description page. -->

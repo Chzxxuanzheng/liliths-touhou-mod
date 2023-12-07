@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <fluid>
-	<race>touhou_yurei</race>
+	<race>touhou_rei</race>
 	
-	<transformationName><![CDATA[幽灵]]></transformationName>
+	<transformationName><![CDATA[[#npc.getSubspecies().getName(npc.getBody())]]]></transformationName>
 	
 	<baseFluidType>GIRLCUM</baseFluidType>
 	
@@ -13,11 +13,11 @@
 	<namesFeminine/>
 	
 	<descriptorsMasculine>
-		<name><![CDATA[幽灵]]></name>
+		<name><![CDATA[[#npc.getSubspecies().getName(npc.getBody())]]]></name>
 	</descriptorsMasculine>
 	
 	<descriptorsFeminine>
-		<name><![CDATA[幽灵]]></name>
+		<name><![CDATA[[#npc.getSubspecies().getName(npc.getBody())]]]></name>
 	</descriptorsFeminine>
 	
 	<defaultFluidModifiers/>

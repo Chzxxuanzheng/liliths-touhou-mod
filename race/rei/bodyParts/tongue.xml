@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <tongue>
-	<race>touhou_yurei</race>
+	<race>touhou_rei</race>
 	<coveringType>TONGUE</coveringType>
 	<defaultLength><![CDATA[4]]></defaultLength>
 	<name><![CDATA[舌头]]></name>

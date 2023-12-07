@@ -4,20 +4,20 @@
 	
 	<!-- For a commented example of a fluid type, see 'milk.xml'. -->
 	
-	<race>touhou_yurei</race>
+	<race>touhou_rei</race>
 	
-	<transformationName><![CDATA[幽灵]]></transformationName>
+	<transformationName><![CDATA[[#npc.getSubspecies().getName(npc.getBody())]]]></transformationName>
 	
 	<baseFluidType>CUM</baseFluidType>
 	
 	<flavour>CUM</flavour>
 	
 	<namesMasculine>
-		<name><![CDATA[幽灵]]></name>
+		<name><![CDATA[[#npc.getSubspecies().getName(npc.getBody())]]]></name>
 	</namesMasculine>
 	
 	<namesFeminine>
-		<name><![CDATA[幽灵]]></name>
+		<name><![CDATA[[#npc.getSubspecies().getName(npc.getBody())]]]></name>
 	</namesFeminine>
 	
 	<descriptorsMasculine/>

@@ -2,11 +2,11 @@
 <arm>
 	<!-- GENERAL INFORMATION: If you are unsure of anything, please use the LT Discord to ask for help! -->
 	
-	<race>touhou_yurei</race>
+	<race>touhou_rei</race>
 	
 	<!-- The name that will be used when referring to transformations related to this type (such as when changing body parts in the self-TF menu). -->
-	<transformationName><![CDATA[幽灵]]></transformationName>
-	<coveringType>touhou_yurei_skin</coveringType>
+	<transformationName><![CDATA[[#npc.getSubspecies().getName(npc.getBody())]]]></transformationName>
+	<coveringType>touhou_rei_skin</coveringType>
 	
 	<!-- Whether this arm type grants the ability to fly. -->
 	<allowsFlight>false</allowsFlight>
@@ -74,12 +74,12 @@
 	This description immediately follows a brief description of the arm type beginning to transform. -->
 	<transformationDescription><![CDATA[
 	[npc.her]的胳膊开始冒起了白光并不断的变淡,不一会儿,[npc.her]的胳膊就变成了半透明的能量体
-	<br/>当变形结束时,[npc.name]的手臂变成了[style.boldSamoyed(幽灵手臂)]
+	<br/>当变形结束时,[npc.name]的手臂变成了[style.boldSamoyed([#npc.getSubspecies().getName(npc.getBody())]手臂)]
 	]]></transformationDescription>
 	
 	<!-- How these arms are described in a character's description page. -->
 	<bodyDescription><![CDATA[
-	[npc.She]有着飘忽不定的幽灵手臂,[npc.materialCompositionDescriptor][npc.armFullDescription(true)],时不时散发着阵阵寒气
+	[npc.She]有着飘忽不定的[#npc.getSubspecies().getName(npc.getBody())]手臂,[npc.materialCompositionDescriptor][npc.armFullDescription(true)],时不时散发着阵阵寒气
 	]]></bodyDescription>
 	
 </arm>

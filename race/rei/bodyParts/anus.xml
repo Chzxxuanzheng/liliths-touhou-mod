@@ -7,7 +7,7 @@
 	
 	<!-- The id of the race which this anus belongs to.
 	This will almost always be the id of the race in which this type is found (in this case hyena). -->
-	<race>touhou_yurei</race>
+	<race>touhou_rei</race>
 	
 	<!-- The id of the material covering this anus.
 	This should always be left as 'ANUS', but I've included the option to change it here in case you wanted to experiment.
