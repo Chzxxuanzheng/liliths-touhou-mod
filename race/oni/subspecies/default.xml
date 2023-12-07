@@ -168,10 +168,6 @@
 		<attribute value="40">RESISTANCE_PHYSICAL</attribute>
 		<attribute value="10">DAMAGE_MELEE_WEAPON</attribute>
 		<attribute value="10">DAMAGE_UNARMED</attribute>
-		<attribute value="-30">RESISTANCE_LUST</attribute>
-		<attribute value="-10">RESISTANCE_ICE</attribute>	<!-- 冰抗 -->
-		<attribute value="-10">RESISTANCE_FIRE</attribute>	<!-- 火抗 -->
-		<attribute value="-10">RESISTANCE_POISON</attribute>	<!-- 毒抗 -->
 	</statusEffectAttributeModifiers>
 	
 	<!-- 该亚种的额外属性加成
