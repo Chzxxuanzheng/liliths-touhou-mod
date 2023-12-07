@@ -20,7 +20,7 @@
 	
 	<!-- 这个亚种是否是这个种族的主要亚种
 	 	除此之外，只有一个亚种，也填true-->
-	<mainSubspecies>true</mainSubspecies>
+	<mainSubspecies>false</mainSubspecies>
 
 	<!-- 被作为奴隶售卖的基础价格 -->
 	<baseSlaveValue>25000</baseSlaveValue>
