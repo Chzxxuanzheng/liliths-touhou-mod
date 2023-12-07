@@ -34,7 +34,7 @@
 		可以在<![CDATA[ ]]中使用解析指令
 		-->
 	<transformationDescription><![CDATA[
-		[npc.she]现在拥有一个[style.boldDragon(充斥着魔法的)],[npc.assholeFullDescription]。
+		[npc.she]现在拥有一个[style.boldmahoutsukaI(充斥着魔法的)],[npc.assholeFullDescription]。
 	]]></transformationDescription>
 
 	<!-- 角色的描述页面对屁股的描述。 -->

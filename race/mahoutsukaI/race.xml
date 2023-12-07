@@ -36,20 +36,6 @@
     AMPHIBIOUS（两栖）
     TERRESTRIAL（陆生）
     -->
-	<!-- 野生形态名称 -->
-	<!-- <nameFeral>
-		<name legConfiguration="QUADRUPEDAL"><![CDATA[名称]]></name>
-		<name legConfiguration="TAIL_LONG"><![CDATA[名称]]></name>
-		<name legConfiguration="TAIL_LONG" affinity="AQUATIC"><![CDATA[名称]]></name>
-		<name legConfiguration="TAIL"><![CDATA[名称]]></name>
-	</nameFeral>
-	<nameFeralPlural>
-		<name legConfiguration="QUADRUPEDAL"><![CDATA[复数名称]]></name>
-		<name legConfiguration="TAIL_LONG"><![CDATA[复数名称]]></name>
-		<name legConfiguration="TAIL_LONG" affinity="AQUATIC"><![CDATA[复数名称]]></name>
-		<name legConfiguration="TAIL"><![CDATA[复数名称]]></name>
-	</nameFeralPlural> -->
-
 	<!-- 在引用与此种族相关的变形时使用的名称（例如，在自我变形菜单中更改身体部位时）。
     它应该与定义为 'nameFeral' 的名称相同。
     -->
@@ -62,7 +48,7 @@
     https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/utils/colours/PresetColour.java
     或者使用颜色mod的颜色
     -->
-	<colour>BASE_PURPLE_LIGHT</colour>
+	<colour>touhou_mahoutsukaI</colour>
 
 	<!-- 此种族通常对待陌生人的方式。
     CIVILIZED("有教养"),

@@ -70,12 +70,12 @@
 		-->
 	<transformationDescription><![CDATA[
 		不一会儿,[npc.her]的手臂上迅速传来了一阵瘙痒感,低头一看自己的手臂发出了奥术光芒。
-		<br/>转化来到尾声,奥术光芒散去,[npc.nameIsFull]得到了[style.boldDragon(充满魔力的手臂和手)],[npc.materialDescriptor][npc.armFullDescription]。
+		<br/>转化来到尾声,奥术光芒散去,[npc.nameIsFull]得到了[style.boldmahoutsukaI(充满魔力的手臂和手)],[npc.materialDescriptor][npc.armFullDescription]。
 	]]></transformationDescription>
 
 	<!-- 角色的描述页面对这些手臂的描述。 -->
 	<bodyDescription><![CDATA[
-	[npc.She]有着[npc.armRows]手臂,[npc.materialCompositionDescriptor]的[npc.armFullDescription(true)]。[npc.Her]双手似人且又像龙一样,有着锋利的爪子。
+	[npc.She]有着[npc.armRows]手臂,[npc.materialCompositionDescriptor]的[npc.armFullDescription(true)]。[npc.Her]的双手十分灵巧,充盈的魔力允许[npc.her]立刻释放魔法。
 	]]></bodyDescription>
 
 	<!--

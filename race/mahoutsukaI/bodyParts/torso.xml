@@ -35,13 +35,13 @@
 		可以在<![CDATA[ ]]中使用解析指令
 		-->
 	<transformationDescription><![CDATA[
-		片刻之后,变身结束了,[npc.she]深深地叹了一口气,因为瘙痒终于停止了,[npc.her]的躯干上布满了龙鳞。[npc.her]的新鳞片在关节周围更加细密,形成的皮也相当坚韧。
-		<br/>[npc.Name]现在拥有[style.boldDragon(龙一般)], [npc.skinFullDescription]。
+		片刻之后,变身结束了,[npc.she]深深地叹了一口气,因为瘙痒终于停止了,。[npc.her]的身躯充溢着强烈的魔力,可以使[npc.her]更好的释放魔法。
+		<br/>[npc.Name]现在拥有[style.boldmahoutsukaI(充盈着魔法的身躯)],[npc.skinFullDescription]。
 	]]></transformationDescription>
 
 	<!-- 角色的描述页面对躯干的描述。 -->
 	<bodyDescription><![CDATA[
-		[npc.Her]的躯干具有[npc.a_femininity(true)]的外貌,并且[npc.materialCompositionDescriptor][npc.skinFullDescription(true)]。
+		[npc.Her]的躯干具有[npc.a_femininity(true)]的外貌,并且[npc.materialCompositionDescriptor][npc.skinFullDescription(true)]。身躯内充盈的魔力不仅使[npc.her]可以更好的释放魔法,还可以使[npc.her]自由飞行。
 	]]></bodyDescription>
 	
 </torso>

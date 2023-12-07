@@ -65,7 +65,7 @@
 	[npc.Her]的鼻子和嘴微微抽动,随后便发出了奥术光芒。
 	很快,光芒散去了,转化已经完成。尽管从表面上看没什么变化,但是皮肤之下涌动着强大的奥术之力。
 	[npc.sheIs]试图喘口气,却发出了娇喘和呻吟。
-	<br/>[npc.Name]现在拥有一张[style.boldDragon(与魔法相结合的脸)],[npc.materialDescriptor][npc.faceFullDescription]。在[npc.her]嘴中有一根[style.boldDragon(涌动着魔力的舌头)]。
+	<br/>[npc.Name]现在拥有一张[style.boldmahoutsukaI(与魔法相结合的脸)],[npc.materialDescriptor][npc.faceFullDescription]。在[npc.her]嘴中有一根[style.boldmahoutsukaI(涌动着魔力的舌头)]。
 	]]></transformationDescription>
 
 	<!-- 角色的描述页面对脸部的描述。 -->
@@ -74,7 +74,7 @@
 	]]></bodyDescription>
 	<!-- 角色的描述页面兽化时对脸部的描述。 -->
 	<bodyDescriptionFeral><![CDATA[
-		[npc.SheHasFull] the [npc.feminineDescriptor(true)] face of a feral [npc.legRace], which is [npc.materialDescriptor] [npc.faceFullDescription(true)] and complete with a pointed muzzle.
+		[npc.SheHasFull]拥有张和人类一模一样,但与魔法相结合的[npc.a_feminineDescriptor(true)]的魔法使的面庞,[npc.materialCompositionDescriptor][npc.faceFullDescription(true)]。
 	]]></bodyDescriptionFeral>
 	
 </face>

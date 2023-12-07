@@ -36,7 +36,7 @@
 	<transformationDescription><![CDATA[
 		[npc.her]的耳朵上传来了一阵瘙痒感,发出了淡淡的奥术光芒。
 		不一会,光满散去,转化完成了。
-		<br/>[npc.Name]现在拥有[style.boldDragon(与奥术相结合的魔法使耳朵)],它们呈[npc.materialCompositionDescriptor][npc.earFullDescription]。
+		<br/>[npc.Name]现在拥有[style.boldmahoutsukaI(与奥术相结合的魔法使耳朵)],它们呈[npc.materialCompositionDescriptor][npc.earFullDescription]。
 	]]></transformationDescription>
 
 	<!-- 角色的描述页面对这些耳朵的描述。 -->

@@ -14,9 +14,9 @@
     https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/utils/colours/PresetColour.java
     或者使用颜色mod的颜色
     -->
-	<colour>BASE_PURPLE_LIGHT</colour>
-	<secondaryColour>BASE_PURPLE_LIGHT</secondaryColour>
-	<tertiaryColour>BASE_PURPLE_LIGHT</tertiaryColour>
+	<colour>touhou_mahoutsukaI</colour>
+	<secondaryColour>touhou_mahoutsukaI</secondaryColour>
+	<tertiaryColour>touhou_mahoutsukaI</tertiaryColour>
 	
 	<!-- 这个亚种是否是这个种族的主要亚种
 	 	除此之外，只有一个亚种，也填true-->

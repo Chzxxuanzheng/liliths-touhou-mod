@@ -68,8 +68,8 @@
 		-->
 	<transformationDescription><![CDATA[
 	伴随着情不自禁的呻吟,[npc.name]感觉自己的阴茎转变为了新的形态。低头一看,自己的阴茎发出了奥术光满。不一会光满散去,转化完成了。
-	<br/>[npc.She]现在拥有一根[style.boldDragon(魔法使的阴茎)],[npc.materialDescriptor][npc.penisFullDescription(true)]。
-	<br/>[npc.She]有[style.boldDragon([npc.ballsCount]#IF(npc.isInternalTesticles())体内#ENDIF睾丸)],[npc.materialDescriptor][npc.ballsFullDescription(true)],能够产生[npc.cumColour(true)][style.boldDragon(魔法使精液)]。
+	<br/>[npc.She]现在拥有一根[style.boldmahoutsukaI(魔法使的阴茎)],[npc.materialDescriptor][npc.penisFullDescription(true)]。
+	<br/>[npc.She]有[style.boldmahoutsukaI([npc.ballsCount]#IF(npc.isInternalTesticles())体内#ENDIF睾丸)],[npc.materialDescriptor][npc.ballsFullDescription(true)],能够产生[npc.cumColour(true)][style.boldmahoutsukaI(魔法使精液)]。
 	]]></transformationDescription>
 
 	<!-- 角色的描述页面对阴茎的描述。 -->

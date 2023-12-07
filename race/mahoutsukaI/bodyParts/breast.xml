@@ -46,7 +46,7 @@
 		可以在<![CDATA[ ]]中使用解析指令
 		-->
 	<transformationDescription><![CDATA[
-		[npc.She]现在有[style.boldDragon(充斥着魔法的)][npc.nipplesFullDescription],[npc.she]在哺乳期会分泌[style.boldDragon(魔法使的乳汁)]。
+		[npc.She]现在有[style.boldmahoutsukaI(充斥着魔法的)][npc.nipplesFullDescription],[npc.she]在哺乳期会分泌[style.boldmahoutsukaI(魔法使的乳汁)]。
 	]]></transformationDescription>
 
 	<!-- 角色的描述页面对胸部的描述。 -->
@@ -61,7 +61,7 @@
 		可以在<![CDATA[ ]]中使用解析指令
 		-->
 	<crotchBoobsTransformationDescription><![CDATA[
-		[npc.She]现在有[style.boldDragon(充斥着魔法的)][npc.nipplesFullDescription],[npc.she]在哺乳期会分泌[style.boldDragon(魔法使的乳汁)]。
+		[npc.She]现在有[style.boldmahoutsukaI(充斥着魔法的)][npc.nipplesFullDescription],[npc.she]在哺乳期会分泌[style.boldmahoutsukaI(魔法使的乳汁)]。
 	]]></crotchBoobsTransformationDescription>
 
 	<!-- 角色的描述页面对腹乳的描述。 -->

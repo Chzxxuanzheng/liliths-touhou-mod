@@ -47,7 +47,7 @@
 		-->
 	<transformationDescription><![CDATA[
 		转化仅持续了很短的时间,便得到了魔法使的头发。
-		<br/>[npc.Name]现在拥有[npc.hairColour][style.boldDragon(魔法使的头发)]。
+		<br/>[npc.Name]现在拥有[npc.hairColour][style.boldmahoutsukaI(魔法使的头发)]。
 	]]></transformationDescription>
 
 	<!-- 角色的描述页面对头发的描述。 -->

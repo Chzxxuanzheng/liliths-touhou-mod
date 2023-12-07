@@ -87,7 +87,7 @@
 		可以在<![CDATA[ ]]中使用解析指令
 		-->
 	<transformationDescription><![CDATA[
-	<br/>[npc.Name]现在拥有了[style.boldDragon(涌动着魔力的腿和脚)],[npc.materialDescriptor][npc.legFullDescription]。
+	<br/>[npc.Name]现在拥有了[style.boldmahoutsukaI(涌动着魔力的腿和脚)],[npc.materialDescriptor][npc.legFullDescription]。
 ]]></transformationDescription>
 
 	<!-- 角色的描述页面对腿的描述。 -->
