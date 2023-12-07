@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<coveringType>
+	<!-- GENERAL INFORMATION: If you are unsure of anything, please use the LT Discord to ask for help! -->
+	
+	<!-- See fur.xml for a fully-commented coveringType example. -->
+	
+	<category>HORN</category>
+	
+	<determiner><![CDATA[两根]]></determiner>
+	<name><![CDATA[小角]]></name>
+	<namePlural pluralByDefault="false"><![CDATA[小角]]></namePlural> 
+	
+	<naturalCoveringModifiers>
+		<modifier>SILKEN</modifier>
+	</naturalCoveringModifiers>
+	
+	<extraCoveringModifiers/>
+	
+	<naturalPatterns/>
+	
+	<extraPatterns/>
+	
+	<naturalColoursPrimary>
+		<colour>BASE_BLUE</colour>
+	</naturalColoursPrimary> 
+	<extraColoursPrimary>
+		<colour>BASE_BLUE</colour>
+	</extraColoursPrimary>
+	
+	<naturalColoursSecondary>
+		<colour>BASE_BLUE</colour>
+	</naturalColoursSecondary>
+	<extraColoursSecondary>
+		<colour>BASE_BLUE</colour>
+	</extraColoursSecondary>
+	
+</coveringType>

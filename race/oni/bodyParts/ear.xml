@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<ear>
+
+	<!-- 种族id -->
+	<race>touhou_oni</race>
+
+	<!-- 种族部件转化时候显示的名称 一般是 种族名称 -->
+	<transformationName><![CDATA[鬼]]></transformationName>
+
+	<!-- 参考原版coveringType 可以填	皮肤coveringTypes
+	如果要自定义
+	皮肤覆盖id 推荐命名 作者_种族名字_skin 其中“作者_种族名字”与race文件中的相同
+	需要coveringTypes(没有这个文件夹自己创建)中建立并填写skin.xml文件
+	 -->
+	<coveringType>touhou_oni_skin</coveringType>
+	
+	<!-- 耳朵tag有:
+	用<tag>分隔
+	EAR_HANDLES_IN_SEX 耳朵可以在性交中当"把手"
+	ECHO_LOCATION 声波感知(蝙蝠)
+	 -->
+	<tags/>
+
+	<!-- 单数名称 -->
+	<name><![CDATA[耳朵]]></name>
+	<!-- 复数名称 -->
+	<namePlural><![CDATA[耳朵]]></namePlural>
+
+	<!-- 对男性的描述 -->
+	<descriptorsMasculine/>
+	<!-- 对女性的描述 -->
+	<descriptorsFeminine>
+		<descriptor><![CDATA[女性]]></descriptor>
+	</descriptorsFeminine>
+
+	<transformationDescription><![CDATA[
+		<br/>[npc.Name]现在拥有[style.boldoni(与奥术相结合的鬼耳朵)],它们呈[npc.materialCompositionDescriptor][npc.earFullDescription]。
+	]]></transformationDescription>
+
+	<!-- 角色的描述页面对这些耳朵的描述。 -->
+	<bodyDescription><![CDATA[
+		[npc.She]有着一对与奥术相结合的鬼耳朵#IF(npc.isPiercedEar()),且已经打过孔#ENDIF,[npc.materialCompositionDescriptor][npc.earFullDescription(true)]。
+	]]></bodyDescription>
+	
+</ear>
