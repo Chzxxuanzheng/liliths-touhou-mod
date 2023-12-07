@@ -55,7 +55,7 @@
 
 	<!-- 角色的描述页面对眼睛的描述。 -->
 	<bodyDescription><![CDATA[
-		[npc.SheHasFull]拥有[npc.eyePairs]与魔法相结合的眼睛,其瞳孔和虹膜都和常人一样。[npc.irisColour(true)]虹膜呈[npc.irisShape],[npc.pupilColour(true)]瞳孔呈[npc.pupilShape],还有着[npc.scleraColour(true)]的巩膜。
+		[npc.SheHasFull]拥有[npc.eyePairs]瞳孔和虹膜都和常人一样的双眼。[npc.irisColour(true)]虹膜呈[npc.irisShape],[npc.pupilColour(true)]瞳孔呈[npc.pupilShape],还有着[npc.scleraColour(true)]的巩膜。
 	]]></bodyDescription>
 	
 </eye>
