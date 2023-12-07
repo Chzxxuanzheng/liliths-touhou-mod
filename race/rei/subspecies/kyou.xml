@@ -184,7 +184,7 @@
 	<perkWeightings>
 		<category masculineWeighting="10" feminineWeighting="10">PHYSICAL</category>
 		<category masculineWeighting="0" feminineWeighting="0">LUST</category>
-		<category masculineWeighting="3" feminineWeighting="3">ARCANE</category>
+		<category masculineWeighting="0" feminineWeighting="0">ARCANE</category>
 	</perkWeightings>
 	
 	<!-- 这个物种可以在那些区域位置刷新
