@@ -5,21 +5,38 @@
 		 我建议使用一个对传说友好的名字，以免破坏沉浸感 -->
 	<!-- 基本描述 -->
 	<htmlContent tag="touhou_MAHOUTSUKA_I_BASE" author="稗田阿求"><![CDATA[
-	异世界的魔法存在
-	魔法使
-	<b>
-	主要危险度&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;普通<br>
-	遭遇频度&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;低<br>
-	多样性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;低<br>
-	主要遭遇场所&nbsp;&nbsp;幻想乡任何地点<br>
-	主要遭遇时间&nbsp;&nbsp;任何时间<br>
+	<div class='container-full-width' style='width:35%; float:left;'>
+		<p style='width:100%; text-align:left;'>
+			<b>异世界的魔法存在</b><br>
+			<b>魔法使</b>
+		</p>
+		<hr/>
+		<table align='left'>
+			<tr>
+				<td style='width:50%; text-align:left;'>主要危险度</td>
+				<td style='text-align:left;'>普通</td>
+			</tr>
+			<tr>
+				<td style='width:50%; text-align:left;'>遭遇频度</td>
+				<td style='text-align:left;'>低</td>
+			</tr>
+			<tr>
+				<td style='width:50%; text-align:left;'>主要遭遇场所</td>
+				<td style='text-align:left;'>幻想乡任何地点</td>
+			</tr>
+			<tr>
+				<td style='width:50%; text-align:left;'>主要遭遇时间</td>
+				<td style='text-align:left;'>任何时间</td>
+			</tr>
+		</table>
+	</div>
+	<br><br><br><br><br><br><br><br><br><br><br>
 	]]></htmlContent>
 
 	<!-- 高级描述(看书才会出现) -->
 	<!-- 你可以写多个不同tag也就是id的高级描述以对应你的每一个亚种里的<advancedDescriptionId> -->
 	<htmlContent tag="touhou_MAHOUTSUKA_I_ADVANCED" author="稗田阿求"><![CDATA[
-	<br>
-	<br>
+	<hr>
 	<h6>特征</h6>
 	<br>
 	被魔法所迷住了的人，已经成为了魔法作为身体的原动力的妖怪，便是魔法使。以魔法的研究为其生业，每天都在思考新的魔法。在妖怪之中是最接近人类的。<br>

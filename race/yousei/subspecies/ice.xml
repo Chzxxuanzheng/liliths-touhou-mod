@@ -134,8 +134,8 @@
 	<!-- The element names which contain the book's basic and advanced descriptions.
 	描述元素,这里写名字,具体内容应当写到'bookEntries.xml'里
 	These should be entered into the 'bookEntries.xml' file in the same folder location as this file. -->
-	<basicDescriptionId>touhou_YOUSEI_ICE</basicDescriptionId>
-	<advancedDescriptionId/>
+	<basicDescriptionId>touhou_YOUSEI_ICE_BASE</basicDescriptionId>
+	<advancedDescriptionId>touhou_YOUSEI_ICE_ADVANCE</advancedDescriptionId>
 	
 	<!-- 刷新率
 	(23.11.22)
