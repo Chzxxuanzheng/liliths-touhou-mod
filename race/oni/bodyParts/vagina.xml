@@ -21,7 +21,7 @@
 	<fluidType>touhou_oni_girlcum</fluidType>
 	
 	<!-- 产卵（true）还是生崽(false) -->
-	<eggLayer>true</eggLayer>
+	<eggLayer>false</eggLayer>
 
 	<!-- 单数名称 -->
 	<names>

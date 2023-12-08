@@ -46,7 +46,6 @@
 	 -->
 	<defaultOrificeModifiers>
 		<modifier>PUFFY</modifier>
-		<modifier>MUSCLE_CONTROL</modifier>
 	</defaultOrificeModifiers>
 
 	<!-- 当一个角色转变成这种阴道的时候的描述语句

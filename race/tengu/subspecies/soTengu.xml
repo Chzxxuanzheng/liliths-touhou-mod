@@ -77,6 +77,7 @@
 	[##npc.getBody().setEarType(EAR_TYPE_touhou_tengu_earSo)]
 	[##npc.getBody().setTailType(TAIL_TYPE_touhou_tengu_tail)]
 	[##npc.getBody().setEyeType(EYE_TYPE_touhou_tengu_eyeSo)]
+	[##npc.getBody().setVaginaType(VAGINA_TYPE_touhou_tengu_vaginaSo)]
 	]]></applySubspeciesChanges>
 	
 	<!-- 这个条件语句确定一个身体是否被检测为该亚种的一个实例。

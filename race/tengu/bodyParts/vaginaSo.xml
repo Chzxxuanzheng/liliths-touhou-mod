@@ -3,10 +3,10 @@
 	<!-- GENERAL INFORMATION: If you are unsure of anything, please use the LT Discord to ask for help! -->
 
 	<!-- 种族id -->
-	<race>touhou_mahoutsukaI</race>
+	<race>touhou_tengu</race>
 
 	<!-- 种族部件转化时候显示的名称 一般是 种族名称 -->
-	<transformationName><![CDATA[魔法使]]></transformationName>
+	<transformationName><![CDATA[白狼天狗]]></transformationName>
 
 	<!-- 参考原版coveringType 可以填	VAGINA
 	如果要自定义
@@ -18,18 +18,18 @@
 	<!-- 允许阴毛 <pubicHairAllowed>true</pubicHairAllowed>-->
 
 	<!-- 爱液描述,完成同文件夹下的girlcum.xml的文件 -->
-	<fluidType>touhou_mahoutsukaI_girlcum</fluidType>
+	<fluidType>touhou_tengu_girlcum</fluidType>
 	
 	<!-- 产卵（true）还是生崽(false) -->
 	<eggLayer>false</eggLayer>
 
 	<!-- 单数名称 -->
 	<names>
-		<name><![CDATA[魔法使]]></name>
+		<name><![CDATA[白狼天狗]]></name>
 	</names>
 	<!-- 复数名称 -->
 	<namesPlural>
-		<name><![CDATA[魔法使]]></name>
+		<name><![CDATA[白狼天狗]]></name>
 	</namesPlural>
 
 	<!-- 对部位的描述 -->
@@ -44,7 +44,9 @@
     TENTACLED("长有触手")
     MUSCLE_CONTROL("肌肉发达")
 	 -->
-	<defaultOrificeModifiers/>
+	<defaultOrificeModifiers>
+		<modifier>PUFFY</modifier>
+	</defaultOrificeModifiers>
 
 	<!-- 当一个角色转变成这种阴道的时候的描述语句
 		<br/> 转变语句之后便是对这种触角的形容
@@ -52,15 +54,15 @@
 		可以在<![CDATA[ ]]中使用解析指令
 		-->
 	<transformationDescription><![CDATA[
-			[npc.She]感受到快感的波浪上蹿到腹股沟,发出了兴奋的浪叫声。这加剧了[npc.her]的小缝不受控制地抽动和收缩。片刻后,快感消散,[npc.she]发现[npc.her]的小穴里不断涌动着魔力。
+			[npc.She]感受到快感的波浪上蹿到腹股沟,发出了兴奋的浪叫声。这加剧了[npc.her]的小缝不受控制地抽动和收缩。
 		</p>
 		<p>
-			<br/>[npc.Name]现在拥有[style.boldmahoutsukaI(魔法使的阴道)],[npc.pussyColourPrimary(true)]阴唇和[npc.pussyColourSecondary(true)]内壁。
+			<br/>[npc.Name]现在拥有[style.boldtengu(天狗的阴道)],[npc.pussyColourPrimary(true)]阴唇和[npc.pussyColourSecondary(true)]内壁。
 	]]></transformationDescription>
 
 	<!-- 角色的描述页面对阴茎的描述。 -->
 	<bodyDescription><![CDATA[
-		[npc.she]拥有#IF(npc.isPiercedVagina())一个打孔的#ELSE一个#ENDIF魔法使的小穴,[npc.labiaSize],[npc.pussyPrimaryColour(true)]阴唇和[npc.pussySecondaryColour(true)]内壁。
+		[npc.she]拥有#IF(npc.isPiercedVagina())一个打孔的#ELSE一个#ENDIF天狗的小穴,[npc.labiaSize],[npc.pussyPrimaryColour(true)]阴唇和[npc.pussySecondaryColour(true)]内壁。
 	]]></bodyDescription>
 	
 </vagina>
