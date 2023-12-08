@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<antenna>
+	
+	<!-- 种族id -->
+	<race>touhou_satori</race>
+	
+	<!-- 种族部件转化时候显示的名称 一般是 种族名称 -->
+	<transformationName><![CDATA[觉之瞳]]></transformationName>
+	
+	<!-- 参考原版coveringType 可以填	ANTENNA
+	如果要自定义
+	触角覆盖id 推荐命名 作者_种族名字_antenna 其中“作者_种族名字”与race文件中的相同
+	需要coveringTypes(没有这个文件夹自己创建)中建立并填写antenna.xml文件
+	 -->
+	<coveringType>author_raceName_satoriEye</coveringType>
+	
+	<!-- 每一组（默认一组）触角有多少只 -->
+	<defaultAntennaePerRow>4</defaultAntennaePerRow>
+	
+	<!-- 单数名称 -->
+	<name><![CDATA[觉之瞳]]></name>
+	
+	<!-- 复数名称 -->
+	<namePlural><![CDATA[觉之瞳]]></namePlural> 
+	
+	<!-- 对男性的描述 -->
+	<descriptorsMasculine>
+		<descriptor><![CDATA[看透一切的]]></descriptor>
+		<descriptor><![CDATA[犀利的]]></descriptor>
+	</descriptorsMasculine>
+	<!-- 对女性的描述 -->
+	<descriptorsFeminine>
+		<descriptor><![CDATA[看透一切的]]></descriptor>
+		<descriptor><![CDATA[犀利的]]></descriptor>
+	</descriptorsFeminine>
+	
+	<!-- 当一个角色转变成这种触须的时候的描述语句
+		<br/> 转变语句之后便是对这种触角的形容
+		其中 <br/> 是换行符号
+		可以在<![CDATA[ ]]中使用解析指令
+		-->
+	<transformationDescription><![CDATA[
+	[npc.name]感觉浑身痒痒的,定眼一看身上不知道何时逐渐浮现出[style.colourGold(黄色的包)]。
+	紧接着,这些包开始延申出来一根根[style.coloursatori(心脏般深红色的触手)]。
+	这些触手在[npc.name]的胸前不断交织,形成了一颗巨大的眼珠。
+	新的视野涌入进了[npc.name]的脑海中,当[npc.name]尝试着用这颗眼珠看向其他人时,耳边似乎响起了其他人的低语声。<br>
+	现在[npc.name]拥有了[style.coloursatori(读心的觉之瞳)],[npc.materialCompositionDescriptor]的[npc.antennaFullDescription(true)]。
+	]]></transformationDescription>
+	
+	<!-- 角色的描述页面对这些触须的描述。 -->
+	<bodyDescription><![CDATA[
+	从[npc.name]的全身抽出了[pc.AntennaePerRow]根[npc.antennaColour(true)]的不知是触手还是神经的东西,连接着漂浮在胸口前,[npc.materialCompositionDescriptor]的[npc.antennaFullDescription(true)],看透一切的觉之瞳。
+	]]></bodyDescription>
+	
+</antenna>
