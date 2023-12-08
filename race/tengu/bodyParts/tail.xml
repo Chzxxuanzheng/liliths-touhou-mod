@@ -5,7 +5,7 @@
 	<race>touhou_tengu</race>
 
 	<!-- 种族部件转化时候显示的名称 一般是 种族名称 -->
-	<transformationName><![CDATA[种族名称]]></transformationName>
+	<transformationName><![CDATA[白狼天狗]]></transformationName>
 
 	<!-- 参考原版coveringType 可以填	皮肤coveringTypes
 	如果要自定义
