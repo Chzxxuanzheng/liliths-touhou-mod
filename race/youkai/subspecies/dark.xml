@@ -1,0 +1,255 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<subspecies>
+
+	<!-- 你首先应该把此文件的名称改为你的亚种的名称 -->
+
+	<!-- 这个亚种属于那个种族 -->
+	<race>touhou_youkai</race>
+	
+	<!-- 这个亚种的颜色id
+	通常与种族的颜色相似
+	这个亚种大部分都会使用这个颜色
+	'secondaryColour' 和 'tertiaryColour' 与 'colour'一起用于这个亚种的图标和背景
+	从这里获取：
+    https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/utils/colours/PresetColour.java
+    或者使用颜色mod的颜色
+    -->
+	<colour>touhou_youkaiDark</colour>
+	<secondaryColour>touhou_youkaiDark</secondaryColour>
+	<tertiaryColour>touhou_youkai</tertiaryColour>
+	
+	<!-- 这个亚种是否是这个种族的主要亚种
+	 	除此之外，只有一个亚种，也填true-->
+	<mainSubspecies>false</mainSubspecies>
+
+	<!-- 被作为奴隶售卖的基础价格 -->
+	<baseSlaveValue>10000</baseSlaveValue>
+	
+	<!-- 与该种族相关联的物品的id，该物品可以附魔以修改属性
+	没有的话就填 'innoxia_race_human_vanilla_water'. -->
+	<attributeItemId>innoxia_race_human_vanilla_water</attributeItemId>
+	
+	<!-- 使用后会变成这个种族的物品的id
+	没有的话就填 'innoxia_race_human_bread_roll'. -->
+	<transformativeItemId>innoxia_race_human_bread_roll</transformativeItemId>
+	
+	<!-- 这只用于恶魔，除非你知道自己在做什么，否则应该始终保持为0 -->
+	<subspeciesOverridePriority>0</subspeciesOverridePriority>
+	
+	<!-- 该亚种的夜间行为。
+	如果忽略此值，则它将默认为DIURNAL。
+	DIURNAL("白天活动", "白天活动，夜晚休息。")
+    NOCTURNAL("夜晚活动", "夜晚活动，白天休息。")
+    CREPUSCULAR("黄昏活动", "在早晨和傍晚的黄昏时段活动。")
+    MATUTINAL("早晨活动", "在黎明时段活动。")
+    VESPERTINE("晚间活动", "在晚间黄昏时段活动。")
+    CATHEMERAL("无规律", "在白天和夜晚不规律地活动。")
+	 -->
+	<nocturnality>VESPERTINE</nocturnality>
+	
+	<!-- 是否矮小化，如果true，则只会出现身高不超过1米2的角色 -->
+	<shortStature>false</shortStature>
+	
+	<!-- 是否默认两足行走 -->
+	<bipedalSubspecies>true</bipedalSubspecies>
+	
+	<!-- 亚种的栖息地分类
+		 默认为AMPHIBIOUS。
+		AQUATIC（"水生的"）
+		AMPHIBIOUS（"两栖的"）
+		TERRESTRIAL（"陆生的"） -->
+	<affinity>AMPHIBIOUS</affinity>
+
+
+	<!--有翅膀的前缀，默认设置为false
+		无论这个亚种是否原本有翅膀，如果NPC或玩家是有翅膀的，它都将显示为“有翅膀的亚种”（例如“有翼鬣狗男孩”）
+		如果是true，则只有初始有翅膀或者手翼的才会显示-->
+	<winged>false</winged>
+	
+	<personalityChances/>
+	
+	<!-- 这个亚种特征的特殊变化
+	应用于race文件的“applyRaceChanges”方法之后
+	可以使用“targetedBody”访问正在更改的角色的身体
+	单亚种或不需要则留空-->
+	<applySubspeciesChanges><![CDATA[
+	[##npc.getBody().setTorsoType(TORSO_TYPE_touhou_youkai_torsoDark)]
+	]]></applySubspeciesChanges>
+	
+	<!-- 这个条件语句确定一个身体是否被检测为该亚种的一个实例。
+	它应该返回一个整数值，如果提供的身体/种族不满足该亚种的要求，则返回0。
+	如果满足要求，你通常应该返回100的值，或者如果这个亚种比其他亚种有更高的优先级，则返回更高的值，其他亚种也可能检测到这个身体是他们亚种的一个实例。
+	可以使用“targetedBody”访问正在检查的正文。
+	不应通过targetedBody.getRace()访问正在检查的主体的种族，而应使用'targetedRace'访问。-->
+	<subspeciesWeighting><![CDATA[
+		#IF(targetedRace==RACE_touhou_youkai && targetedBody.getTorsoType() == TORSO_TYPE_touhou_youkai_torsoDark)
+			110
+		#ELSE
+			0
+		#ENDIF
+	]]></subspeciesWeighting>
+
+	<!-- 这个亚种的图标的名字，应该是同名文件夹下的svg文件
+	 	 displaySize是对文件的缩放 80 就是缩小到80%-->
+	<iconName displaySize="80">icon</iconName>
+	
+	<!-- 这个亚种的图标背景的名字，应该是同名文件夹下的svg文件
+	 	 留空代表使用默认-->
+	<backgroundName></backgroundName>
+	
+	<!-- 书籍是自动生成的
+	为每个亚种的“advancedDescriptionId”字段定义的每个唯一值都创建了一本唯一的书。
+	若字段的值不相同，游戏会为它们每人制作一本书。
+	-->
+		
+	<!-- 这个书籍的图标的名字，一般和种族（亚种）图标一样；应该是同名文件夹下的svg文件 -->
+	<bookIconName>icon</bookIconName>
+	
+	<!-- 书籍的名字 -->
+	<bookName><![CDATA[求闻史记(妖怪篇)]]></bookName>
+	
+	<!-- 描述元素,这里写名字,具体内容应当写到同文件夹下的bookEntries.xml里 -->
+	<!-- 基本描述id -->
+	<basicDescriptionId>touhou_youkai_dark_BASE</basicDescriptionId>
+	<!-- 该亚种高级描述id(看书才会出现) -->
+	<advancedDescriptionId>touhou_youkai_dark_ADVANCED</advancedDescriptionId>
+	
+	<!-- 该亚种偏好，随机出现的这个种族是这个亚种的概率
+	ZERO_NONE 表示关闭该亚种或物种
+	ONE_LOW 四分之一
+	TWO_AVERAGE 半数
+	THREE_HIGH 四分之三
+	FOUR_ABUNDANT 全部
+	-->
+	<defaultPreference>ZERO_NONE</defaultPreference>
+	
+	<!-- 该亚种在非兽化形态时的名称
+	通常应该遵循X化形、X男、X女的模式（可能应该由“namesDefault”元素覆盖）
+	当然不一定要按格式来
+	-->
+	<nameAnthro>
+		<namesDefault>
+			<name><![CDATA[宵暗妖怪]]></name>
+			<namePlural><![CDATA[宵暗妖怪]]></namePlural>
+			<singularMaleName><![CDATA[宵暗妖怪]]></singularMaleName>
+			<singularFemaleName><![CDATA[宵暗妖怪]]></singularFemaleName>
+			<pluralMaleName><![CDATA[宵暗妖怪]]></pluralMaleName>
+			<pluralFemaleName><![CDATA[宵暗妖怪]]></pluralFemaleName>
+		</namesDefault>
+	</nameAnthro>
+
+	<!-- 傻瓜模式下的命名 -->
+	<!-- <nameAnthroSillyMode/>
+		如果要写，必须要写<namesDefault> -->
+
+	<!-- 描述 -->
+	<description><![CDATA[能操纵黑暗程度的妖怪]]></description>
+	
+	<!-- 半该物种半恶魔的称呼(与上面一致) -->
+	<nameHalfDemon>
+		<namesDefault>
+			<name><![CDATA[宵暗妖怪]]></name>
+			<namePlural><![CDATA[宵暗妖怪]]></namePlural>
+			<singularMaleName><![CDATA[宵暗妖怪]]></singularMaleName>
+			<singularFemaleName><![CDATA[宵暗妖怪]]></singularFemaleName>
+			<pluralMaleName><![CDATA[宵暗妖怪]]></pluralMaleName>
+			<pluralFemaleName><![CDATA[宵暗妖怪]]></pluralFemaleName>
+		</namesDefault>
+	</nameHalfDemon>
+
+	<!-- 兽化后的命名 -->
+	<feralAttributes/>
+	
+	<!-- 该亚种在玩家界面显示的描述 -->
+	<statusEffectDescription><![CDATA[
+		是——这样吗——?
+	]]></statusEffectDescription>
+	
+	<statusEffectAttributeModifiers>
+		<attribute value="5">MAJOR_PHYSIQUE</attribute>	<!-- 体格 -->
+		<attribute value="5">MAJOR_ARCANE</attribute>	<!-- 奥术 -->
+	</statusEffectAttributeModifiers>
+	
+	<!-- 该亚种的额外属性加成
+		 用<effect>分隔
+	 	 由于这些额外的效果需要对游戏代码进行更改才能生效,因此它们可能应该留空-->
+	<extraEffects/>
+	
+	<!-- 男性与女性分别三种主要攻击的权重
+		 "masculineWeighting"男性主要攻击权重
+		 "feminineWeighting"女性主要攻击权重
+	     不要超过2,147,483,647
+	     PHYSICAL 物理攻击/武器攻击
+	     LUST 性欲攻击
+		 ARCANE 法术攻击
+	     -->
+	<perkWeightings>
+		<category masculineWeighting="3" feminineWeighting="3">PHYSICAL</category>
+		<category masculineWeighting="3" feminineWeighting="3">LUST</category>
+		<category masculineWeighting="10" feminineWeighting="10">ARCANE</category>
+	</perkWeightings>
+	
+	<!-- 这个物种可以在那些区域位置刷新
+	地点：
+	MISC（杂项）
+	OLD_WORLD（旧世界）
+	FELICIA_APARTMENT（微型公寓）
+	DOMINION（御城区）
+	HARPY_NESTS（比之巢）
+	SUBMISSION（屈城区）
+	FIELD_CITY（平原城市）
+	DESERT_CITY（沙漠城市）
+	JUNGLE_CITY（丛林城市）
+	SEA_CITY（海洋城市）
+	FIELDS（平原）
+	WOODLAND（林地）
+	RIVER（河流）
+	SAVANNAH（热带草原）
+	DESERT（沙漠）
+	VOLCANO（火山）
+	JUNGLE（丛林）
+	SEA（海洋）
+	YOUKO_FOREST（妖狐森林）
+	MOUNTAINS（山区）
+	SNOW（雪地）
+
+	rarity，出现的概率
+	ZERO_EXTREMELY_RARE 极为罕见
+	ONE_VERY_RARE 非常罕见
+	TWO_RARE 罕见
+	THREE_UNCOMMON 不常见
+	FOUR_COMMON 常见
+
+	可以留空(若regionLocations，regionLocations，placeLocations都留空将不会出现)
+	-->
+	<!-- TODO -->
+	<regionLocations>
+		<!-- <region rarity="THREE_UNCOMMON">SAVANNAH</region>
+		<region rarity="ONE_VERY_RARE">DESERT</region> -->
+	</regionLocations>
+	
+	<!-- 这个物种可以在那些地图位置刷新
+		 见worldType
+	 -->
+	<regionLocations>
+		<!-- <world rarity="ONE_VERY_RARE">NIGHTLIFE_CLUB</world> -->
+	</regionLocations>
+	
+	<!-- 这个物种可以在那些位置刷新
+		 见placeType
+	-->
+	<placeLocations>
+		<!-- <place rarity="TWO_RARE">DOMINION_CANAL</place>
+		<place rarity="TWO_RARE">DOMINION_ALLEYS_CANAL_CROSSING</place> -->
+	</placeLocations>
+	
+	<!-- 特殊亚种标志
+	用<flag>分隔
+	HIDDEN_FROM_PREFERENCES 隐藏亚种选项。
+	DISABLE_FURRY_PREFERENCE 禁用游戏的选项中毛茸茸(福瑞)偏好设置。
+	DISABLE_SPAWN_PREFERENCE 禁用游戏的选项中亚种生成偏好设置。
+	 -->
+
+	<flags/>
+	
+</subspecies>
