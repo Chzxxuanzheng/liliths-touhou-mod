@@ -166,6 +166,9 @@
 	]]></statusEffectDescription>
 	
 	<statusEffectAttributeModifiers>
+		<attribute value="5">MAJOR_PHYSIQUE</attribute>	<!-- 体格 -->
+		<attribute value="15">RESISTANCE_LUST</attribute>	<!-- 性欲护盾 -->
+		<attribute value="15">DAMAGE_LUST</attribute>	<!-- 性欲伤害 -->
 	</statusEffectAttributeModifiers>
 	
 	<!-- 该亚种的额外属性加成
@@ -182,9 +185,9 @@
 		 ARCANE 法术攻击
 	     -->
 	<perkWeightings>
-		<category masculineWeighting="10" feminineWeighting="10">PHYSICAL</category>
-		<category masculineWeighting="3" feminineWeighting="3">LUST</category>
-		<category masculineWeighting="10" feminineWeighting="10">ARCANE</category>
+		<category masculineWeighting="3" feminineWeighting="3">PHYSICAL</category>
+		<category masculineWeighting="10" feminineWeighting="10">LUST</category>
+		<category masculineWeighting="3" feminineWeighting="3">ARCANE</category>
 	</perkWeightings>
 	
 	<!-- 这个物种可以在那些区域位置刷新
