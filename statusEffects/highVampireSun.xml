@@ -2,13 +2,19 @@
 <statusEffect>
 	<!-- GENERAL INFORMATION: If you are unsure of anything, please use the LT Discord to ask for help! -->
 	
-	<!-- 一个整数表示这个状态的渲染优先级 -->
+	<!-- 一个整数表示这个状态的渲染优先级
+	通常值是50.
+	一些关于宣传的示例:
+	- 一个角色的种族效果,优先级总是最高
+	- 天气效果的优先级为100(作者希望它们总是尽可能考前地显示)
+	- 性相关考虑90(作者希望它们总是尽可能高地显示).
+	- 大多数其他标准状态影响(如怀孕、休息良好、酒精水平等)的优先级为80.
+	- 套装奖励是70. -->
 	<renderingPriority>99</renderingPriority>
 	
 	<!-- 如果你希望它能显示在玩家buff栏里,应当设为true. -->
 	<renderInEffectsPanel>true</renderInEffectsPanel>
 	
-	<!-- 此效果的类别,你可以省略这个空,它将会被设为DEFAULT类别 -->
 	<category>DEFAULT</category>
 	
 	<!-- 'BENEFICIAL'表面这是个有利buff,'NEUTRAL'是中立buff,'DETRIMENTAL'是debuff. -->
@@ -21,15 +27,26 @@
 	<!-- 如果你想要该状态效果在性交中渲染,请设置为 true. -->
 	<sexEffect>false</sexEffect>
 	
-	<!-- buff激活后,目标角色受到的tag. -->
+	<!-- buff激活后,目标角色受到的tag.
+	可以在这里看tag:https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/inventory/ItemTag.java
+	The only ones which actually do anything at the time of this feature's addition (v0.4) are:
+		NIGHT_VISION_SELF
+		NIGHT_VISION_AREA
+		SPREADS_FEET
+		MUFFLES_SPEECH
+		HINDERS_ARM_MOVEMENT
+		HINDERS_LEG_MOVEMENT
+		PREVENTS_ERECTION_PHYSICAL
+		PREVENTS_ERECTION_OTHER
+	It is unlikely that additional tags will be supported in the future, but if any are added, this section will be updated. -->
 	<tags/>
 	
 	<!-- 该buff的名称(name).处于该效果下的角色会以'npc'作为解析变量传入.所以如果你想要引用,可以使用[npc.name]等类似形式. -->
-	<name><![CDATA[可怕的流水]]></name>
+	<name><![CDATA[灼烧的阳光]]></name>
 	
 	<!-- 该buff的描述.处于该效果下的角色会以'npc'作为解析变量传入.所以如果你想要引用,可以使用[npc.name]等类似形式. -->
 	<description><![CDATA[
-            身为血族,身处于流水之中并不是一个正确的选择。
+            尽管高级血族对阳光有一定的抗性,但直接暴露在阳光之下并不是一个正确的选择。
 ]]></description>
 	
 	<!-- 图标,应和xml处于同一文件夹 -->
@@ -37,7 +54,7 @@
 	
 	<!-- 颜色
 	可以在这里查内置颜色:https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/utils/colours/PresetColour.java -->
-	<colourPrimary>BASE_BLUE_DARK</colourPrimary> <!-- 必须要写,不然不能加载. -->
+	<colourPrimary>BASE_GINGER</colourPrimary> <!-- 必须要写,不然不能加载. -->
 	<colourSecondary/> <!-- 可以留空,'colourTertiary'也一样. -->
 	<colourTertiary/>
 	
@@ -47,7 +64,7 @@
 		<modifier value="-20">MAJOR_PHYSIQUE</modifier>	<!-- 体格 -->
 		<modifier value="-20">MAJOR_ARCANE</modifier>	<!-- 奥术 -->
 		<modifier value="-20">SPELL_COST_MODIFIER</modifier>	<!-- 法术效率 -->
-		<modifier value="-5">ENERGY_SHIELDING</modifier>	<!-- 生命护盾 -->
+		<modifier value="-10">ENERGY_SHIELDING</modifier>	<!-- 生命护盾 -->
 		<modifier value="-20">RESISTANCE_PHYSICAL</modifier>	<!-- 物理护盾 -->
 	</attributeModifiers>
 	
@@ -65,10 +82,7 @@
 	<!-- 你可以使用这一部分来描述状态效果可能附带的额外效果.
 	当玩家将鼠标悬浮在状态效果的图标上,这些效果将会显示在提示中.处于该效果下的角色会以'npc'作为解析变量传入.
 	所以如果你想要引用,可以使用[npc.name]等类似形式.对于该状态效果,没有需要描述的额外效果,但如果想要使用该部分,请遵循以下格式:-->
-	<extraEffects>
-		<effect><![CDATA[[npc.name]的体力正在岁时间流逝。]]></effect>
-	</extraEffects>
-	
+	<extraEffects/>
 	
 	<!-- 效果逻辑 -->
 	
@@ -81,23 +95,17 @@
 	npc.getWorldLocation() == WORLD_TYPE_HARPY_NEST ||
 	npc.getWorldLocation() == WORLD_TYPE_SUBMISSION -->
 	<applicationCondition><![CDATA[
-	[##'(不能防护奥术风暴的地方一定防水吧+雨天 || 站水里)+普通吸血鬼']
-	#IF (npc.getSubspecies() != SUBSPECIES_touhou_vampire_subspecies_default)
-		false
-	#ELSEIF (
+	[##'不能防护奥术风暴的地方一定没阳光吧+晴天+白天+普通吸血鬼']
+	#IF (
 	npc.getLocationPlace().getPlaceType().isStormImmune() == false && 
-	npc.hasStatusEffect(SE_WEATHER_RAIN))
-		true
-	[##'有流动的水的地方']
-	#ELSEIF (
-		npc.getLocationPlace().getPlaceType() == PLACE_TYPE_DOMINION_ALLEYS_CANAL_CROSSING ||
-		npc.getLocationPlace().getPlaceType() == PLACE_TYPE_DOMINION_CANAL ||
-		npc.getLocationPlace().getPlaceType() == PLACE_TYPE_DOMINION_CANAL_END ||
-		npc.getLocationPlace().getPlaceType() == PLACE_TYPE_LILAYA_HOME_FOUNTAIN ||
-		npc.getLocationPlace().getPlaceType() == PLACE_TYPE_BAT_CAVERN_RIVER ||
-		npc.getLocationPlace().getPlaceType() == PLACE_TYPE_BAT_CAVERN_RIVER_END
-	)
-		true
+	npc.hasStatusEffect(SE_WEATHER_CLEAR) && game.isDayTime() && 
+	npc.getSubspecies() == SUBSPECIES_touhou_vampire_subspecies_high)
+		[##'阴暗小巷,无阳光']
+		#IF (npc.getLocationPlace().getPlaceType() == PLACE_TYPE_DOMINION_DARK_ALLEYS)
+			false
+		#ELSE
+			true
+		#ENDIF
 	#ELSE
 		false
 	#ENDIF
@@ -123,11 +131,7 @@
 	SECONDS_PASSED			经过了多少秒,战斗时恒定为1.
 	TOTAL_SECONDS_PASSED	这个buff被施加了多长时间,'TOTAL_SECONDS_PASSED == 0'可以用来实现只有效果刚被施加时才生效
 	返回的字符串会进入内置解释器处理,处理后显示的字符串在'重要状态效果'屏幕中显示.-->
-	<applyEffect interval="60"><![CDATA[
-		#IF(SECONDS_PASSED>0)
-			[##npc.incrementHealth(-1 * SECONDS_PASSED / 60)]
-		#ENDIF
-	]]></applyEffect>
+	<applyEffect/>
 	
 	<!-- 与上方的'applyEffect'元素行为相似,游戏本体会在该状态效果被移除前执行逻辑.
 	逻辑执行时,角色实际上依然还处于该状态效果的影响下. -->

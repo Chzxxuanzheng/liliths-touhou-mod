@@ -29,7 +29,7 @@
 	
 	<!-- 该buff的描述.处于该效果下的角色会以'npc'作为解析变量传入.所以如果你想要引用,可以使用[npc.name]等类似形式. -->
 	<description><![CDATA[
-            身为血族,身处于流水之中并不是一个正确的选择。
+			尽管高级血族对流水有一定的抗性,但直接身处于流水之中并不是一个正确的选择。
 ]]></description>
 	
 	<!-- 图标,应和xml处于同一文件夹 -->
@@ -44,11 +44,11 @@
 	<!-- The 拥有该状态效果会影响的属性.modifier 节点必须包含会被影响的属性.你可以定义任意数量的属性修改项,但最好不要太多.
 	值可以从这里来查:https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/attributes/Attribute.java-->
 	<attributeModifiers>
-		<modifier value="-20">MAJOR_PHYSIQUE</modifier>	<!-- 体格 -->
-		<modifier value="-20">MAJOR_ARCANE</modifier>	<!-- 奥术 -->
-		<modifier value="-20">SPELL_COST_MODIFIER</modifier>	<!-- 法术效率 -->
+		<modifier value="-10">MAJOR_PHYSIQUE</modifier>	<!-- 体格 -->
+		<modifier value="-10">MAJOR_ARCANE</modifier>	<!-- 奥术 -->
+		<modifier value="-10">SPELL_COST_MODIFIER</modifier>	<!-- 法术效率 -->
 		<modifier value="-5">ENERGY_SHIELDING</modifier>	<!-- 生命护盾 -->
-		<modifier value="-20">RESISTANCE_PHYSICAL</modifier>	<!-- 物理护盾 -->
+		<modifier value="-10">RESISTANCE_PHYSICAL</modifier>	<!-- 物理护盾 -->
 	</attributeModifiers>
 	
 	<!-- 拥有此buff时可以解锁的战斗动作(combatMoves).
@@ -65,9 +65,7 @@
 	<!-- 你可以使用这一部分来描述状态效果可能附带的额外效果.
 	当玩家将鼠标悬浮在状态效果的图标上,这些效果将会显示在提示中.处于该效果下的角色会以'npc'作为解析变量传入.
 	所以如果你想要引用,可以使用[npc.name]等类似形式.对于该状态效果,没有需要描述的额外效果,但如果想要使用该部分,请遵循以下格式:-->
-	<extraEffects>
-		<effect><![CDATA[[npc.name]的体力正在岁时间流逝。]]></effect>
-	</extraEffects>
+	<extraEffects/>
 	
 	
 	<!-- 效果逻辑 -->
@@ -82,8 +80,8 @@
 	npc.getWorldLocation() == WORLD_TYPE_SUBMISSION -->
 	<applicationCondition><![CDATA[
 	[##'(不能防护奥术风暴的地方一定防水吧+雨天 || 站水里)+普通吸血鬼']
-	#IF (npc.getSubspecies() != SUBSPECIES_touhou_vampire_subspecies_default)
-		false
+	#IF((npc.getSubspecies() != SUBSPECIES_touhou_vampire_subspecies_high &&
+	npc.getSubspecies() != SUBSPECIES_touhou_vampire_subspecies_flan))
 	#ELSEIF (
 	npc.getLocationPlace().getPlaceType().isStormImmune() == false && 
 	npc.hasStatusEffect(SE_WEATHER_RAIN))

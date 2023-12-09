@@ -14,12 +14,12 @@
 	<race>touhou_vampire</race>
 	
 	<!-- The name that will be used when referring to transformations related to this type (such as when changing body parts in the self-TF menu). -->
-	<transformationName><![CDATA[血族]]></transformationName>
+	<transformationName><![CDATA[变异血族之翼]]></transformationName>
 	
 	<!-- The id of the material covering this wing.
 	The id will typically take the form of 'innoxia_hyena_fur'.
 	Hard-coded values can be found here: https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/body/coverings/BodyCoveringType.java -->
-	<coveringType>touhou_vampire_wingDefault</coveringType>
+	<coveringType>touhou_vampire_wingFlan</coveringType>
 	
 	<!-- Whether this is a generic wing type or not (use the values 'true' or 'false' here).
 		是否是通用翅膀,通用翅膀可以被任何种族使用
@@ -39,40 +39,40 @@
 	THREE_LARGE	大型
 	FOUR_HUGE	巨型
 	Values for wing sizes can be found here: https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/body/valueEnums/WingSize.java -->
-	<minimumSize>THREE_LARGE</minimumSize>
-	<maximumSize>THREE_LARGE</maximumSize>
+	<minimumSize>FOUR_HUGE</minimumSize>
+	<maximumSize>FOUR_HUGE</maximumSize>
 	
 	<!-- The singular and plural names of this wing. -->
-	<name><![CDATA[血族之翼]]></name>
-	<namePlural><![CDATA[血族之翼]]></namePlural>
+	<name><![CDATA[魔法血族之翼]]></name>
+	<namePlural><![CDATA[魔法血族之翼]]></namePlural>
 	
 	<!-- The descriptors which should be drawn upon when describing a masculine character's wing of this type.
 	Can be left blank. -->
 	<descriptorsMasculine>
-		<descriptor><![CDATA[硕大的]]></descriptor>
+		<descriptor><![CDATA[七彩般的]]></descriptor>
+		<descriptor><![CDATA[难以理解的]]></descriptor>
+		<descriptor><![CDATA[光彩夺目的]]></descriptor>
 	</descriptorsMasculine>
 	<!-- Same as above, but for feminine characters. -->
 	<descriptorsFeminine>
-		<descriptor><![CDATA[硕大的]]></descriptor>
+		<descriptor><![CDATA[七彩般的]]></descriptor>
+		<descriptor><![CDATA[难以理解的]]></descriptor>
+		<descriptor><![CDATA[光彩夺目的]]></descriptor>
 	</descriptorsFeminine>
 	
 	<!-- The description which is shown when a character transforms to obtain this wing type.
 	This description immediately follows a brief description of the wing type beginning to transform. -->
 	<transformationDescription><![CDATA[
-		在血族的强横力量涌动下,[npc.She]紧咬下唇,忍受着来自全身的疼痛,
-		在不知不觉中,
-		一对[npc.wingSize][npc.materialDescriptor][npc.wingFullDescription(true)]的血族之翼从从[npc.her][npc.legConfiguration]
-		#IF (npc.getLegConfiguration().isWingsOnLegConfiguration())
-			身体的两侧长了出来。
-		#ELSE
-			的肩胛骨位置长了出来。
-		#ENDIF
-		<br/>[npc.Name]现在拥有[style.boldTfGeneric(独属于血族的巨大蝙蝠翅膀)]。
+		在血族与魔力两股强横力量相互冲击下,[npc.She]紧咬下唇,忍受着来自全身的疼痛,
+		在不知不觉中,原本巨大的蝙蝠翅膀迅速萎缩,仅剩下一根光妥妥的骨架。
+		紧接着,骨架的皮肤开始变成棕色,下方也开始出现了[style.colourRainbow(七彩色的若有若无的发光点)]。
+		发光点逐渐变大,直至变成了一个个闪烁着的魔法水晶才停止。
+		<br/>[npc.Name]现在拥有[style.boldTfGeneric(独属于血族的巨大的魔法血族之翼)]。
 	]]></transformationDescription>
 	
 	<!-- How this wing is described in a character's description page. -->
 	<bodyDescription><![CDATA[
-		[npc.sheHasFull]拥有一对[npc.wingSize]的蝙蝠翅膀,大到说是恶魔翅膀也不过分,[npc.materialDescriptor][npc.wingFullDescription(true)]。
+		[npc.sheHasFull]拥有一对[npc.wingSize]的[style.colourRainbow(带有七彩色魔法水晶的翅膀)],[npc.materialDescriptor][npc.wingFullDescription(true)]。
 	]]></bodyDescription>
 	
 </wing>

@@ -6,7 +6,7 @@
 	<secondaryColour>BASE_RED_DARK</secondaryColour>
 	<tertiaryColour>BASE_RED_DARK</tertiaryColour>
 	
-	<mainSubspecies>true</mainSubspecies>
+	<mainSubspecies>false</mainSubspecies>
 	
 	<baseSlaveValue>150000</baseSlaveValue>
 	
@@ -57,12 +57,13 @@
 	<winged>true</winged>
 
 	<applySubspeciesChanges>
-	<![CDATA[]]>
+	<![CDATA[
+	[##npc.getBody().setWingType(WING_TYPE_touhou_vampire_wingFlan)]]]>
 	</applySubspeciesChanges>
 	
 	<subspeciesWeighting><![CDATA[
-		#IF(targetedRace==RACE_touhou_vampire)
-			100
+		#IF(targetedRace==RACE_touhou_vampire && targetedBody.getWingType() == WING_TYPE_touhou_vampire_wingFlan)
+			200
 		#ELSE
 			0
 		#ENDIF
@@ -70,12 +71,12 @@
 
 	<iconName displaySize="80">vampire</iconName>
 	
-	<backgroundName>background</backgroundName>
+	<backgroundName>backgroundHigh</backgroundName>
 	
 	<bookIconName>vampire</bookIconName>
 	<bookName><![CDATA[求闻史记(血族篇)]]></bookName>
-	<basicDescriptionId>touhou_VAMPIRE_BASE</basicDescriptionId>
-	<advancedDescriptionId>touhou_VAMPIRE_ADVANCED</advancedDescriptionId>
+	<basicDescriptionId>touhou_VAMPIRE_FLAN_BASE</basicDescriptionId>
+	<advancedDescriptionId>touhou_VAMPIRE_FLAN_ADVANCED</advancedDescriptionId>
 	
 	<!-- 刷新率
 	(23.11.22)
@@ -84,32 +85,32 @@
 	TWO_AVERAGE
 	THREE_HIGH
 	FOUR_ABUNDANT -->
-	<defaultPreference>ONE_LOW</defaultPreference>
+	<defaultPreference>ZERO_NONE</defaultPreference>
 	
 	<!-- 该亚种在非野生形态时的名称。
 	(可能应该由“namesDefault”元素覆盖) -->
 	<nameAnthro>
 		<namesDefault>
-			<name><![CDATA[低级血族]]></name>
-			<namePlural><![CDATA[低级血族]]></namePlural>
-			<singularMaleName><![CDATA[低级血族]]></singularMaleName>
+			<name><![CDATA[变异血族]]></name>
+			<namePlural><![CDATA[变异血族]]></namePlural>
+			<singularMaleName><![CDATA[变异血族]]></singularMaleName>
 			<singularFemaleName><![CDATA[吸血姬]]></singularFemaleName>
-			<pluralMaleName><![CDATA[低级血族]]></pluralMaleName>
+			<pluralMaleName><![CDATA[变异血族]]></pluralMaleName>
 			<pluralFemaleName><![CDATA[吸血姬]]></pluralFemaleName>
 		</namesDefault>
 	</nameAnthro>
 	
 	<!-- 描述 -->
-	<description><![CDATA[一种人形生物。相对于人类,有着血红色的双眼,更长的犬牙与指甲,以及一对巨大蝙蝠翅膀。低级血族无论是对自身肉体的掌握还是对魔法的理解都达到了人类无法超越的地步。]]></description>
+	<description><![CDATA[拥有魔法少女力量的变异血族,不仅有着高级血族也难以匹敌的力量,而且还能释放魔法少女的奇异魔法。]]></description>
 	
 	<!-- 变恶魔的称呼 -->
 	<nameHalfDemon>
 		<namesDefault>
-			<name><![CDATA[低级血族]]></name>
-			<namePlural><![CDATA[低级血族]]></namePlural>
-			<singularMaleName><![CDATA[低级血族]]></singularMaleName>
+			<name><![CDATA[变异血族]]></name>
+			<namePlural><![CDATA[变异血族]]></namePlural>
+			<singularMaleName><![CDATA[变异血族]]></singularMaleName>
 			<singularFemaleName><![CDATA[吸血姬]]></singularFemaleName>
-			<pluralMaleName><![CDATA[低级血族]]></pluralMaleName>
+			<pluralMaleName><![CDATA[变异血族]]></pluralMaleName>
 			<pluralFemaleName><![CDATA[吸血姬]]></pluralFemaleName>
 		</namesDefault>
 	</nameHalfDemon>
@@ -120,9 +121,9 @@
 	<!-- 该亚种的提示工具. -->
 	<statusEffectDescription><![CDATA[
 	#IF (npc == pc)
-		低级血族异于常人的力量在你身上涌动着。
+		变异血族异于常人的力量在你身上涌动着。
 	#ELSE
-		[npc.NamePos]正在用那仿佛某种捕食者的深红竖瞳注视这你。
+		[npc.NamePos]用天真好奇,但似乎又有些危险的目光打量着你。
 	#ENDIF
 	]]></statusEffectDescription>
 	
@@ -168,19 +169,16 @@
 	DAMAGE_POISON		毒素伤害
 	-->
 	<statusEffectAttributeModifiers>
-		<attribute value="30">MAJOR_PHYSIQUE</attribute>	<!-- 体格 -->
-		<attribute value="30">MAJOR_ARCANE</attribute>	<!-- 奥术 -->
-		<attribute value="30">SPELL_COST_MODIFIER</attribute>	<!-- 法术效率 -->
-		<attribute value="10">ENERGY_SHIELDING</attribute>	<!-- 生命护盾 -->
-		<attribute value="30">RESISTANCE_PHYSICAL</attribute>	<!-- 物理护盾 -->
-		<attribute value="-60">RESISTANCE_FIRE</attribute>	<!-- 火焰护盾 -->
-		<attribute value="30">DAMAGE_UNARMED</attribute>	<!-- 徒手伤害 -->
+		<attribute value="50">MAJOR_PHYSIQUE</attribute>	<!-- 体格 -->
+		<attribute value="60">MAJOR_ARCANE</attribute>	<!-- 奥术 -->
+		<attribute value="60">SPELL_COST_MODIFIER</attribute>	<!-- 法术效率 -->
+		<attribute value="20">ENERGY_SHIELDING</attribute>	<!-- 生命护盾 -->
+		<attribute value="50">RESISTANCE_PHYSICAL</attribute>	<!-- 物理护盾 -->
+		<attribute value="50">DAMAGE_UNARMED</attribute>	<!-- 徒手伤害 -->
 	</statusEffectAttributeModifiers>
 	
-	<!--该亚种的状态效果工具提示中应列出的任何额外效果
-	由于这些额外的效果需要对游戏代码进行更改才能生效,因此它们可能应该留空-->
 	<extraEffects>
-		<effect><![CDATA[不能暴露再[style.colorBadEnd(流水)]与[style.colorBadEnd(阳光)]中]]></effect>
+		<effect><![CDATA[害怕[style.colorBadEnd(流水)]]]></effect>
 	</extraEffects>
 	
 	<!-- The likelihood of an AI of this subspecies choosing to select a perk from each of the three main perk categories.
