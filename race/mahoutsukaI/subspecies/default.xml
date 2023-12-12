@@ -109,11 +109,12 @@
 
 	<!-- 这个亚种的图标的名字，应该是同名文件夹下的svg文件
 	 	 displaySize是对文件的缩放 80 就是缩小到80%-->
-	<iconName displaySize="80">icon</iconName>
+	<iconName displaySize="80">ico</iconName>
 	
 	<!-- 这个亚种的图标背景的名字，应该是同名文件夹下的svg文件
 	 	 留空代表使用默认-->
-	<backgroundName></backgroundName>
+	<!-- <backgroundName>background</backgroundName> -->
+	<backgroundName/>
 	
 	<!-- 书籍是自动生成的
 	为每个亚种的“advancedDescriptionId”字段定义的每个唯一值都创建了一本唯一的书。
@@ -121,7 +122,7 @@
 	-->
 		
 	<!-- 这个书籍的图标的名字，一般和种族（亚种）图标一样；应该是同名文件夹下的svg文件 -->
-	<bookIconName>icon</bookIconName>
+	<bookIconName>bookIco</bookIconName>
 	
 	<!-- 书籍的名字 -->
 	<bookName><![CDATA[求闻史记(魔法使篇)]]></bookName>

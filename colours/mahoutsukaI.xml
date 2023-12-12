@@ -9,20 +9,20 @@
 	<metallic>false</metallic>
 	
 	<!-- The name of this colour. -->
-	<name><![CDATA[奥术的淡紫色]]></name>
+	<name><![CDATA[魔法光芒的天蓝色]]></name>
 	
 	<!-- This colour's hex code, which is used when the game is set in the default 'dark' theme. -->
 	<!-- 深色主题时显示的颜色 -->
-	<colour>DA8FFF</colour>
+	<colour>01C9F8</colour>
 	<!-- This colour's hex code, which is used when the game is set in the 'light' theme.
 	浅色主题时显示的颜色
 	在用于物品或种族上色的情况下,和上面相同即可
 	In the case of colours intended for item or race recolouring, this will almost always be the same as the 'colour' value above (as is the case here). -->
-	<lightColour>DA8FFF</lightColour>
+	<lightColour>01C9F8</lightColour>
 	<!-- This colour's hex code to be used when displaying this colour's icon in covering transformation screens.
 	在变形界面对颜色标注时展示的颜色,应该和上面俩相同
 	You can omit this field entirely, in which case the icon colour will be the same as the 'colour' value above (as is the case here). -->
-	<coveringIconColour>DA8FFF</coveringIconColour>
+	<coveringIconColour>01C9F8</coveringIconColour>
 	
 	<!-- here you can define names to be recognised by the parser for formatting.
 	定义后可以这样些[style.colour测试内容(文本)]使用
