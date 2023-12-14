@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<worldType>
+	<worldRegion>MISC</worldRegion>
+	<name><![CDATA[芙兰的房间]]></name>
+	<colour>#740000</colour>
+	<sexBlockedReason/>
+	<furniturePresent deskName="铺有红布的桌子">true</furniturePresent>
+	<wallsPresent wallName="贴有红色墙纸的墙">true</wallsPresent>
+	<majorAreaIndex>1</majorAreaIndex>
+	<loiteringEnabled>true</loiteringEnabled>
+	<flightEnabled>false</flightEnabled>
+	<visibleFromStart>true</visibleFromStart>
+	<fullyRevealedFromStart>true</fullyRevealedFromStart>
+	<!-- TODO -->
+	<globalMapLocation>WORLD_MAP_DOMINION</globalMapLocation>
+	<standardPlace>GENERIC_IMPASSABLE</standardPlace>
+	<entryFromGlobalMapLocation>touhou_gensokyo_koumakan_basement_flanHome_door</entryFromGlobalMapLocation>
+	<teleportPermissions>BOTH</teleportPermissions>
+	<places>
+		<place colour="#000000">GENERIC_IMPASSABLE</place>
+
+		<place colour="#760000">touhou_gensokyo_koumakan_basement_flanHome_door</place>
+		<place colour="#6f6f6f">touhou_gensokyo_koumakan_basement_flanHome_floor</place>
+		<place colour="#9b0000">touhou_gensokyo_koumakan_basement_flanHome_desk</place>
+		<place colour="#b33030">touhou_gensokyo_koumakan_basement_flanHome_chair</place>
+		<place colour="#ff0000">touhou_gensokyo_koumakan_basement_flanHome_coffin</place>
+		<place colour="#484848">touhou_gensokyo_koumakan_basement_flanHome_toy</place>
+	</places>
+	<offspringTextFilePath/>
+</worldType>

@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<placeType>
+	<worldRegion>MISC</worldRegion>
+	<name><![CDATA[芙兰的房间]]></name>
+	<tooltipDescription><![CDATA[到出都铺着豪华的深红色地毯的房间。
+	但是地上总是洒落着棉花与碎布料,处处充斥着诡异感。]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[在芙兰的房间里]]></virginityLossDescription>
+	<sexBlockedFromCharacterPresent>false</sexBlockedFromCharacterPresent>
+	<svgName/>
+	<colour>BASE_GREY</colour>
+	<backgroundColour>#400000</backgroundColour>
+	
+	<!-- 偶遇事件.
+	You can omit this entirely or use the value 'null' if there is no associated Encounter.
+	Please note that if a place type has multiple different 'encounterTypes' associated with it (via being set in the encounter file itself), one of those lists will be chosen at random to have an encounter drawn from it. -->
+	<encounterType>null</encounterType>
+	<dialogue>touhou_place_gensokyo_koumakan_basement_flanHomeFloor</dialogue>
+	<populationPresent/>
+	<furniturePresent/>
+	<wallsPresent/>
+	<loiteringEnabled/>
+	<globalMapTile>false</globalMapTile>
+	<dangerous><![CDATA[false]]></dangerous>
+	<itemsDisappear><![CDATA[false]]></itemsDisappear>
+	<aquatic><![CDATA[LAND]]></aquatic>
+	<darkness><![CDATA[ALWAYS_LIGHT]]></darkness>
+	<teleportPermissions>BOTH</teleportPermissions>
+	<weatherImmunities immuneToAll="true"/>
+	<applyInventoryInit/>
+</placeType>

@@ -1,0 +1,172 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<dialogue>
+
+	<!-- 芙兰的房间: -->
+	<htmlContent tag="FLAN_HOME_FLOOR"><![CDATA[
+		[##var out = '';
+		out = '
+		<p>
+			具有豪华装饰的房间。地上铺着带有金色纹路的深红色地毯,墙上贴着豪华的深红色墙纸。
+			周围的家具都是由红木精心雕刻而成的。
+			尽管这里的装饰十分豪华,但是地上是不是出现的玩具熊支离破碎的躯体使这里显得有些破败。
+		';
+		/*猪脚是吸血鬼*/
+		if(pc.getRace() == RACE_touhou_vampire){
+			out += '
+				附加的桌子上摆放着几样红色的糕点,不断散发着诱人的香甜气息。
+			';
+		/*其余情况*/
+		}else{
+			out += '
+				附加的桌子上摆放着几样红色的糕点,尽管不断散发着草莓的芬芳,但是其中夹着这血腥味。
+				血腥味加上破碎的玩具熊,一股令人不安的感觉从[pc.name]心中浮现出来。
+			';
+		}
+		out += '</p>';
+		]
+		[#out]
+	]]></htmlContent>
+	<htmlContent tag="FLAN_HOME_DESK"><![CDATA[
+		[##var out = '';
+		out = '
+		<p>
+			这是一个雕刻着复杂花纹的红木桌子,上面还铺着一层带有金边的深红色桌布。
+			桌子上摆放着草莓蛋糕与草莓布丁,散发着浓厚的草莓气息。
+		';
+		/*猪脚是吸血鬼*/
+		if(pc.getRace() == RACE_touhou_vampire){
+			out += '
+				闻到这样香甜的草莓气息,[pc.name]不自觉的咽了口口水。
+			';
+		/*其余情况*/
+		}else{
+			out += '
+				靠近这里,血腥气息开始变得浓郁起来,草莓气息根本掩盖不住这样刺鼻的血腥气息。
+				[pc.name]开始怀疑糕点红色的颜色是不是不止来自于草莓……
+			';
+		}
+		out += '</p>';
+		]
+		[#out]
+	]]></htmlContent>
+	<htmlContent tag="FLAN_HOME_CHAIR"><![CDATA[
+		[##var out = '';
+		out = '
+		<p>
+			这是一个雕刻着复杂花纹的红木椅子。旁边的桌子上还摆放有着豪华的糕点。
+		';
+		/*猪脚是吸血鬼*/
+		if(pc.getRace() == RACE_touhou_vampire){
+			out += '
+				闻着糕点香甜的气息,[pc.name]产生了一股坐下来享受美食的冲动。
+			';
+		/*其余情况*/
+		}else{
+			out += '
+				如果抛开从糕点上源源不断散发出来的刺鼻血腥味,或许可以坐在这里享受美食。
+			';
+		}
+		out += '</p>';
+		]
+		[#out]
+	]]></htmlContent>
+	<htmlContent tag="FLAN_HOME_CHAIR_DOWN"><![CDATA[
+		[##var out = '<p>';
+		/*猪脚是吸血鬼*/
+		if(pc.getRace() == RACE_touhou_vampire){
+			out += '
+				坐下之后,看着眼前不断散发着香甜气息的糕点,[pc.name]咽了口口水。
+			';
+		/*其余情况*/
+		}else{
+			out += '
+				坐下之后,看着眼前不断散发着刺鼻血腥味的糕点,[pc.name]只好紧紧捏着鼻子。
+			';
+		}
+		out += '</p>';
+		]
+		[#out]
+	]]></htmlContent>
+	<htmlContent tag="FLAN_HOME_CHAIR_UP"><![CDATA[
+		[##var out = '';
+		out = '
+		<p>
+			[pc.name]重写站起身来。
+		</p>
+		';
+		]
+		[#out]
+	]]></htmlContent>
+	<htmlContent tag="FLAN_HOME_CHAIR_DANCE"><![CDATA[
+		[##var out = '';
+		out = '
+		<p>
+			[pc.name]一会坐下,一会站起来。[pc.name]就重复着这样怪异的动作挑起了凳子舞。
+		</p>
+		';
+		]
+		[#out]
+	]]></htmlContent>
+	<htmlContent tag="FLAN_HOME_CHAIR_DANCE_KEEP"><![CDATA[
+		[##var out = '';
+		out = '
+		<p>
+			[pc.name]依旧在表演者坐下与站起的奇怪舞蹈。
+		</p>
+		';
+		]
+		[#out]
+	]]></htmlContent>
+	<htmlContent tag="FLAN_HOME_COFFIN"><![CDATA[
+		[##var out = '';
+		out = '
+		<p>
+			这是一个雕刻着复杂花纹,还带有金色涂装装饰的红木棺材。
+		';
+		/*猪脚是吸血鬼*/
+		if(pc.getRace() == RACE_touhou_vampire){
+			out += '
+				身为吸血鬼的[pc.name]一眼看出来了这是吸血鬼棺材。装饰都这么豪华的棺材,里面睡着一定很舒服吧。
+			';
+		/*其余情况*/
+		}else{
+			out += '
+				考虑到这座馆里有吸血鬼的存在,这很可能是吸血鬼睡觉用的吸血鬼棺材吧。
+			';
+		}
+		out += '</p>';
+		]
+		[#out]
+	]]></htmlContent>
+	<htmlContent tag="FLAN_HOME_COFFIN_OPEN"><![CDATA[
+		[##var out = '';
+		out = '
+		<p>
+			打开棺材后,里面是深红色软布,摸起来软软的,躺进去的话一定会让人舒服的起不来床。
+		</p>
+		';
+		]
+		[#out]
+	]]></htmlContent>
+	<htmlContent tag="FLAN_HOME_DOOR"><![CDATA[
+		[##var out = '';
+		out = '
+		<p>
+			推开雕刻有豪华装饰的红木门,一间装饰豪华但又杂乱的房间出现在了[pc.name]眼前
+		</p>
+		';]
+		[#out]
+	]]></htmlContent>
+	<htmlContent tag="FLAN_HOME_TOY"><![CDATA[
+		[##var out = '';
+		out = '
+		<p>
+			几只缺胳膊少腿的玩具熊堆积在这里。
+			有的头被拔,有的胳膊被拔了下来,有点腿被拔了下来……
+			但共同点就是都露出了花白的棉花。
+		</p>
+		';]
+		[#out]
+	]]></htmlContent>
+
+</dialogue>
