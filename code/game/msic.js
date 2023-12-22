@@ -1,6 +1,6 @@
 function touhouLibraryWhoRoom(chara){
-	if (chara.getLocation().getY() < 18)return 'Library'
-	if (chara.getLocation().getX() > 9)return 'Patchouli'
+	if (chara.getLocation().getY() < 8)return 'Library'
+	if (chara.getLocation().getX() > 4)return 'Patchouli'
 	return 'Little Devil'
 }
 function touhouMoveInit(arg0, arg1, arg2){

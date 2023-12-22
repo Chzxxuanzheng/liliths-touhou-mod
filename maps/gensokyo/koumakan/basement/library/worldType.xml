@@ -42,8 +42,6 @@
 		<!-- 私用家具 -->
 		<place colour="#2D2727">touhou_gensokyo_koumakan_basement_library_patchouliHomeFloor</place>
 		<place colour="#2D2020">touhou_gensokyo_koumakan_basement_library_littleDevilHomeFloor</place>
-
-
 	</places>
 	<offspringTextFilePath/>
 </worldType>

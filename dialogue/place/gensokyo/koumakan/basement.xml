@@ -7,7 +7,7 @@
 		<tooltip/>
 		<preParsingEffects/>
 		<content folderPath="mods/touhou/txt/place/gensokyo/koumakan/basement">FLAN_HOME_FLOOR</content>
-		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
+		<secondsPassed minutes="false"><![CDATA[5]]></secondsPassed>
 		<continuesDialogue><![CDATA[false]]></continuesDialogue>
 		<travelDisabled/>
 		<inventoryDisabled><![CDATA[false]]></inventoryDisabled>
@@ -20,7 +20,7 @@
 		<tooltip/>
 		<preParsingEffects/>
 		<content folderPath="mods/touhou/txt/place/gensokyo/koumakan/basement">FLAN_HOME_DESK</content>
-		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
+		<secondsPassed minutes="false"><![CDATA[5]]></secondsPassed>
 		<continuesDialogue><![CDATA[false]]></continuesDialogue>
 		<travelDisabled/>
 		<inventoryDisabled><![CDATA[false]]></inventoryDisabled>
@@ -33,7 +33,7 @@
 		<tooltip/>
 		<preParsingEffects/>
 		<content folderPath="mods/touhou/txt/place/gensokyo/koumakan/basement">FLAN_HOME_CHAIR</content>
-		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
+		<secondsPassed minutes="false"><![CDATA[5]]></secondsPassed>
 		<continuesDialogue><![CDATA[false]]></continuesDialogue>
 		<travelDisabled/>
 		<inventoryDisabled><![CDATA[false]]></inventoryDisabled>
@@ -46,7 +46,7 @@
 				<responseTitle><![CDATA[坐下]]></responseTitle>
 				<responseTooltip><![CDATA[坐在椅子上休息]]></responseTooltip>
 				<nextDialogue forceContinue="true"><![CDATA[touhou_common_chairDown]]></nextDialogue>
-				<secondsPassed minutes="true"><![CDATA[30]]></secondsPassed>
+				<secondsPassed minutes="false"><![CDATA[30]]></secondsPassed>
 				<effects><![CDATA[{#touhouChairSceneInit()#}]]></effects>
 			</response>
 		</responses>
@@ -57,7 +57,7 @@
 		<tooltip/>
 		<preParsingEffects/>
 		<content folderPath="mods/touhou/txt/place/gensokyo/koumakan/basement">FLAN_HOME_COFFIN</content>
-		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
+		<secondsPassed minutes="false"><![CDATA[5]]></secondsPassed>
 		<continuesDialogue><![CDATA[false]]></continuesDialogue>
 		<travelDisabled/>
 		<inventoryDisabled><![CDATA[false]]></inventoryDisabled>
@@ -70,7 +70,7 @@
 				<responseTitle><![CDATA[打开]]></responseTitle>
 				<responseTooltip><![CDATA[试着打开这个棺材]]></responseTooltip>
 				<nextDialogue forceContinue="true"><![CDATA[touhou_place_gensokyo_koumakan_basement_flanHomeCoffinOpen]]></nextDialogue>
-				<secondsPassed minutes="true"><![CDATA[30]]></secondsPassed>
+				<secondsPassed minutes="false"><![CDATA[30]]></secondsPassed>
 			</response>
 		</responses>
 	</scene>
@@ -80,7 +80,7 @@
 		<tooltip/>
 		<preParsingEffects/>
 		<content folderPath="mods/touhou/txt/place/gensokyo/koumakan/basement">FLAN_HOME_COFFIN_OPEN</content>
-		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
+		<secondsPassed minutes="false"><![CDATA[5]]></secondsPassed>
 		<continuesDialogue><![CDATA[false]]></continuesDialogue>
 		<travelDisabled/>
 		<inventoryDisabled><![CDATA[false]]></inventoryDisabled>
@@ -93,7 +93,7 @@
 		<tooltip/>
 		<preParsingEffects/>
 		<content folderPath="mods/touhou/txt/place/gensokyo/koumakan/basement">FLAN_HOME_DOOR</content>
-		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
+		<secondsPassed minutes="false"><![CDATA[5]]></secondsPassed>
 		<continuesDialogue><![CDATA[false[##touhouMoveInit(WORLD_TYPE_touhou_gensokyo_koumakan_basement_library, PLACE_TYPE_touhou_gensokyo_koumakan_basement_library_darkDoor)]]]></continuesDialogue>
 		<travelDisabled/>
 		<inventoryDisabled><![CDATA[false]]></inventoryDisabled>
@@ -117,7 +117,7 @@
 		<tooltip/>
 		<preParsingEffects/>
 		<content folderPath="mods/touhou/txt/place/gensokyo/koumakan/basement">FLAN_HOME_TOY</content>
-		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
+		<secondsPassed minutes="false"><![CDATA[5]]></secondsPassed>
 		<continuesDialogue><![CDATA[false]]></continuesDialogue>
 		<travelDisabled/>
 		<inventoryDisabled><![CDATA[false]]></inventoryDisabled>
@@ -132,7 +132,7 @@
 		<tooltip/>
 		<preParsingEffects/>
 		<content folderPath="mods/touhou/txt/place/gensokyo/koumakan/basement">LIBRARY_FLOOR</content>
-		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
+		<secondsPassed minutes="false"><![CDATA[30]]></secondsPassed>
 		<continuesDialogue><![CDATA[false]]></continuesDialogue>
 		<travelDisabled/>
 		<inventoryDisabled><![CDATA[false]]></inventoryDisabled>
@@ -145,7 +145,7 @@
 		<tooltip/>
 		<preParsingEffects/>
 		<content folderPath="mods/touhou/txt/place/gensokyo/koumakan/basement">LIBRARY_DESK</content>
-		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
+		<secondsPassed minutes="false"><![CDATA[30]]></secondsPassed>
 		<continuesDialogue><![CDATA[false]]></continuesDialogue>
 		<travelDisabled/>
 		<inventoryDisabled><![CDATA[false]]></inventoryDisabled>
@@ -158,7 +158,7 @@
 		<tooltip/>
 		<preParsingEffects/>
 		<content folderPath="mods/touhou/txt/place/gensokyo/koumakan/basement">LIBRARY_BOOK_SHELF</content>
-		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
+		<secondsPassed minutes="false"><![CDATA[30]]></secondsPassed>
 		<continuesDialogue><![CDATA[false]]></continuesDialogue>
 		<travelDisabled/>
 		<inventoryDisabled><![CDATA[false]]></inventoryDisabled>
@@ -171,7 +171,7 @@
 		<tooltip/>
 		<preParsingEffects/>
 		<content folderPath="mods/touhou/txt/place/gensokyo/koumakan/basement">LIBRARIAN_DESK</content>
-		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
+		<secondsPassed minutes="false"><![CDATA[30]]></secondsPassed>
 		<continuesDialogue><![CDATA[false]]></continuesDialogue>
 		<travelDisabled/>
 		<inventoryDisabled><![CDATA[false]]></inventoryDisabled>
@@ -185,7 +185,7 @@
 		<tooltip/>
 		<preParsingEffects/>
 		<content folderPath="mods/touhou/txt/place/gensokyo/koumakan/basement">DARK_DOOR</content>
-		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
+		<secondsPassed minutes="false"><![CDATA[30]]></secondsPassed>
 		<continuesDialogue><![CDATA[false[##touhouMoveInit(WORLD_TYPE_touhou_gensokyo_koumakan_basement_flanHome, PLACE_TYPE_touhou_gensokyo_koumakan_basement_flanHome_door)]]]></continuesDialogue>
 		<travelDisabled/>
 		<inventoryDisabled><![CDATA[false]]></inventoryDisabled>
@@ -209,7 +209,7 @@
 		<tooltip/>
 		<preParsingEffects/>
 		<content folderPath="mods/touhou/txt/place/gensokyo/koumakan/basement">DOOR</content>
-		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
+		<secondsPassed minutes="false"><![CDATA[30]]></secondsPassed>
 		<continuesDialogue><![CDATA[false]]></continuesDialogue>
 		<travelDisabled/>
 		<inventoryDisabled><![CDATA[false]]></inventoryDisabled>
@@ -222,7 +222,7 @@
 		<tooltip/>
 		<preParsingEffects/>
 		<content folderPath="mods/touhou/txt/place/gensokyo/koumakan/basement">STAIRS</content>
-		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
+		<secondsPassed minutes="false"><![CDATA[30]]></secondsPassed>
 		<continuesDialogue><![CDATA[false]]></continuesDialogue>
 		<travelDisabled/>
 		<inventoryDisabled><![CDATA[false]]></inventoryDisabled>
@@ -236,7 +236,7 @@
 		<tooltip/>
 		<preParsingEffects/>
 		<content folderPath="mods/touhou/txt/place/gensokyo/koumakan/basement">ARMOIRE</content>
-		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
+		<secondsPassed minutes="false"><![CDATA[30]]></secondsPassed>
 		<continuesDialogue><![CDATA[false]]></continuesDialogue>
 		<travelDisabled/>
 		<inventoryDisabled><![CDATA[false]]></inventoryDisabled>
@@ -249,7 +249,7 @@
 		<tooltip/>
 		<preParsingEffects/>
 		<content folderPath="mods/touhou/txt/place/gensokyo/koumakan/basement">BED</content>
-		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
+		<secondsPassed minutes="false"><![CDATA[30]]></secondsPassed>
 		<continuesDialogue><![CDATA[false]]></continuesDialogue>
 		<travelDisabled/>
 		<inventoryDisabled><![CDATA[false]]></inventoryDisabled>
@@ -262,7 +262,7 @@
 		<tooltip/>
 		<preParsingEffects/>
 		<content folderPath="mods/touhou/txt/place/gensokyo/koumakan/basement">DESK</content>
-		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
+		<secondsPassed minutes="false"><![CDATA[30]]></secondsPassed>
 		<continuesDialogue><![CDATA[false]]></continuesDialogue>
 		<travelDisabled/>
 		<inventoryDisabled><![CDATA[false]]></inventoryDisabled>
@@ -275,7 +275,7 @@
 		<tooltip/>
 		<preParsingEffects/>
 		<content folderPath="mods/touhou/txt/place/gensokyo/koumakan/basement">CHAIR</content>
-		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
+		<secondsPassed minutes="false"><![CDATA[30]]></secondsPassed>
 		<continuesDialogue><![CDATA[false]]></continuesDialogue>
 		<travelDisabled/>
 		<inventoryDisabled><![CDATA[false]]></inventoryDisabled>
@@ -299,7 +299,7 @@
 		<tooltip/>
 		<preParsingEffects/>
 		<content folderPath="mods/touhou/txt/place/gensokyo/koumakan/basement">BED_DESK</content>
-		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
+		<secondsPassed minutes="false"><![CDATA[30]]></secondsPassed>
 		<continuesDialogue><![CDATA[false]]></continuesDialogue>
 		<travelDisabled/>
 		<inventoryDisabled><![CDATA[false]]></inventoryDisabled>
@@ -313,7 +313,7 @@
 		<tooltip/>
 		<preParsingEffects/>
 		<content folderPath="mods/touhou/txt/place/gensokyo/koumakan/basement">PATCHOULI_HOME_FLOOR</content>
-		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
+		<secondsPassed minutes="false"><![CDATA[30]]></secondsPassed>
 		<continuesDialogue><![CDATA[false]]></continuesDialogue>
 		<travelDisabled/>
 		<inventoryDisabled><![CDATA[false]]></inventoryDisabled>
@@ -326,7 +326,7 @@
 		<tooltip/>
 		<preParsingEffects/>
 		<content folderPath="mods/touhou/txt/place/gensokyo/koumakan/basement">LITTLE_DEVIL_HOME_FLOOR</content>
-		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
+		<secondsPassed minutes="false"><![CDATA[30]]></secondsPassed>
 		<continuesDialogue><![CDATA[false]]></continuesDialogue>
 		<travelDisabled/>
 		<inventoryDisabled><![CDATA[false]]></inventoryDisabled>
