@@ -1,0 +1,303 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<dialogueNodes>
+	<scene id="chairDown">
+		<author><![CDATA[Mr.Lee]]></author>
+		<title/>
+		<tooltip/>
+		<preParsingEffects/>
+		<content folderPath="mods/touhou/txt/common">CHAIR_DOWN</content>
+		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
+		<continuesDialogue><![CDATA[false]]></continuesDialogue>
+		<travelDisabled/>
+		<inventoryDisabled><![CDATA[true]]></inventoryDisabled>
+		<regenerationDisabled><![CDATA[false]]></regenerationDisabled>
+		<responseTabs/>
+		<responses>
+			<response>
+				<availabilityConditional><![CDATA[{#touhouChairDownScene.getResponseConditional(0)#}]]></availabilityConditional>
+				<responseTabIndex><![CDATA[0]]></responseTabIndex>
+				<index><![CDATA[1]]></index>
+				<responseTitle><![CDATA[{#touhouChairDownScene.getResponseName(0)#}]]></responseTitle>
+				<responseTooltip><![CDATA[{#touhouChairDownScene.getResponseTooltip(0)#}]]></responseTooltip>
+				<colour><![CDATA[{#touhouChairDownScene.getResponseColour(0)#}]]></colour>
+				<effects><![CDATA[{#touhouChairDownScene.getResponseEffects(0)#}]]></effects>
+				<nextDialogue forceContinue="true"><![CDATA[{#touhouChairDownScene.getResponseNextDialogue(0)#}]]></nextDialogue>
+				<secondsPassed minutes="false"><![CDATA[{#touhouChairDownScene.getResponseSecondsPassed(0)#}]]></secondsPassed>
+			</response>
+			<response>
+				<availabilityConditional><![CDATA[{#touhouChairDownScene.getResponseConditional(1)#}]]></availabilityConditional>
+				<responseTabIndex><![CDATA[0]]></responseTabIndex>
+				<index><![CDATA[2]]></index>
+				<responseTitle><![CDATA[{#touhouChairDownScene.getResponseName(1)#}]]></responseTitle>
+				<responseTooltip><![CDATA[{#touhouChairDownScene.getResponseTooltip(1)#}]]></responseTooltip>
+				<colour><![CDATA[{#touhouChairDownScene.getResponseColour(1)#}]]></colour>
+				<effects><![CDATA[{#touhouChairDownScene.getResponseEffects(1)#}]]></effects>
+				<nextDialogue forceContinue="true"><![CDATA[{#touhouChairDownScene.getResponseNextDialogue(1)#}]]></nextDialogue>
+				<secondsPassed minutes="false"><![CDATA[{#touhouChairDownScene.getResponseSecondsPassed(1)#}]]></secondsPassed>
+			</response>
+			<response>
+				<availabilityConditional><![CDATA[{#touhouChairDownScene.getResponseConditional(2)#}]]></availabilityConditional>
+				<responseTabIndex><![CDATA[0]]></responseTabIndex>
+				<index><![CDATA[3]]></index>
+				<responseTitle><![CDATA[{#touhouChairDownScene.getResponseName(2)#}]]></responseTitle>
+				<responseTooltip><![CDATA[{#touhouChairDownScene.getResponseTooltip(2)#}]]></responseTooltip>
+				<colour><![CDATA[{#touhouChairDownScene.getResponseColour(2)#}]]></colour>
+				<effects><![CDATA[{#touhouChairDownScene.getResponseEffects(2)#}]]></effects>
+				<nextDialogue forceContinue="true"><![CDATA[{#touhouChairDownScene.getResponseNextDialogue(2)#}]]></nextDialogue>
+				<secondsPassed minutes="false"><![CDATA[{#touhouChairDownScene.getResponseSecondsPassed(2)#}]]></secondsPassed>
+			</response>
+			<response>
+				<availabilityConditional><![CDATA[{#touhouChairDownScene.getResponseConditional(3)#}]]></availabilityConditional>
+				<responseTabIndex><![CDATA[0]]></responseTabIndex>
+				<index><![CDATA[4]]></index>
+				<responseTitle><![CDATA[{#touhouChairDownScene.getResponseName(3)#}]]></responseTitle>
+				<responseTooltip><![CDATA[{#touhouChairDownScene.getResponseTooltip(3)#}]]></responseTooltip>
+				<colour><![CDATA[{#touhouChairDownScene.getResponseColour(3)#}]]></colour>
+				<effects><![CDATA[{#touhouChairDownScene.getResponseEffects(3)#}]]></effects>
+				<nextDialogue forceContinue="true"><![CDATA[{#touhouChairDownScene.getResponseNextDialogue(3)#}]]></nextDialogue>
+				<secondsPassed minutes="false"><![CDATA[{#touhouChairDownScene.getResponseSecondsPassed(3)#}]]></secondsPassed>
+			</response>
+			<response>
+				<availabilityConditional><![CDATA[{#touhouChairDownScene.getResponseConditional(4)#}]]></availabilityConditional>
+				<responseTabIndex><![CDATA[0]]></responseTabIndex>
+				<index><![CDATA[5]]></index>
+				<responseTitle><![CDATA[{#touhouChairDownScene.getResponseName(4)#}]]></responseTitle>
+				<responseTooltip><![CDATA[{#touhouChairDownScene.getResponseTooltip(4)#}]]></responseTooltip>
+				<colour><![CDATA[{#touhouChairDownScene.getResponseColour(4)#}]]></colour>
+				<effects><![CDATA[{#touhouChairDownScene.getResponseEffects(4)#}]]></effects>
+				<nextDialogue forceContinue="true"><![CDATA[{#touhouChairDownScene.getResponseNextDialogue(4)#}]]></nextDialogue>
+				<secondsPassed minutes="false"><![CDATA[{#touhouChairDownScene.getResponseSecondsPassed(4)#}]]></secondsPassed>
+			</response>
+			<response>
+				<availabilityConditional><![CDATA[{#touhouChairDownScene.getResponseConditional(5)#}]]></availabilityConditional>
+				<responseTabIndex><![CDATA[0]]></responseTabIndex>
+				<index><![CDATA[6]]></index>
+				<responseTitle><![CDATA[{#touhouChairDownScene.getResponseName(5)#}]]></responseTitle>
+				<responseTooltip><![CDATA[{#touhouChairDownScene.getResponseTooltip(5)#}]]></responseTooltip>
+				<colour><![CDATA[{#touhouChairDownScene.getResponseColour(5)#}]]></colour>
+				<effects><![CDATA[{#touhouChairDownScene.getResponseEffects(5)#}]]></effects>
+				<nextDialogue forceContinue="true"><![CDATA[{#touhouChairDownScene.getResponseNextDialogue(5)#}]]></nextDialogue>
+				<secondsPassed minutes="false"><![CDATA[{#touhouChairDownScene.getResponseSecondsPassed(5)#}]]></secondsPassed>
+			</response>
+			<response>
+				<availabilityConditional><![CDATA[{#touhouChairDownScene.getResponseConditional(6)#}]]></availabilityConditional>
+				<responseTabIndex><![CDATA[0]]></responseTabIndex>
+				<index><![CDATA[7]]></index>
+				<responseTitle><![CDATA[{#touhouChairDownScene.getResponseName(6)#}]]></responseTitle>
+				<responseTooltip><![CDATA[{#touhouChairDownScene.getResponseTooltip(6)#}]]></responseTooltip>
+				<colour><![CDATA[{#touhouChairDownScene.getResponseColour(6)#}]]></colour>
+				<effects><![CDATA[{#touhouChairDownScene.getResponseEffects(6)#}]]></effects>
+				<nextDialogue forceContinue="true"><![CDATA[{#touhouChairDownScene.getResponseNextDialogue(6)#}]]></nextDialogue>
+				<secondsPassed minutes="false"><![CDATA[{#touhouChairDownScene.getResponseSecondsPassed(6)#}]]></secondsPassed>
+			</response>
+			<response>
+				<availabilityConditional><![CDATA[{#touhouChairDownScene.getResponseConditional(7)#}]]></availabilityConditional>
+				<responseTabIndex><![CDATA[0]]></responseTabIndex>
+				<index><![CDATA[8]]></index>
+				<responseTitle><![CDATA[{#touhouChairDownScene.getResponseName(7)#}]]></responseTitle>
+				<responseTooltip><![CDATA[{#touhouChairDownScene.getResponseTooltip(7)#}]]></responseTooltip>
+				<colour><![CDATA[{#touhouChairDownScene.getResponseColour(7)#}]]></colour>
+				<effects><![CDATA[{#touhouChairDownScene.getResponseEffects(7)#}]]></effects>
+				<nextDialogue forceContinue="true"><![CDATA[{#touhouChairDownScene.getResponseNextDialogue(7)#}]]></nextDialogue>
+				<secondsPassed minutes="false"><![CDATA[{#touhouChairDownScene.getResponseSecondsPassed(7)#}]]></secondsPassed>
+			</response>
+			<response>
+				<availabilityConditional><![CDATA[{#touhouChairDownScene.getResponseConditional(8)#}]]></availabilityConditional>
+				<responseTabIndex><![CDATA[0]]></responseTabIndex>
+				<index><![CDATA[9]]></index>
+				<responseTitle><![CDATA[{#touhouChairDownScene.getResponseName(8)#}]]></responseTitle>
+				<responseTooltip><![CDATA[{#touhouChairDownScene.getResponseTooltip(8)#}]]></responseTooltip>
+				<colour><![CDATA[{#touhouChairDownScene.getResponseColour(8)#}]]></colour>
+				<effects><![CDATA[{#touhouChairDownScene.getResponseEffects(8)#}]]></effects>
+				<nextDialogue forceContinue="true"><![CDATA[{#touhouChairDownScene.getResponseNextDialogue(8)#}]]></nextDialogue>
+				<secondsPassed minutes="false"><![CDATA[{#touhouChairDownScene.getResponseSecondsPassed(8)#}]]></secondsPassed>
+			</response>
+			<response>
+				<availabilityConditional><![CDATA[{#touhouChairDownScene.getResponseConditional(9)#}]]></availabilityConditional>
+				<responseTabIndex><![CDATA[0]]></responseTabIndex>
+				<index><![CDATA[10]]></index>
+				<responseTitle><![CDATA[{#touhouChairDownScene.getResponseName(9)#}]]></responseTitle>
+				<responseTooltip><![CDATA[{#touhouChairDownScene.getResponseTooltip(9)#}]]></responseTooltip>
+				<colour><![CDATA[{#touhouChairDownScene.getResponseColour(9)#}]]></colour>
+				<effects><![CDATA[{#touhouChairDownScene.getResponseEffects(9)#}]]></effects>
+				<nextDialogue forceContinue="true"><![CDATA[{#touhouChairDownScene.getResponseNextDialogue(9)#}]]></nextDialogue>
+				<secondsPassed minutes="false"><![CDATA[{#touhouChairDownScene.getResponseSecondsPassed(9)#}]]></secondsPassed>
+			</response>
+		</responses>
+	</scene>
+	<scene id="chairUp">
+		<author><![CDATA[Mr.Lee]]></author>
+		<title/>
+		<tooltip/>
+		<preParsingEffects/>
+		<content folderPath="mods/touhou/txt/common">CHAIR_UP</content>
+		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
+		<continuesDialogue><![CDATA[false]]></continuesDialogue>
+		<travelDisabled/>
+		<inventoryDisabled><![CDATA[true]]></inventoryDisabled>
+		<regenerationDisabled><![CDATA[false]]></regenerationDisabled>
+		<responseTabs/>
+		<responses>
+			<response>
+				<availabilityConditional><![CDATA[{#touhouChairUpScene.getResponseConditional(0)#}]]></availabilityConditional>
+				<responseTabIndex><![CDATA[0]]></responseTabIndex>
+				<index><![CDATA[1]]></index>
+				<responseTitle><![CDATA[{#touhouChairUpScene.getResponseName(0)#}]]></responseTitle>
+				<responseTooltip><![CDATA[{#touhouChairUpScene.getResponseTooltip(0)#}]]></responseTooltip>
+				<colour><![CDATA[{#touhouChairUpScene.getResponseColour(0)#}]]></colour>
+				<effects><![CDATA[{#touhouChairUpScene.getResponseEffects(0)#}]]></effects>
+				<nextDialogue forceContinue="true"><![CDATA[{#touhouChairUpScene.getResponseNextDialogue(0)#}]]></nextDialogue>
+				<secondsPassed minutes="false"><![CDATA[{#touhouChairUpScene.getResponseSecondsPassed(0)#}]]></secondsPassed>
+			</response>
+			<response>
+				<availabilityConditional><![CDATA[{#touhouChairUpScene.getResponseConditional(1)#}]]></availabilityConditional>
+				<responseTabIndex><![CDATA[0]]></responseTabIndex>
+				<index><![CDATA[2]]></index>
+				<responseTitle><![CDATA[{#touhouChairUpScene.getResponseName(1)#}]]></responseTitle>
+				<responseTooltip><![CDATA[{#touhouChairUpScene.getResponseTooltip(1)#}]]></responseTooltip>
+				<colour><![CDATA[{#touhouChairUpScene.getResponseColour(1)#}]]></colour>
+				<effects><![CDATA[{#touhouChairUpScene.getResponseEffects(1)#}]]></effects>
+				<nextDialogue forceContinue="true"><![CDATA[{#touhouChairUpScene.getResponseNextDialogue(1)#}]]></nextDialogue>
+				<secondsPassed minutes="false"><![CDATA[{#touhouChairUpScene.getResponseSecondsPassed(1)#}]]></secondsPassed>
+			</response>
+			<response>
+				<availabilityConditional><![CDATA[{#touhouChairUpScene.getResponseConditional(2)#}]]></availabilityConditional>
+				<responseTabIndex><![CDATA[0]]></responseTabIndex>
+				<index><![CDATA[3]]></index>
+				<responseTitle><![CDATA[{#touhouChairUpScene.getResponseName(2)#}]]></responseTitle>
+				<responseTooltip><![CDATA[{#touhouChairUpScene.getResponseTooltip(2)#}]]></responseTooltip>
+				<colour><![CDATA[{#touhouChairUpScene.getResponseColour(2)#}]]></colour>
+				<effects><![CDATA[{#touhouChairUpScene.getResponseEffects(2)#}]]></effects>
+				<nextDialogue forceContinue="true"><![CDATA[{#touhouChairUpScene.getResponseNextDialogue(2)#}]]></nextDialogue>
+				<secondsPassed minutes="false"><![CDATA[{#touhouChairUpScene.getResponseSecondsPassed(2)#}]]></secondsPassed>
+			</response>
+			<response>
+				<availabilityConditional><![CDATA[{#touhouChairUpScene.getResponseConditional(3)#}]]></availabilityConditional>
+				<responseTabIndex><![CDATA[0]]></responseTabIndex>
+				<index><![CDATA[4]]></index>
+				<responseTitle><![CDATA[{#touhouChairUpScene.getResponseName(3)#}]]></responseTitle>
+				<responseTooltip><![CDATA[{#touhouChairUpScene.getResponseTooltip(3)#}]]></responseTooltip>
+				<colour><![CDATA[{#touhouChairUpScene.getResponseColour(3)#}]]></colour>
+				<effects><![CDATA[{#touhouChairUpScene.getResponseEffects(3)#}]]></effects>
+				<nextDialogue forceContinue="true"><![CDATA[{#touhouChairUpScene.getResponseNextDialogue(3)#}]]></nextDialogue>
+				<secondsPassed minutes="false"><![CDATA[{#touhouChairUpScene.getResponseSecondsPassed(3)#}]]></secondsPassed>
+			</response>
+			<response>
+				<availabilityConditional><![CDATA[{#touhouChairUpScene.getResponseConditional(4)#}]]></availabilityConditional>
+				<responseTabIndex><![CDATA[0]]></responseTabIndex>
+				<index><![CDATA[5]]></index>
+				<responseTitle><![CDATA[{#touhouChairUpScene.getResponseName(4)#}]]></responseTitle>
+				<responseTooltip><![CDATA[{#touhouChairUpScene.getResponseTooltip(4)#}]]></responseTooltip>
+				<colour><![CDATA[{#touhouChairUpScene.getResponseColour(4)#}]]></colour>
+				<effects><![CDATA[{#touhouChairUpScene.getResponseEffects(4)#}]]></effects>
+				<nextDialogue forceContinue="true"><![CDATA[{#touhouChairUpScene.getResponseNextDialogue(4)#}]]></nextDialogue>
+				<secondsPassed minutes="false"><![CDATA[{#touhouChairUpScene.getResponseSecondsPassed(4)#}]]></secondsPassed>
+			</response>
+			<response>
+				<availabilityConditional><![CDATA[{#touhouChairUpScene.getResponseConditional(5)#}]]></availabilityConditional>
+				<responseTabIndex><![CDATA[0]]></responseTabIndex>
+				<index><![CDATA[6]]></index>
+				<responseTitle><![CDATA[{#touhouChairUpScene.getResponseName(5)#}]]></responseTitle>
+				<responseTooltip><![CDATA[{#touhouChairUpScene.getResponseTooltip(5)#}]]></responseTooltip>
+				<colour><![CDATA[{#touhouChairUpScene.getResponseColour(5)#}]]></colour>
+				<effects><![CDATA[{#touhouChairUpScene.getResponseEffects(5)#}]]></effects>
+				<nextDialogue forceContinue="true"><![CDATA[{#touhouChairUpScene.getResponseNextDialogue(5)#}]]></nextDialogue>
+				<secondsPassed minutes="false"><![CDATA[{#touhouChairUpScene.getResponseSecondsPassed(5)#}]]></secondsPassed>
+			</response>
+			<response>
+				<availabilityConditional><![CDATA[{#touhouChairUpScene.getResponseConditional(6)#}]]></availabilityConditional>
+				<responseTabIndex><![CDATA[0]]></responseTabIndex>
+				<index><![CDATA[7]]></index>
+				<responseTitle><![CDATA[{#touhouChairUpScene.getResponseName(6)#}]]></responseTitle>
+				<responseTooltip><![CDATA[{#touhouChairUpScene.getResponseTooltip(6)#}]]></responseTooltip>
+				<colour><![CDATA[{#touhouChairUpScene.getResponseColour(6)#}]]></colour>
+				<effects><![CDATA[{#touhouChairUpScene.getResponseEffects(6)#}]]></effects>
+				<nextDialogue forceContinue="true"><![CDATA[{#touhouChairUpScene.getResponseNextDialogue(6)#}]]></nextDialogue>
+				<secondsPassed minutes="false"><![CDATA[{#touhouChairUpScene.getResponseSecondsPassed(6)#}]]></secondsPassed>
+			</response>
+			<response>
+				<availabilityConditional><![CDATA[{#touhouChairUpScene.getResponseConditional(7)#}]]></availabilityConditional>
+				<responseTabIndex><![CDATA[0]]></responseTabIndex>
+				<index><![CDATA[8]]></index>
+				<responseTitle><![CDATA[{#touhouChairUpScene.getResponseName(7)#}]]></responseTitle>
+				<responseTooltip><![CDATA[{#touhouChairUpScene.getResponseTooltip(7)#}]]></responseTooltip>
+				<colour><![CDATA[{#touhouChairUpScene.getResponseColour(7)#}]]></colour>
+				<effects><![CDATA[{#touhouChairUpScene.getResponseEffects(7)#}]]></effects>
+				<nextDialogue forceContinue="true"><![CDATA[{#touhouChairUpScene.getResponseNextDialogue(7)#}]]></nextDialogue>
+				<secondsPassed minutes="false"><![CDATA[{#touhouChairUpScene.getResponseSecondsPassed(7)#}]]></secondsPassed>
+			</response>
+			<response>
+				<availabilityConditional><![CDATA[{#touhouChairUpScene.getResponseConditional(8)#}]]></availabilityConditional>
+				<responseTabIndex><![CDATA[0]]></responseTabIndex>
+				<index><![CDATA[9]]></index>
+				<responseTitle><![CDATA[{#touhouChairUpScene.getResponseName(8)#}]]></responseTitle>
+				<responseTooltip><![CDATA[{#touhouChairUpScene.getResponseTooltip(8)#}]]></responseTooltip>
+				<colour><![CDATA[{#touhouChairUpScene.getResponseColour(8)#}]]></colour>
+				<effects><![CDATA[{#touhouChairUpScene.getResponseEffects(8)#}]]></effects>
+				<nextDialogue forceContinue="true"><![CDATA[{#touhouChairUpScene.getResponseNextDialogue(8)#}]]></nextDialogue>
+				<secondsPassed minutes="false"><![CDATA[{#touhouChairUpScene.getResponseSecondsPassed(8)#}]]></secondsPassed>
+			</response>
+			<response>
+				<availabilityConditional><![CDATA[{#touhouChairUpScene.getResponseConditional(9)#}]]></availabilityConditional>
+				<responseTabIndex><![CDATA[0]]></responseTabIndex>
+				<index><![CDATA[10]]></index>
+				<responseTitle><![CDATA[{#touhouChairUpScene.getResponseName(9)#}]]></responseTitle>
+				<responseTooltip><![CDATA[{#touhouChairUpScene.getResponseTooltip(9)#}]]></responseTooltip>
+				<colour><![CDATA[{#touhouChairUpScene.getResponseColour(9)#}]]></colour>
+				<effects><![CDATA[{#touhouChairUpScene.getResponseEffects(9)#}]]></effects>
+				<nextDialogue forceContinue="true"><![CDATA[{#touhouChairUpScene.getResponseNextDialogue(9)#}]]></nextDialogue>
+				<secondsPassed minutes="false"><![CDATA[{#touhouChairUpScene.getResponseSecondsPassed(9)#}]]></secondsPassed>
+			</response>
+		</responses>
+	</scene>
+	<scene id="chairDance">
+		<author><![CDATA[Mr.Lee]]></author>
+		<title/>
+		<tooltip/>
+		<preParsingEffects/>
+		<content folderPath="mods/touhou/txt/common">CHAIR_DANCE</content>
+		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
+		<continuesDialogue><![CDATA[false]]></continuesDialogue>
+		<travelDisabled/>
+		<inventoryDisabled><![CDATA[true]]></inventoryDisabled>
+		<regenerationDisabled><![CDATA[false]]></regenerationDisabled>
+		<responseTabs/>
+		<responses>
+			<response>
+				<availabilityConditional><![CDATA[true]]></availabilityConditional>
+				<responseTabIndex><![CDATA[0]]></responseTabIndex>
+				<index><![CDATA[1]]></index>
+				<responseTitle><![CDATA[继续跳]]></responseTitle>
+				<responseTooltip><![CDATA[接着表演你的站起与坐下的功底]]></responseTooltip>
+				<colour><![CDATA[TEXT]]></colour>
+				<nextDialogue forceContinue="true"><![CDATA[touhou_common_chairDanceKeep]]></nextDialogue>
+				<secondsPassed minutes="true"><![CDATA[60]]></secondsPassed>
+			</response>
+		</responses>
+	</scene>
+	<scene id="chairDanceKeep">
+		<author><![CDATA[Mr.Lee]]></author>
+		<title/>
+		<tooltip/>
+		<preParsingEffects/>
+		<content folderPath="mods/touhou/txt/common">CHAIR_DANCE_KEEP</content>
+		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
+		<continuesDialogue><![CDATA[false]]></continuesDialogue>
+		<travelDisabled/>
+		<inventoryDisabled><![CDATA[true]]></inventoryDisabled>
+		<regenerationDisabled><![CDATA[false]]></regenerationDisabled>
+		<responseTabs/>
+		<responses>
+			<response>
+				<availabilityConditional><![CDATA[true]]></availabilityConditional>
+				<responseTabIndex><![CDATA[0]]></responseTabIndex>
+				<index><![CDATA[1]]></index>
+				<responseTitle><![CDATA[继续跳]]></responseTitle>
+				<responseTooltip><![CDATA[接着表演你的站起与坐下的功底]]></responseTooltip>
+				<colour><![CDATA[TEXT]]></colour>
+				<nextDialogue forceContinue="true"><![CDATA[touhou_common_chairDanceKeep]]></nextDialogue>
+				<secondsPassed minutes="true"><![CDATA[60]]></secondsPassed>
+			</response>
+		</responses>
+	</scene>
+</dialogueNodes>

@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<placeType>
+	<worldRegion>MISC</worldRegion>
+	<name><![CDATA[图书管理员的桌子]]></name>
+	<tooltipDescription><![CDATA[只要是白天,总可以在这里看到不动大图书馆——帕秋莉在这里看书。有任何和书籍有关的问题都可以去这里问她。]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[图书管理员的桌子旁边]]></virginityLossDescription>
+	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
+	<svgName/>
+	<colour>BASE_GREY</colour>
+	<backgroundColour>#DF7126</backgroundColour>
+	<encounterType>null</encounterType>
+	<dialogue>touhou_place_gensokyo_koumakan_basement_librarianDesk</dialogue>
+	<populationPresent/>
+	<furniturePresent/>
+	<wallsPresent/>
+	<loiteringEnabled/>
+	<globalMapTile>false</globalMapTile>
+	<dangerous><![CDATA[false]]></dangerous>
+	<itemsDisappear><![CDATA[false]]></itemsDisappear>
+	<aquatic><![CDATA[LAND]]></aquatic>
+	<darkness><![CDATA[ALWAYS_LIGHT]]></darkness>
+	<teleportPermissions>BOTH</teleportPermissions>
+	<weatherImmunities immuneToAll="true"/>
+	<applyInventoryInit/>
+</placeType>

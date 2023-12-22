@@ -1,0 +1,2 @@
+var TouhouTFlag = {}
+var TouhouSFlag = {}

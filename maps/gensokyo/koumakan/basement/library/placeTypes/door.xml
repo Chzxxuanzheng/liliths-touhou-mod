@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<placeType>
+	<worldRegion>MISC</worldRegion>
+	<name><![CDATA[门]]></name>
+	<tooltipDescription><![CDATA[一扇豪华的红木门。]]></tooltipDescription>
+	<!-- TODO -->
+	<virginityLossDescription><![CDATA[]]></virginityLossDescription>
+	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
+	<svgName/>
+	<colour>BASE_GREY</colour>
+	<backgroundColour>#740000</backgroundColour>
+	<encounterType>null</encounterType>
+	<dialogue>touhou_place_gensokyo_koumakan_basement_door</dialogue>
+	<populationPresent/>
+	<furniturePresent/>
+	<wallsPresent/>
+	<loiteringEnabled/>
+	<globalMapTile>false</globalMapTile>
+	<dangerous><![CDATA[false]]></dangerous>
+	<itemsDisappear><![CDATA[false]]></itemsDisappear>
+	<aquatic><![CDATA[LAND]]></aquatic>
+	<darkness><![CDATA[ALWAYS_LIGHT]]></darkness>
+	<teleportPermissions>BOTH</teleportPermissions>
+	<weatherImmunities immuneToAll="true"/>
+	<applyInventoryInit/>
+</placeType>

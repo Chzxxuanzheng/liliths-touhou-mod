@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<dialogue>
+	<htmlContent tag="CHAIR_DANCE"><![CDATA[
+		<p>
+			[pc.name]一会坐下,一会站起来。[pc.name]就重复着这样怪异的动作挑起了凳子舞。
+		</p>
+	]]></htmlContent>
+	<htmlContent tag="CHAIR_DANCE_KEEP"><![CDATA[
+		<p>
+			[pc.name]依旧在表演者坐下与站起的奇怪舞蹈。
+		</p>
+	]]></htmlContent>
+	<htmlContent tag="CHAIR_DOWN"><![CDATA[
+		{#touhouChairUpScene.getSceneContent()#}
+	]]></htmlContent>
+	<htmlContent tag="CHAIR_UP"><![CDATA[
+		{#touhouChairDownScene.getSceneContent()#}
+	]]></htmlContent>
+</dialogue>
