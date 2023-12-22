@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<placeType>
+	<worldRegion>MISC</worldRegion>
+	<name><![CDATA[楼梯]]></name>
+	<tooltipDescription><![CDATA[通往1L的楼梯]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[在红魔馆的楼梯拐角]]></virginityLossDescription>
+	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
+	<svgName/>
+	<colour>BASE_GREY</colour>
+	<backgroundColour>#740000</backgroundColour>
+	<encounterType>null</encounterType>
+	<dialogue>touhou_place_gensokyo_koumakan_basement_stairs</dialogue>
+	<populationPresent>
+			<population day="true">
+					<populationType plural="true" density="SEVERAL">打扫卫生的妖精女仆</populationType>
+					<subspeciesPresent>
+							<subspecies>touhou_yousei_subspecies_default</subspecies>
+					</subspeciesPresent>
+			</population>
+	</populationPresent>
+	<furniturePresent/>
+	<wallsPresent/>
+	<loiteringEnabled/>
+	<globalMapTile>false</globalMapTile>
+	<dangerous><![CDATA[false]]></dangerous>
+	<itemsDisappear><![CDATA[false]]></itemsDisappear>
+	<aquatic><![CDATA[LAND]]></aquatic>
+	<darkness><![CDATA[ALWAYS_LIGHT]]></darkness>
+	<teleportPermissions>BOTH</teleportPermissions>
+	<weatherImmunities immuneToAll="true"/>
+	<applyInventoryInit/>
+</placeType>

@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<!-- TODO刷书 -->
+<worldType>
+	<worldRegion>MISC</worldRegion>
+	<name><![CDATA[大图书馆]]></name>
+	<colour>#8b00ff</colour>
+	<sexBlockedReason/>
+	<furniturePresent>true</furniturePresent>
+	<wallsPresent>true</wallsPresent>
+	<majorAreaIndex>1</majorAreaIndex>
+	<loiteringEnabled>true</loiteringEnabled>
+	<flightEnabled>false</flightEnabled>
+	<visibleFromStart>true</visibleFromStart>
+	<fullyRevealedFromStart>true</fullyRevealedFromStart>
+	<!-- TODO -->
+	<globalMapLocation>WORLD_MAP_DOMINION</globalMapLocation>
+	<standardPlace>GENERIC_IMPASSABLE</standardPlace>
+	<entryFromGlobalMapLocation>touhou_gensokyo_koumakan_basement_flanHome_door</entryFromGlobalMapLocation>
+	<teleportPermissions>BOTH</teleportPermissions>
+	<places>
+		<!-- 空 -->
+		<place colour="#000000">GENERIC_IMPASSABLE</place>
+
+		<!-- 图书馆 -->
+		<place colour="#2D2D2D">touhou_gensokyo_koumakan_basement_library_libraryFloor</place>
+		<place colour="#A8541B">touhou_gensokyo_koumakan_basement_library_libraryDesk</place>
+		<place colour="#DF7126">touhou_gensokyo_koumakan_basement_library_libraryBookshelf</place>
+		<place colour="#894212">touhou_gensokyo_koumakan_basement_library_librarianDesk</place>
+
+		<!-- 门 -->
+		<place colour="#7B0000">touhou_gensokyo_koumakan_basement_library_darkDoor</place>
+		<place colour="#A80000">touhou_gensokyo_koumakan_basement_library_door</place>
+		<place colour="#A30202">touhou_gensokyo_koumakan_basement_library_stairs</place>
+
+		<!-- 共用家具 -->
+		<place colour="#B43900">touhou_gensokyo_koumakan_basement_library_armoire</place>
+		<place colour="#8F563B">touhou_gensokyo_koumakan_basement_library_bed</place>
+		<place colour="#D2581F">touhou_gensokyo_koumakan_basement_library_desk</place>
+		<place colour="#BE4F1B">touhou_gensokyo_koumakan_basement_library_chair</place>
+		<place colour="#AA5933">touhou_gensokyo_koumakan_basement_library_bedDesk</place>
+		
+		<!-- 私用家具 -->
+		<place colour="#2D2727">touhou_gensokyo_koumakan_basement_library_patchouliHomeFloor</place>
+		<place colour="#2D2020">touhou_gensokyo_koumakan_basement_library_littleDevilHomeFloor</place>
+
+
+	</places>
+	<offspringTextFilePath/>
+</worldType>

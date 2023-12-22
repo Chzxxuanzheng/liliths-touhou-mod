@@ -1,0 +1,10 @@
+game.parseJsFromFile("mods/touhou/code/util/util")
+TouhouUtil.import('util/flag')
+TouhouUtil.import('dialogue/chair')
+TouhouUtil.import('game/msic')
+TouhouUtil.import('save/saveLoad')
+try{
+	touhouImportGame()
+}catch(e){
+	TouhouUtil.run('game/init')
+}

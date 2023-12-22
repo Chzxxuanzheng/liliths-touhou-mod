@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<placeType>
+	<worldRegion>MISC</worldRegion>
+	<name><![CDATA[桌子]]></name>
+	<tooltipDescription><![CDATA[为阅读书籍提供的桌子。]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[在图书馆里]]></virginityLossDescription>
+	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
+	<svgName/>
+	<colour>BASE_GREY</colour>
+	<backgroundColour>#A8541B</backgroundColour>
+	<encounterType>null</encounterType>
+	<dialogue>touhou_place_gensokyo_koumakan_basement_libraryDesk</dialogue>
+	<populationPresent>
+			<population day="true">
+					<populationType plural="true" density="OCCASIONAL">魔法使</populationType>
+					<subspeciesPresent>
+							<subspecies>touhou_mahoutsukaI_subspecies_default</subspecies>
+					</subspeciesPresent>
+			</population>
+	</populationPresent>
+	<furniturePresent/>
+	<wallsPresent/>
+	<loiteringEnabled/>
+	<globalMapTile>false</globalMapTile>
+	<dangerous><![CDATA[false]]></dangerous>
+	<itemsDisappear><![CDATA[false]]></itemsDisappear>
+	<aquatic><![CDATA[LAND]]></aquatic>
+	<darkness><![CDATA[ALWAYS_LIGHT]]></darkness>
+	<teleportPermissions>BOTH</teleportPermissions>
+	<weatherImmunities immuneToAll="true"/>
+	<applyInventoryInit/>
+</placeType>

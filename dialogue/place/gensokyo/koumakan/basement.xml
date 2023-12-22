@@ -10,7 +10,7 @@
 		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 		<continuesDialogue><![CDATA[false]]></continuesDialogue>
 		<travelDisabled/>
-		<inventoryDisabled><![CDATA[true]]></inventoryDisabled>
+		<inventoryDisabled><![CDATA[false]]></inventoryDisabled>
 		<regenerationDisabled><![CDATA[false]]></regenerationDisabled>
 		<responseTabs/>
 	</scene>
@@ -23,7 +23,7 @@
 		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 		<continuesDialogue><![CDATA[false]]></continuesDialogue>
 		<travelDisabled/>
-		<inventoryDisabled><![CDATA[true]]></inventoryDisabled>
+		<inventoryDisabled><![CDATA[false]]></inventoryDisabled>
 		<regenerationDisabled><![CDATA[false]]></regenerationDisabled>
 		<responseTabs/>
 	</scene>
@@ -36,174 +36,18 @@
 		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 		<continuesDialogue><![CDATA[false]]></continuesDialogue>
 		<travelDisabled/>
-		<inventoryDisabled><![CDATA[true]]></inventoryDisabled>
+		<inventoryDisabled><![CDATA[false]]></inventoryDisabled>
 		<regenerationDisabled><![CDATA[false]]></regenerationDisabled>
 		<responseTabs/>
 		<responses>
 			<response>
-				<availabilityConditional><![CDATA[true]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
 				<responseTitle><![CDATA[坐下]]></responseTitle>
 				<responseTooltip><![CDATA[坐在椅子上休息]]></responseTooltip>
-				<colour><![CDATA[TEXT]]></colour>
-				<nextDialogue forceContinue="true"><![CDATA[touhou_place_gensokyo_koumakan_basement_flanHomeChairDown]]></nextDialogue>
+				<nextDialogue forceContinue="true"><![CDATA[touhou_common_chairDown]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[30]]></secondsPassed>
-				<effects><![CDATA[[#var chairDance = 0;]]]></effects>
-				<requiredFetishes/>
-				<corruptionLevel/>
-				<requiredPerks/>
-				<requiredFemininity/>
-				<requiredSubspecies/>
-				<tradingVariables enabled="false"/>
-				<combatVariables enabled="false"/>
-				<sexVariables enabled="false"/>
-				<sexVariablesWithManager enabled="false"/>
-			</response>
-		</responses>
-	</scene>
-	<scene id="flanHomeChairDown">
-		<author><![CDATA[Mr.Lee]]></author>
-		<title/>
-		<tooltip/>
-		<preParsingEffects/>
-		<content folderPath="mods/touhou/txt/place/gensokyo/koumakan/basement">FLAN_HOME_CHAIR_DOWN</content>
-		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
-		<continuesDialogue><![CDATA[false]]></continuesDialogue>
-		<travelDisabled>true</travelDisabled>
-		<inventoryDisabled><![CDATA[true]]></inventoryDisabled>
-		<regenerationDisabled><![CDATA[false]]></regenerationDisabled>
-		<responseTabs/>
-		<responses>
-			<response>
-				<availabilityConditional><![CDATA[true]]></availabilityConditional>
-				<responseTabIndex><![CDATA[0]]></responseTabIndex>
-				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[起来]]></responseTitle>
-				<responseTooltip><![CDATA[从椅子上起来]]></responseTooltip>
-				<colour><![CDATA[TEXT]]></colour>
-				<nextDialogue forceContinue="true"><![CDATA[touhou_place_gensokyo_koumakan_basement_flanHomeChairUp]]></nextDialogue>
-				<secondsPassed minutes="true"><![CDATA[30]]></secondsPassed>
-				<effects/>
-				<requiredFetishes/>
-				<corruptionLevel/>
-				<requiredPerks/>
-				<requiredFemininity/>
-				<requiredSubspecies/>
-				<tradingVariables enabled="false"/>
-				<combatVariables enabled="false"/>
-				<sexVariables enabled="false"/>
-				<sexVariablesWithManager enabled="false"/>
-			</response>
-		</responses>
-	</scene>
-	<scene id="flanHomeChairUp">
-		<author><![CDATA[Mr.Lee]]></author>
-		<title/>
-		<tooltip/>
-		<preParsingEffects/>
-		<content folderPath="mods/touhou/txt/place/gensokyo/koumakan/basement">FLAN_HOME_CHAIR_UP</content>
-		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
-		<continuesDialogue><![CDATA[false]]></continuesDialogue>
-		<travelDisabled/>
-		<inventoryDisabled><![CDATA[true]]></inventoryDisabled>
-		<regenerationDisabled><![CDATA[false]]></regenerationDisabled>
-		<responseTabs/>
-		<responses>
-			<response>
-				<availabilityConditional><![CDATA[true]]></availabilityConditional>
-				<responseTabIndex><![CDATA[0]]></responseTabIndex>
-				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[坐下]]></responseTitle>
-				<responseTooltip><![CDATA[坐在椅子上休息]]></responseTooltip>
-				<colour><![CDATA[TEXT]]></colour>
-				<nextDialogue forceContinue="true"><![CDATA[
-				#IF(chairDance>9)
-					touhou_place_gensokyo_koumakan_basement_flanHomeChairDance
-				#ELSE
-					touhou_place_gensokyo_koumakan_basement_flanHomeChairDown
-				#ENDIF]]></nextDialogue>
-				<secondsPassed minutes="true"><![CDATA[30]]></secondsPassed>
-				<effects><![CDATA[[#chairDance++;]]]></effects>
-				<requiredFetishes/>
-				<corruptionLevel/>
-				<requiredPerks/>
-				<requiredFemininity/>
-				<requiredSubspecies/>
-				<tradingVariables enabled="false"/>
-				<combatVariables enabled="false"/>
-				<sexVariables enabled="false"/>
-				<sexVariablesWithManager enabled="false"/>
-			</response>
-		</responses>
-	</scene>
-	<scene id="flanHomeChairDance">
-		<author><![CDATA[Mr.Lee]]></author>
-		<title/>
-		<tooltip/>
-		<preParsingEffects/>
-		<content folderPath="mods/touhou/txt/place/gensokyo/koumakan/basement">FLAN_HOME_CHAIR_DANCE</content>
-		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
-		<continuesDialogue><![CDATA[false]]></continuesDialogue>
-		<travelDisabled/>
-		<inventoryDisabled><![CDATA[true]]></inventoryDisabled>
-		<regenerationDisabled><![CDATA[false]]></regenerationDisabled>
-		<responseTabs/>
-		<responses>
-			<response>
-				<availabilityConditional><![CDATA[true]]></availabilityConditional>
-				<responseTabIndex><![CDATA[0]]></responseTabIndex>
-				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[继续跳]]></responseTitle>
-				<responseTooltip><![CDATA[接着表演你的站起与坐下的功底]]></responseTooltip>
-				<colour><![CDATA[TEXT]]></colour>
-				<nextDialogue forceContinue="true"><![CDATA[touhou_place_gensokyo_koumakan_basement_flanHomeChairDanceKeep]]></nextDialogue>
-				<secondsPassed minutes="true"><![CDATA[60]]></secondsPassed>
-				<effects/>
-				<requiredFetishes/>
-				<corruptionLevel/>
-				<requiredPerks/>
-				<requiredFemininity/>
-				<requiredSubspecies/>
-				<tradingVariables enabled="false"/>
-				<combatVariables enabled="false"/>
-				<sexVariables enabled="false"/>
-				<sexVariablesWithManager enabled="false"/>
-			</response>
-		</responses>
-	</scene>
-	<scene id="flanHomeChairDanceKeep">
-		<author><![CDATA[Mr.Lee]]></author>
-		<title/>
-		<tooltip/>
-		<preParsingEffects/>
-		<content folderPath="mods/touhou/txt/place/gensokyo/koumakan/basement">FLAN_HOME_CHAIR_DANCE_KEEP</content>
-		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
-		<continuesDialogue><![CDATA[false]]></continuesDialogue>
-		<travelDisabled/>
-		<inventoryDisabled><![CDATA[true]]></inventoryDisabled>
-		<regenerationDisabled><![CDATA[false]]></regenerationDisabled>
-		<responseTabs/>
-		<responses>
-			<response>
-				<availabilityConditional><![CDATA[true]]></availabilityConditional>
-				<responseTabIndex><![CDATA[0]]></responseTabIndex>
-				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[继续跳]]></responseTitle>
-				<responseTooltip><![CDATA[接着表演你的站起与坐下的功底]]></responseTooltip>
-				<colour><![CDATA[TEXT]]></colour>
-				<nextDialogue forceContinue="true"><![CDATA[touhou_place_gensokyo_koumakan_basement_flanHomeChairDanceKeep]]></nextDialogue>
-				<secondsPassed minutes="true"><![CDATA[60]]></secondsPassed>
-				<effects/>
-				<requiredFetishes/>
-				<corruptionLevel/>
-				<requiredPerks/>
-				<requiredFemininity/>
-				<requiredSubspecies/>
-				<tradingVariables enabled="false"/>
-				<combatVariables enabled="false"/>
-				<sexVariables enabled="false"/>
-				<sexVariablesWithManager enabled="false"/>
+				<effects><![CDATA[{#touhouChairSceneInit()#}]]></effects>
 			</response>
 		</responses>
 	</scene>
@@ -216,29 +60,17 @@
 		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 		<continuesDialogue><![CDATA[false]]></continuesDialogue>
 		<travelDisabled/>
-		<inventoryDisabled><![CDATA[true]]></inventoryDisabled>
+		<inventoryDisabled><![CDATA[false]]></inventoryDisabled>
 		<regenerationDisabled><![CDATA[false]]></regenerationDisabled>
 		<responseTabs/>
 		<responses>
 			<response>
-				<availabilityConditional><![CDATA[true]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
 				<responseTitle><![CDATA[打开]]></responseTitle>
 				<responseTooltip><![CDATA[试着打开这个棺材]]></responseTooltip>
-				<colour><![CDATA[TEXT]]></colour>
 				<nextDialogue forceContinue="true"><![CDATA[touhou_place_gensokyo_koumakan_basement_flanHomeCoffinOpen]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[30]]></secondsPassed>
-				<effects/>
-				<requiredFetishes/>
-				<corruptionLevel/>
-				<requiredPerks/>
-				<requiredFemininity/>
-				<requiredSubspecies/>
-				<tradingVariables enabled="false"/>
-				<combatVariables enabled="false"/>
-				<sexVariables enabled="false"/>
-				<sexVariablesWithManager enabled="false"/>
 			</response>
 		</responses>
 	</scene>
@@ -251,7 +83,7 @@
 		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 		<continuesDialogue><![CDATA[false]]></continuesDialogue>
 		<travelDisabled/>
-		<inventoryDisabled><![CDATA[true]]></inventoryDisabled>
+		<inventoryDisabled><![CDATA[false]]></inventoryDisabled>
 		<regenerationDisabled><![CDATA[false]]></regenerationDisabled>
 		<responseTabs/>
 	</scene>
@@ -262,11 +94,22 @@
 		<preParsingEffects/>
 		<content folderPath="mods/touhou/txt/place/gensokyo/koumakan/basement">FLAN_HOME_DOOR</content>
 		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
-		<continuesDialogue><![CDATA[false]]></continuesDialogue>
+		<continuesDialogue><![CDATA[false[##touhouMoveInit(WORLD_TYPE_touhou_gensokyo_koumakan_basement_library, PLACE_TYPE_touhou_gensokyo_koumakan_basement_library_darkDoor)]]]></continuesDialogue>
 		<travelDisabled/>
-		<inventoryDisabled><![CDATA[true]]></inventoryDisabled>
+		<inventoryDisabled><![CDATA[false]]></inventoryDisabled>
 		<regenerationDisabled><![CDATA[false]]></regenerationDisabled>
 		<responseTabs/>
+		<responses>
+			<response>
+				<responseTabIndex><![CDATA[0]]></responseTabIndex>
+				<index><![CDATA[1]]></index>
+				<responseTitle><![CDATA[离开]]></responseTitle>
+				<responseTooltip><![CDATA[回到图书馆]]></responseTooltip>
+				<secondsPassed minutes="false"><![CDATA[30]]></secondsPassed>
+				<nextDialogue stripContent="false"><![CDATA[[#TouhouTFlag.enterScene[0]]]]></nextDialogue>
+				<effects><![CDATA[[#touhouMoveGeneral(0)]]]></effects>
+			</response>
+		</responses>
 	</scene>
 	<scene id="flanHomeToy">
 		<author><![CDATA[Mr.Lee]]></author>
@@ -277,8 +120,218 @@
 		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 		<continuesDialogue><![CDATA[false]]></continuesDialogue>
 		<travelDisabled/>
-		<inventoryDisabled><![CDATA[true]]></inventoryDisabled>
+		<inventoryDisabled><![CDATA[false]]></inventoryDisabled>
 		<regenerationDisabled><![CDATA[false]]></regenerationDisabled>
 		<responseTabs/>
 	</scene>
+
+	<!-- 图书馆: -->
+	<scene id="libraryFloor">
+		<author><![CDATA[Mr.Lee]]></author>
+		<title/>
+		<tooltip/>
+		<preParsingEffects/>
+		<content folderPath="mods/touhou/txt/place/gensokyo/koumakan/basement">LIBRARY_FLOOR</content>
+		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
+		<continuesDialogue><![CDATA[false]]></continuesDialogue>
+		<travelDisabled/>
+		<inventoryDisabled><![CDATA[false]]></inventoryDisabled>
+		<regenerationDisabled><![CDATA[false]]></regenerationDisabled>
+		<responseTabs/>
+	</scene>
+	<scene id="libraryDesk">
+		<author><![CDATA[Mr.Lee]]></author>
+		<title/>
+		<tooltip/>
+		<preParsingEffects/>
+		<content folderPath="mods/touhou/txt/place/gensokyo/koumakan/basement">LIBRARY_DESK</content>
+		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
+		<continuesDialogue><![CDATA[false]]></continuesDialogue>
+		<travelDisabled/>
+		<inventoryDisabled><![CDATA[false]]></inventoryDisabled>
+		<regenerationDisabled><![CDATA[false]]></regenerationDisabled>
+		<responseTabs/>
+	</scene>
+	<scene id="libraryBookshelf">
+		<author><![CDATA[Mr.Lee]]></author>
+		<title/>
+		<tooltip/>
+		<preParsingEffects/>
+		<content folderPath="mods/touhou/txt/place/gensokyo/koumakan/basement">LIBRARY_BOOK_SHELF</content>
+		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
+		<continuesDialogue><![CDATA[false]]></continuesDialogue>
+		<travelDisabled/>
+		<inventoryDisabled><![CDATA[false]]></inventoryDisabled>
+		<regenerationDisabled><![CDATA[false]]></regenerationDisabled>
+		<responseTabs/>
+	</scene>
+	<scene id="librarianDesk">
+		<author><![CDATA[Mr.Lee]]></author>
+		<title/>
+		<tooltip/>
+		<preParsingEffects/>
+		<content folderPath="mods/touhou/txt/place/gensokyo/koumakan/basement">LIBRARIAN_DESK</content>
+		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
+		<continuesDialogue><![CDATA[false]]></continuesDialogue>
+		<travelDisabled/>
+		<inventoryDisabled><![CDATA[false]]></inventoryDisabled>
+		<regenerationDisabled><![CDATA[false]]></regenerationDisabled>
+		<responseTabs/>
+	</scene>
+	<!-- 门: -->
+	<scene id="darkDoor">
+		<author><![CDATA[Mr.Lee]]></author>
+		<title/>
+		<tooltip/>
+		<preParsingEffects/>
+		<content folderPath="mods/touhou/txt/place/gensokyo/koumakan/basement">DARK_DOOR</content>
+		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
+		<continuesDialogue><![CDATA[false[##touhouMoveInit(WORLD_TYPE_touhou_gensokyo_koumakan_basement_flanHome, PLACE_TYPE_touhou_gensokyo_koumakan_basement_flanHome_door)]]]></continuesDialogue>
+		<travelDisabled/>
+		<inventoryDisabled><![CDATA[false]]></inventoryDisabled>
+		<regenerationDisabled><![CDATA[false]]></regenerationDisabled>
+		<responseTabs/>
+		<responses>
+			<response>
+				<responseTabIndex><![CDATA[0]]></responseTabIndex>
+				<index><![CDATA[1]]></index>
+				<responseTitle><![CDATA[进入]]></responseTitle>
+				<responseTooltip><![CDATA[推开门看看]]></responseTooltip>
+				<secondsPassed minutes="false"><![CDATA[30]]></secondsPassed>
+				<nextDialogue stripContent="false"><![CDATA[[#TouhouTFlag.enterScene[0]]]]></nextDialogue>
+				<effects><![CDATA[[#touhouMoveGeneral(0)]]]></effects>
+			</response>
+		</responses>
+	</scene>
+	<scene id="door">
+		<author><![CDATA[Mr.Lee]]></author>
+		<title/>
+		<tooltip/>
+		<preParsingEffects/>
+		<content folderPath="mods/touhou/txt/place/gensokyo/koumakan/basement">DOOR</content>
+		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
+		<continuesDialogue><![CDATA[false]]></continuesDialogue>
+		<travelDisabled/>
+		<inventoryDisabled><![CDATA[false]]></inventoryDisabled>
+		<regenerationDisabled><![CDATA[false]]></regenerationDisabled>
+		<responseTabs/>
+	</scene>
+	<scene id="stairs">
+		<author><![CDATA[Mr.Lee]]></author>
+		<title/>
+		<tooltip/>
+		<preParsingEffects/>
+		<content folderPath="mods/touhou/txt/place/gensokyo/koumakan/basement">STAIRS</content>
+		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
+		<continuesDialogue><![CDATA[false]]></continuesDialogue>
+		<travelDisabled/>
+		<inventoryDisabled><![CDATA[false]]></inventoryDisabled>
+		<regenerationDisabled><![CDATA[false]]></regenerationDisabled>
+		<responseTabs/>
+	</scene>
+	<!-- 共用家具: -->
+	<scene id="armoire">
+		<author><![CDATA[Mr.Lee]]></author>
+		<title/>
+		<tooltip/>
+		<preParsingEffects/>
+		<content folderPath="mods/touhou/txt/place/gensokyo/koumakan/basement">ARMOIRE</content>
+		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
+		<continuesDialogue><![CDATA[false]]></continuesDialogue>
+		<travelDisabled/>
+		<inventoryDisabled><![CDATA[false]]></inventoryDisabled>
+		<regenerationDisabled><![CDATA[false]]></regenerationDisabled>
+		<responseTabs/>
+	</scene>
+	<scene id="bed">
+		<author><![CDATA[Mr.Lee]]></author>
+		<title/>
+		<tooltip/>
+		<preParsingEffects/>
+		<content folderPath="mods/touhou/txt/place/gensokyo/koumakan/basement">BED</content>
+		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
+		<continuesDialogue><![CDATA[false]]></continuesDialogue>
+		<travelDisabled/>
+		<inventoryDisabled><![CDATA[false]]></inventoryDisabled>
+		<regenerationDisabled><![CDATA[false]]></regenerationDisabled>
+		<responseTabs/>
+	</scene>
+	<scene id="desk">
+		<author><![CDATA[Mr.Lee]]></author>
+		<title/>
+		<tooltip/>
+		<preParsingEffects/>
+		<content folderPath="mods/touhou/txt/place/gensokyo/koumakan/basement">DESK</content>
+		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
+		<continuesDialogue><![CDATA[false]]></continuesDialogue>
+		<travelDisabled/>
+		<inventoryDisabled><![CDATA[false]]></inventoryDisabled>
+		<regenerationDisabled><![CDATA[false]]></regenerationDisabled>
+		<responseTabs/>
+	</scene>
+	<scene id="chair">
+		<author><![CDATA[Mr.Lee]]></author>
+		<title/>
+		<tooltip/>
+		<preParsingEffects/>
+		<content folderPath="mods/touhou/txt/place/gensokyo/koumakan/basement">CHAIR</content>
+		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
+		<continuesDialogue><![CDATA[false]]></continuesDialogue>
+		<travelDisabled/>
+		<inventoryDisabled><![CDATA[false]]></inventoryDisabled>
+		<regenerationDisabled><![CDATA[false]]></regenerationDisabled>
+		<responseTabs/>
+		<responses>
+			<response>
+				<responseTabIndex><![CDATA[0]]></responseTabIndex>
+				<index><![CDATA[1]]></index>
+				<responseTitle><![CDATA[坐下]]></responseTitle>
+				<responseTooltip><![CDATA[坐在椅子上休息]]></responseTooltip>
+				<nextDialogue forceContinue="true"><![CDATA[touhou_common_chairDown]]></nextDialogue>
+				<secondsPassed minutes="false"><![CDATA[30]]></secondsPassed>
+				<effects><![CDATA[{#touhouChairSceneInit()#}]]></effects>
+			</response>
+		</responses>
+	</scene>
+	<scene id="bedDesk">
+		<author><![CDATA[Mr.Lee]]></author>
+		<title/>
+		<tooltip/>
+		<preParsingEffects/>
+		<content folderPath="mods/touhou/txt/place/gensokyo/koumakan/basement">BED_DESK</content>
+		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
+		<continuesDialogue><![CDATA[false]]></continuesDialogue>
+		<travelDisabled/>
+		<inventoryDisabled><![CDATA[false]]></inventoryDisabled>
+		<regenerationDisabled><![CDATA[false]]></regenerationDisabled>
+		<responseTabs/>
+	</scene>
+	<!-- 私用家具 -->
+	<scene id="patchouliHomeFloor">
+		<author><![CDATA[Mr.Lee]]></author>
+		<title/>
+		<tooltip/>
+		<preParsingEffects/>
+		<content folderPath="mods/touhou/txt/place/gensokyo/koumakan/basement">PATCHOULI_HOME_FLOOR</content>
+		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
+		<continuesDialogue><![CDATA[false]]></continuesDialogue>
+		<travelDisabled/>
+		<inventoryDisabled><![CDATA[false]]></inventoryDisabled>
+		<regenerationDisabled><![CDATA[false]]></regenerationDisabled>
+		<responseTabs/>
+	</scene>
+	<scene id="littleDevilHomeFloor">
+		<author><![CDATA[Mr.Lee]]></author>
+		<title/>
+		<tooltip/>
+		<preParsingEffects/>
+		<content folderPath="mods/touhou/txt/place/gensokyo/koumakan/basement">LITTLE_DEVIL_HOME_FLOOR</content>
+		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
+		<continuesDialogue><![CDATA[false]]></continuesDialogue>
+		<travelDisabled/>
+		<inventoryDisabled><![CDATA[false]]></inventoryDisabled>
+		<regenerationDisabled><![CDATA[false]]></regenerationDisabled>
+		<responseTabs/>
+	</scene>
+
 </dialogueNodes>	
