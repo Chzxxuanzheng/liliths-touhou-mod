@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<colour>
+	<metallic>false</metallic>
+	<name><![CDATA[魔法少女的七彩色]]></name>
+	<colours>
+		<colour>98FFED</colour>
+		<colour>82A6FF</colour>
+		<colour>C08FFB</colour>
+		<colour>FE82CA</colour>
+		<colour>FFC68C</colour>
+		<colour>FDFD9D</colour>
+		<colour>A2FB84</colour>
+	</colours>
+	<lightColours>
+		<colour>08817F</colour>
+		<colour>22495D</colour>
+		<colour>66225C</colour>
+		<colour>9F2340</colour>
+		<colour>9C4B0A</colour>
+		<colour>B6B70B</colour>
+		<colour>077E0C</colour>
+	</lightColours>
+	<formattingNames>
+		<name><![CDATA[flandreWing]]></name>
+	</formattingNames>
+	<tags>
+		<tag>SKIN</tag>
+	</tags>
+</colour>
