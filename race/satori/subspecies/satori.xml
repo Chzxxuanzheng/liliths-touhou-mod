@@ -91,7 +91,7 @@
 
 	<!-- 这个亚种的图标的名字，应该是同名文件夹下的svg文件
 	 	 displaySize是对文件的缩放 80 就是缩小到80%-->
-	<iconName displaySize="80">icon</iconName>
+	<iconName displaySize="80">satori</iconName>
 	
 	<!-- 这个亚种的图标背景的名字，应该是同名文件夹下的svg文件
 	 	 留空代表使用默认-->
